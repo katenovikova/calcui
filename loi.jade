@@ -10,13 +10,14 @@ html(lang='ru-RU')
     meta(name='author', content='Nick (none23) Anisimov')
     link(href='css/bootstrap.min.css', rel='stylesheet')
     link(href='css/style.css', rel='stylesheet')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
     // }}}
   body
     // wT
     .container-fluid
 
       .row
-        .col-md-12
+        .col-xs-12
           h3
             | Выберите вариант крепления
           #tabs-433998.tabbable
@@ -44,12 +45,10 @@ html(lang='ru-RU')
               
             .tab-content
               #panel140934.tab-pane(role='tabpanel').active
-                h3
-                  | Выберите число створок
-                
-
-                ////  WiN
-                // {{{
+                .row
+                  .col-xs-12
+                    h3
+                      | Выберите число створок
                 
                 .btn-group(data-toggle="buttons")
                   .row
@@ -89,16 +88,44 @@ html(lang='ru-RU')
                           .sr-only
                             input#WiN4(type="radio", name="WiN", autocomplete="off")
                     
-                // }}}    
-                  
-                // WiM
-                // {{{
-                  .container-fluid
-                // }}}
+
+
+
+
+
+
+
+
                   
               #panel917149.tab-pane(role='tabpanel')
-                p
-                  | Howdy, I'm in Section 2.
+                    h3
+                      | Укажите ширину и высоту оконного проема
+                    .row
+                      .col-xs-4
+                        h6
+                          | Ширина проема:
+                        br
+                        .input-group.input-group-lg
+                          span.input-group-addon 
+                            i.fa.fa-fw.fa-arrows-h
+                          input.form-control#WbW(type='text', placeholder='120')
+                          span.input-group-addon 
+                            | мм 
+                    .row  
+                      .col-xs-4
+                        h6
+                          | Высота проема
+                        br
+                        .input-group.input-group-lg
+                          span.input-group-addon 
+                            i.fa.fa-fw.fa-arrows-v
+                          input.form-control#WbH(type='text', placeholder='180')
+                          span.input-group-addon 
+                            | мм 
+
+
+
+
     script(src='js/jquery.min.js')
     script(src='js/scripts.js')
     script(src='js/bootstrap.min.js')
