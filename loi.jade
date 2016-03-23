@@ -11,6 +11,8 @@ html(lang='ru-RU')
     link(href='css/bootstrap.min.css', rel='stylesheet')
     link(href='css/style.css', rel='stylesheet')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    script(src='./js/jquery.js?ver=1.11.3')
+    script(src='./js/jquery-migrate.min.js?ver=1.11.3')
     // }}}
   body
     // wT
@@ -18,13 +20,17 @@ html(lang='ru-RU')
 
       .row
         .col-xs-12
+          h1
+            | 1.
           h3
-            | Выберите вариант крепления
+            |  Выберите вариант крепления
+            br
+            br
           #tabs-433998.tabbable
             ul.nav.nav-pills.nav-justified.row
 
                   li.active.col-xs-4
-                    a(href='#panel140934', data-toggle='pill') 
+                    a(href='#mountOne', data-toggle='pill') 
                       h2.text-center
                         span.label.label-pill.label-success
                           | На створки
@@ -32,10 +38,18 @@ html(lang='ru-RU')
                         img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
                       
                   li.col-xs-4
-                    a(href='#panel917149', data-toggle='pill')
+                    a(href='#mountTwo', data-toggle='pill')
                       h2.text-center
                         span.label.label-pill.label-success
                           | В проем 
+                      span
+                        img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
+
+                  li.col-xs-4
+                    a(href='#mountThree', data-toggle='pill')
+                      h2.text-center
+                        span.label.label-pill.label-success
+                          | На проем 
                       span
                         img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
 
@@ -43,51 +57,195 @@ html(lang='ru-RU')
           
           
               
+            //=======================================================================================================================================================================================
             .tab-content
-              #panel140934.tab-pane(role='tabpanel').active
+              #mountOne.tab-pane(role='tabpanel').active
+                br
+                br
+                br
                 .row
                   .col-xs-12
                     h3
                       | Выберите число створок
                 
-                .btn-group(data-toggle="buttons")
+                .btn-group(data-toggle="buttons")#winLenB
                   .row
                     .col-xs-3
-                      .btn.btn-default.btn-block.btn-lg.text-center
+                      .btn.btn-default.btn-block.btn-lg.text-center.active#win1b
                         span.label.label-default
                           | Одна
                         span  
                           img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
                           .sr-only
-                            input#WiN1(type="radio", name="WiN", autocomplete="off", checked="")
+                            input#win1x(type="radio", name="winLen", value=1, autocomplete="off", checked="")
                       
                     .col-xs-3
-                      .btn.btn-default.btn-block.btn-lg.text-center
+                      .btn.btn-default.btn-block.btn-lg.text-centera#win2b
                         span.label.label-default
                           | Две
                         span  
                           img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
                           .sr-only
-                            input#WiN2(type="radio", name="WiN", autocomplete="off")
+                            input#win2x(type="radio", name="winLen", value=2, autocomplete="off")
                       
                     .col-xs-3
-                      .btn.btn-default.btn-block.btn-lg.text-center
+                      .btn.btn-default.btn-block.btn-lg.text-center#win3b
                         span.label.label-default
                           | Три
                         span  
                           img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
                           .sr-only
-                            input#WiN3(type="radio", name="WiN", autocomplete="off")
+                            input#win3x(type="radio", name="winLen", value=3, autocomplete="off")
                       
                     .col-xs-3
-                      .btn.btn-default.btn-block.btn-lg.text-center
+                      .btn.btn-default.btn-block.btn-lg.text-center#win4b
                         span.label.label-default
-                          | Четыре 
+                          | TODO 
                         span  
                           img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
                           .sr-only
-                            input#WiN4(type="radio", name="WiN", autocomplete="off")
+                            input#win4x(type="radio", name="winLen", value=4, autocomplete="off")
+                br
+                br
+                br
+                //=======================================================================================================================================================================================
+                .row
+                  .col-xs-12
+                    h3
+                      | Укажите высоту и ширину створок
+                      
+                .row
+                  .col-xs-12.col-sm-6
+                    h6.winMeasureLabel
+                      | Высота: 
+                    br
+                    span
+                      img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                    br
+                    .panel.panel-default#winHeight
+                      .panel-body
+                        h6.winMeasureLabel 
+                          | Высота окна
+                        .input-group
+                          span.input-group-addon 
+                            span.fa-stack.fa-fw
+                              i.fa.fa-square.fa-stack-2x
+                              i.fa.fa-fw.fa-arrows-v.fa-stack-1x.fa-inverse
+                          span.input-group-lg
+                            input.form-control#height(type='text', placeholder='180')
+                          span.input-group-addon 
+                            | мм 
+
                     
+                  .col-xs-12.col-sm-6
+                    h6.winMeasureLabel
+                      | Ширина:
+                    br
+                    span
+                      img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                    br
+                    .panel.panel-default.winWidth-panel.winWidth1-panel#winWidth1
+                      .panel-body
+                        h6.winMeasureLabel
+                          | Ширина окна
+                        .input-group
+                          span.input-group-addon
+                            .fa-winPane1 
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                          span.input-group-lg
+                            input.form-control#width1(type='text', placeholder='120')
+                          span.input-group-addon 
+                            | мм 
+
+                    .panel.panel-default.winWidth-panel.winWidth2-panel#winWidth2
+                      .panel-body
+                        h6.winMeasureLabel
+                          | Ширина левой створки:
+                        .input-group
+                          span.input-group-addon
+                            .fa-winPane2  
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                          span.input-group-lg
+                            input.form-control#width1(type='text', placeholder='120')
+                          span.input-group-addon 
+                            | мм 
+                        br
+                        h6.winMeasureLabel
+                          | Ширина правой створки:
+                        .input-group
+                          span.input-group-addon
+                            .fa-winPane2  
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                          span.input-group-lg
+                            input.form-control#width1(type='text', placeholder='120')
+                          span.input-group-addon 
+                            | мм 
+
+                    .panel.panel-default.winWidth-panel.winWidth3-panel#winWidth3
+                      .panel-body
+                        
+                        h6.winMeasureLabel 
+                          | Ширина левой створки:
+                        .input-group
+                          span.input-group-addon
+                            .fa-winPane3  
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                          span.input-group-lg
+                            input.form-control#width1(type='text', placeholder='120')
+                          span.input-group-addon 
+                            | мм 
+                            
+                        br
+                        h6.winMeasureLabel 
+                          | Ширина центральной створки:
+                        .input-group
+                          span.input-group-addon
+                            .fa-winPane3  
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                          span.input-group-lg
+                            input.form-control#width1(type='text', placeholder='120')
+                          span.input-group-addon 
+                            | мм 
+                            
+                        br
+                        h6.winMeasureLabel 
+                          | Ширина правой створки:
+                        .input-group
+                          span.input-group-addon
+                            .fa-winPane3  
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                          span.input-group-lg
+                            input.form-control#width1(type='text', placeholder='120')
+                          span.input-group-addon 
+                            | мм 
 
 
 
@@ -97,31 +255,61 @@ html(lang='ru-RU')
 
 
                   
-              #panel917149.tab-pane(role='tabpanel')
+              #mountTwo.tab-pane(role='tabpanel')
+                br
+                br
+                br
+                .row
+                  .col-xs-12
                     h3
                       | Укажите ширину и высоту оконного проема
-                    .row
-                      .col-xs-4
-                        h6
-                          | Ширина проема:
-                        br
-                        .input-group.input-group-lg
-                          span.input-group-addon 
-                            i.fa.fa-fw.fa-arrows-h
-                          input.form-control#WbW(type='text', placeholder='120')
-                          span.input-group-addon 
-                            | мм 
-                    .row  
-                      .col-xs-4
-                        h6
-                          | Высота проема
-                        br
-                        .input-group.input-group-lg
-                          span.input-group-addon 
-                            i.fa.fa-fw.fa-arrows-v
-                          input.form-control#WbH(type='text', placeholder='180')
-                          span.input-group-addon 
-                            | мм 
+                    h6
+                      | Ширина проема:
+                    br
+                    .input-group.input-group-lg
+                      span.input-group-addon 
+                        i.fa.fa-fw.fa-arrows-h
+                      input.form-control#WbW(type='text', placeholder='120')
+                      span.input-group-addon 
+                        | мм 
+                    h6
+                      | Высота проема
+                    br
+                    .input-group.input-group-lg
+                      span.input-group-addon 
+                        i.fa.fa-fw.fa-arrows-v
+                      input.form-control#WbH(type='text', placeholder='180')
+                      span.input-group-addon 
+                        | мм 
+
+
+
+              #mountThree.tab-pane(role='tabpanel')
+                br
+                br
+                br
+                .row
+                  .col-xs-12
+                    h3
+                      | Укажите ширину и высоту оконного проема
+                    h6
+                      | Ширина проема:
+                    br
+                    .input-group.input-group-lg
+                      span.input-group-addon 
+                        i.fa.fa-fw.fa-arrows-h
+                      input.form-control#WbW(type='text', placeholder='120')
+                      span.input-group-addon 
+                        | мм 
+                    h6
+                      | Высота проема
+                    br
+                    .input-group.input-group-lg
+                      span.input-group-addon 
+                        i.fa.fa-fw.fa-arrows-v
+                      input.form-control#WbH(type='text', placeholder='180')
+                      span.input-group-addon 
+                        | мм 
 
 
 

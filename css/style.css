@@ -1,1 +1,32 @@
-# Empty CSS file for your own CSS
+/*/
+.winWidth-panel {
+  display: none;
+}
+
+
+#win1x.active > #winWidth1 {
+  display: block;
+}
+#win2x.active > #winwidth2 {
+  display: block;
+}
+#win3x.active > #winWidth3 {
+  display: block;
+}
+
+/*/
+
+
+
+.fa-winPane1 {
+  transform: scale(1,1);
+}
+.fa-winPane2 {
+  transform: scale(.75,1);
+}
+.fa-winPane3 {
+  transform: scale(.66,1);
+}
+.winMeasureLabel {
+  font-size: 16px;
+}
