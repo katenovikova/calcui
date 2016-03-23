@@ -20,8 +20,6 @@ html(lang='ru-RU')
 
       .row
         .col-xs-12
-          h1
-            | 1.
           h3
             |  Выберите вариант крепления
             br
@@ -53,12 +51,8 @@ html(lang='ru-RU')
                       span
                         img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
 
-          
-          
-          
-              
-            //=======================================================================================================================================================================================
             .tab-content
+              //=======================================================================================================================================================================================
               #mountOne.tab-pane(role='tabpanel').active
                 br
                 br
@@ -191,6 +185,61 @@ html(lang='ru-RU')
                           span.input-group-addon 
                             | мм 
 
+                    .panel.panel-default.winWidth-panel.winWidth3-panel#winWidth4
+                      .panel-body
+                        
+                        h6.winMeasureLabel 
+                          | Ширина левой створки:
+                        .input-group
+                          span.input-group-addon
+                            .fa-winPane3  
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                          span.input-group-lg
+                            input.form-control#width1(type='text', placeholder='120')
+                          span.input-group-addon 
+                            | мм 
+                            
+                        br
+                        h6.winMeasureLabel 
+                          | Ширина центральной створки:
+                        .input-group
+                          span.input-group-addon
+                            .fa-winPane3  
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                          span.input-group-lg
+                            input.form-control#width1(type='text', placeholder='120')
+                          span.input-group-addon 
+                            | мм 
+                            
+                        br
+                        h6.winMeasureLabel 
+                          | Ширина правой створки:
+                        .input-group
+                          span.input-group-addon
+                            .fa-winPane3  
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square-o.fa-stack-2x
+                              span.fa-stack.fa-fw
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                          span.input-group-lg
+                            input.form-control#width1(type='text', placeholder='120')
+                          span.input-group-addon 
+                            | мм 
                     .panel.panel-default.winWidth-panel.winWidth3-panel#winWidth3
                       .panel-body
                         
@@ -246,35 +295,259 @@ html(lang='ru-RU')
                             input.form-control#width1(type='text', placeholder='120')
                           span.input-group-addon 
                             | мм 
+                //=====================================================================================================================================================================================
+                //=====================================================================================================================================================================================
+                //=====================================================================================================================================================================================
+                .row
+                  .col-xs-12
+                    h3
+                      | Выберите тип рулонных штор и категорию ткани 
+                  .col-xs-12.col-sm-6.col-md-3 
+                    .panel.panel-default
+                      .panel-body
+                        span.label.label-default.center-block
+                          | Лайт
+                        span
+                          img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                        br
+                        
+                        .panel.panel-primary.theFirstPriceTag
+                          .panel-heading
+                            .priceTagLabel
+                              | Категория 1
+                          .panel-body
+                              .row
+                                h.col-xs-6.thePriceItself#Price_1_1_1
+                                  
+                                .col-xs-6.showFabricLink
+                                  a(alt="", href="")
+                                    p
+                                      | Показать ткани
+                        
+                        
+                        .panel.panel-default.theSecondPriceTag
+                          .panel-heading
+                            .priceTagLabel
+                              | Категория 2
+                          .panel-body
+                              .row
+                                h.col-xs-6.thePriceItself#Price_1_1_2
+                                    
+                                .col-xs-6.showFabricLink
+                                  a(alt="", href="")
+                                    p
+                                      | Показать ткани
+                        
+                        
+                        .panel.panel-default.theThirdPriceTag
+                          .panel-heading
+                            .priceTagLabel
+                              | Ткань "Зебра"
+                          .panel-body
+                              .row
+                                h.col-xs-6.thePriceItself#Price_1_1_3
+                                    
+                                .col-xs-6.showFabricLink
+                                  a(alt="", href="")
+                                    p
+                                      | Показать ткани
+                        
+                        
 
+                  .col-xs-12.col-sm-6.col-md-3
+                    .panel.panel-default
+                      .panel-body
+                        span.label.label-default.center-block
+                          | Мини
+                        span
+                          img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                        br
+                        
+                        .panel.panel-primary.theFirstPriceTag
+                          .panel-heading
+                            .priceTagLabel
+                              | Категория 1
+                          .panel-body.container-fluid
+                            .row
+                              .col-xs-6
+                                h.thePriceItself#Price_1_2_1
+                              .col-xs-6
+                                .showFabricLink
+                                  a(alt="", href="")
+                                    p
+                                      | Показать ткани
+                        
+                        
+                        .panel.panel-default.theSecondPriceTag
+                          .panel-heading
+                            .priceTagLabel
+                              | Категория 2
+                          .panel-body.container-fluid
+                            .row
+                              .col-xs-6
+                                h.thePriceItself#Price_1_2_2
+                              .col-xs-6
+                                .showFabricLink
+                                  a(alt="", href="")
+                                    p
+                                      | Показать ткани
+                        
+                        
+                        .panel.panel-default.theThirdPriceTag
+                          .panel-heading
+                            .priceTagLabel
+                              | Ткань "Зебра"
+                          .panel-body.container-fluid
+                            .row
+                              .col-xs-6
+                                h.thePriceItself#Price_1_2_3
+                              .col-xs-6
+                                .showFabricLink
+                                  a(alt="", href="")
+                                    p
+                                      | Показать ткани
+                        
+                        
 
+                  .col-xs-12.col-sm-6.col-md-3
+                    .panel.panel-default
+                      .panel-body
+                        span.label.label-default.center-block
+                          | Уни
+                        span
+                          img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                        br
+                        
+                        .panel.panel-primary.theFirstPriceTag
+                          .panel-heading
+                            .priceTagLabel
+                              | Категория 1
+                          .panel-body.container-fluid
+                            .row
+                              .col-xs-6
+                                h.thePriceItself#Price_1_3_1
+                                    
+                              .col-xs-6
+                                .showFabricLink
+                                  a(alt="", href="")
+                                    p
+                                      | Показать ткани
+                        
+                        
+                        .panel.panel-default.theSecondPriceTag
+                          .panel-heading
+                            .priceTagLabel
+                              | Категория 2
+                          .panel-body.container-fluid
+                            .row
+                              .col-xs-6
+                                h.thePriceItself#Price_1_3_2
+                                    
+                              .col-xs-6
+                                .showFabricLink
+                                  a(alt="", href="")
+                                    p
+                                      | Показать ткани
+                        
+                        
+                        .panel.panel-default.theThirdPriceTag
+                          .panel-heading
+                            .priceTagLabel
+                              | Ткань "Зебра"
+                          .panel-body.container-fluid
+                            .row
+                              .col-xs-6
+                                h.thePriceItself#Price_1_3_3
+                                    
+                              .col-xs-6
+                                .showFabricLink
+                                  a(alt="", href="")
+                                    p
+                                      | Показать ткани
+                        
+                        
 
-
-
-
+                  .col-xs-12.col-sm-6.col-md-3
+                    .panel.panel-default
+                      .panel-body
+                        span.label.label-default.center-block
+                          | Люкс
+                        span
+                          img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                        br
+                        
+                        .panel.panel-primary.theFirstPriceTag
+                          .panel-heading
+                            .priceTagLabel
+                              | Категория 1
+                          .panel-body.container-fluid
+                            .row
+                              .col-xs-6
+                                h.thePriceItself#Price_1_4_1
+                                  | -  
+                              .col-xs-6
+                                .showFabricLink
+                                  a(alt="", href="")
+                                    p
+                                      | Показать ткани
+                        
+                        
+                        .panel.panel-default.theSecondPriceTag
+                          .panel-heading
+                            .priceTagLabel
+                              | Категория 2
+                          .panel-body.container-fluid
+                            .row
+                              .col-xs-6
+                                h.thePriceItself#Price_1_4_2
+                                  | -
+                              .col-xs-6
+                                .showFabricLink
+                                  a(alt="", href="")
+                                    p
+                                      | Показать ткани
+                        
+                        
+                        .panel.panel-default.theThirdPriceTag
+                          .panel-heading
+                            .priceTagLabel
+                              | Ткань "Зебра"
+                          .panel-body.container-fluid
+                            .row
+                              .col-xs-6
+                                h.thePriceItself#Price_1_4_3
+                                  | -
+                              .col-xs-6
+                                .showFabricLink
+                                  a(alt="", href="")
+                                    p
+                                      | Показать ткани
+                        
+                        
 
 
                   
+              //=======================================================================================================================================================================================
               #mountTwo.tab-pane(role='tabpanel')
                 br
                 br
                 br
                 .row
-                  .col-xs-12
                     h3
                       | Укажите ширину и высоту оконного проема
-                    h6
-                      | Ширина проема:
                     br
+                  .col-xs-12.col-sm-6
+                    h6.winMeasureLabel 
+                      | Ширина проема:
                     .input-group.input-group-lg
                       span.input-group-addon 
                         i.fa.fa-fw.fa-arrows-h
                       input.form-control#WbW(type='text', placeholder='120')
                       span.input-group-addon 
                         | мм 
-                    h6
+                  .col-xs-12.col-sm-6
+                    h6.winMeasureLabel 
                       | Высота проема
-                    br
                     .input-group.input-group-lg
                       span.input-group-addon 
                         i.fa.fa-fw.fa-arrows-v
@@ -284,6 +557,7 @@ html(lang='ru-RU')
 
 
 
+              //=======================================================================================================================================================================================
               #mountThree.tab-pane(role='tabpanel')
                 br
                 br
@@ -312,7 +586,9 @@ html(lang='ru-RU')
                         | мм 
 
 
-
+      //=======================================================================================================================================================================================
+      .row
+        
 
     script(src='js/jquery.min.js')
     script(src='js/scripts.js')

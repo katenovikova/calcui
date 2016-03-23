@@ -21,4 +21,8 @@ $(function(){
     hideEmAll();
     $("#winWidth3").show();
   });
+  $("#win4b").on("click", function() {
+    hideEmAll();
+    $("#winWidth4").show();
+  });
 });
