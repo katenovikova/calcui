@@ -1,6 +1,7 @@
 doctype html
 html(lang='ru-RU')
   head
+    //- {{{
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='profile', href='http://gmpg.org/xfn/11')
@@ -11,36 +12,35 @@ html(lang='ru-RU')
     title Купить рулонные шторы в Перми от 499 руб.
     meta(name='description', content='Заказать качественные рулонные шторы в Перми по низким ценам от производителя. Бесплатный замер, доставка от 3 000 руб. бесплатно. Рулонная штора Мини, Уни')
     meta(name='Keywords', content='рулонные шторы, купить рулонные шторы в Перми')
-    style.
-      img.wp-smiley,
-      img.emoji {
-      display: inline !important;
-      border: none !important;
-      box-shadow: none !important;
-      height: 1em !important;
-      width: 1em !important;
-      margin: 0 .07em !important;
-      vertical-align: -0.1em !important;
-      background: none !important;
-      padding: 0 !important;
-      }
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
     link#zerif_bootstrap_style-css(rel='stylesheet', href='./css/bootstrap.min.css?ver=4.4.2', type='text/css', media='all')
     link#zerif_style-css(rel='stylesheet', href='./css/style.css?ver=v1', type='text/css', media='all')
+
+    //- Background
+    style(src='css/background.css')
+
+    //- jQuery
     script(src='./js/jquery.js?ver=1.11.3')
     script(src='./js/jquery-migrate.min.js?ver=1.2.1')
-    style#custom-background-css.
-      body.custom-background { background-image: url('./images/page_bg.jpg'); background-repeat: no-repeat; background-position: top left; background-attachment: scroll; }
-  body.home.blog(itemscope='itemscope', itemtype='http://schema.org/WebPage')
-    .zerif_full_site_wrap
+    //- }}}
+    
+  body.home.blog(itemscope='itemscope', itemtype='http://schema.org/WebPage').zerif_full_site_wrap
       .fadein-slider
-        .slide-item(style='background-image:url(./images/page_bg.jpg);background-repeat:repeat;background-position:left top;background-size: 100% 100%')
+        .slide-item
+
+      style.
+        .fadein-slider > .slide-item {
+            background-image:url('./images/page_bg.jpg');
+            background-repeat:repeat;
+            background-position:left top;
+            background-size: auto auto;
+          }
+        // }}}
+
       .zerif_full_site
-        //
-          =========================
-          PRE LOADER
-          ==============================
+
         header#home.header(itemscope='itemscope', itemtype='http://schema.org/WPHeader', role='banner')
+          //  {{{
           #main-nav.navbar.navbar-inverse.bs-docs-nav
             .container
               .navbar-header.responsive-logo
@@ -63,7 +63,6 @@ html(lang='ru-RU')
                     a(href='http://profkarniz.com/shop/rulonnye-shtory') Купить онлайн
                   li#menu-item-27.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-27
                     a(href='http://profkarniz.com/index/0-5') Вызвать замерщика
-          // / END TOP BAR
           .home-header-wrap
             .header-content-wrap
               .container.big-title-container
@@ -72,11 +71,13 @@ html(lang='ru-RU')
                   a.btn.btn-primary.custom-button.red-btn(href='http://profkarniz.com/index/0-5') Заказать бесплатный замер
                   a.btn.btn-primary.custom-button.green-btn(href='http://profkarniz.com/shop/rulonnye-shtory') Купить готовые шторы онлайн
             .clear
+            // }}}
+        #content.site-content.zerif-fp-site-content
+          //{{{
           section#aboutus.about-us
+            // Our Advantage {{{
             .container
               .section-header
-                // }}}
-                // Our Advantage {{{
                 section#services
                   .container
                     .row
@@ -118,8 +119,9 @@ html(lang='ru-RU')
                           i.fa.fa-4x.fa-university.wow.bounceIn.text-primary(data-wow-delay='.1s')
                           h3 Гибкая система скидок для юр. лиц и дизайнеров
                           p.text-muted У Вас крупный заказ? Мы с радостью предложим особые условия сотрудничества.
-                // }}}
+            // }}}
           section#clients.our-clients
+            // {{{
             .container
               .section-header
                 h2.dark-text Наши клиенты
@@ -138,26 +140,10 @@ html(lang='ru-RU')
                     .col-xs-6.col-sm-3
                       a(href='https://www.sberbank.ru/')
                       img(src='./images/client_sber.png', alt='Сбербанк')
-            // / END CONTAINER
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+            // }}}
           section#team.our-team
+            // How We work {{{
             .container
               .section-header
                 h2.dark-text Как мы работаем?
@@ -184,13 +170,16 @@ html(lang='ru-RU')
                         h5 Профессиональный монтаж
                     // p Профессиональный работник установит рулонные шторы за 300 руб./изделие
         
+            // }}}
           section#calculator.packages
+            // {{{
             .section-header.white-text
               br
               h2
                 | Калькулятор
+            // Tabs===========================================================
+            //{{{
             .container
-
               .row
                 .col-xs-12
                   h3.white-text
@@ -198,35 +187,43 @@ html(lang='ru-RU')
                     br
                     br
                   #tabs-433998.tabbable
+                    //{{{
                     ul.nav.nav-pills.nav-justified.row
+                      //{{{
+                      li.active.col-xs-4
+                        a(href='#mountOne', data-toggle='pill')
+                          //{{{
+                          h2.text-center
+                            span.label.label-pill.calcuLabel
+                              | На створки
+                          span
+                            img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
+                          //}}}
+                          
+                      li.col-xs-4
+                        a(href='#mountTwo', data-toggle='pill')
+                          //{{{
+                          h2.text-center
+                            span.label.label-pill.calcuLabel
+                              | В проем 
+                          span
+                            img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
+                          //}}}
 
-                          li.active.col-xs-4
-                            a(href='#mountOne', data-toggle='pill')
-                              h2.text-center
-                                span.label.label-pill.calcuLabel
-                                  | На створки
-                              span
-                                img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
-                              
-                          li.col-xs-4
-                            a(href='#mountTwo', data-toggle='pill')
-                              h2.text-center
-                                span.label.label-pill.calcuLabel
-                                  | В проем 
-                              span
-                                img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
-
-                          li.col-xs-4
-                            a(href='#mountThree', data-toggle='pill')
-                              h2.text-center
-                                span.label.label-pill.calcuLabel
-                                  | На проем 
-                              span
-                                img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
-
+                      li.col-xs-4
+                        a(href='#mountThree', data-toggle='pill')
+                          //{{{
+                          h2.text-center
+                            span.label.label-pill.calcuLabel
+                              | На проем 
+                          span
+                            img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
+                          //}}}
+                      //}}}
                     .tab-content
-                      //=======================================================================================================================================================================================
+                      //{{{
                       #mountOne.tab-pane(role='tabpanel').active
+                        // {{{
                         br
                         br
                         br
@@ -269,7 +266,7 @@ html(lang='ru-RU')
                             .col-xs-3
                               .btn.btn-default.btn-block.btn-lg.text-center#win4b
                                 span.label.label-success.calcuLabel
-                                  | TODO 
+                                  | Четыре или больше 
                                 span  
                                   img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
                                   .sr-only
@@ -958,11 +955,9 @@ html(lang='ru-RU')
                                               | Показать ткани
                                 
                                 
-
-
-                          
-                      //=======================================================================================================================================================================================
+                        //}}}
                       #mountTwo.tab-pane(role='tabpanel')
+                        //{{{
                         br
                         br
                         br
@@ -990,9 +985,9 @@ html(lang='ru-RU')
                                 | мм 
 
 
-
-                      //=======================================================================================================================================================================================
+                        //}}}
                       #mountThree.tab-pane(role='tabpanel')
+                        //{{{
                         br
                         br
                         br
@@ -1018,15 +1013,14 @@ html(lang='ru-RU')
                               input.form-control.measurementInputThree#height3(type='text', placeholder='180')
                               span.input-group-addon 
                                 | мм 
-
-
-              //=======================================================================================================================================================================================
+                        //}}}
+                      //}}}
+                    //}}}
               .row
-
-        
-        // Types
-        #content.site-content.zerif-fp-site-content
+            //}}}
+            // }}}
           section#focus.focus
+            // Types {{{
             .container
               .section-header
                 h2.dark-text Виды систем
@@ -1034,7 +1028,7 @@ html(lang='ru-RU')
               .row
                 .col-lg-3.col-md-6.col-sm-12.focus-box(data-scrollreveal='enter right after 0.15s over 1s')
                   .service-icon
-                    i.pixeden.our-focus-widget-image(style='background:url(./images/types1.png) no-repeat center;')
+                    img(alt='Lite', url='./images/types1.png')
                   h5.red-border-bottom Лайт
                   p.sizelimitations
                     | Ширина: 40 - 180 см
@@ -1046,7 +1040,7 @@ html(lang='ru-RU')
                       a(href='http://profkarniz.com/shop/rulonnye-shtory', target='_blank') купить онлайн без замеров
                 .col-lg-3.col-md-6.col-sm-12.focus-box(data-scrollreveal='enter right after 0.15s over 1s')
                   .service-icon
-                    i.pixeden.our-focus-widget-image(style='background:url(./images/types2.png) no-repeat center;')
+                    img(alt='Lite', url='./images/types2.png')
                   h5.red-border-bottom Мини
                   p.sizelimitations
                     | Ширина: 40 - 140 см
@@ -1057,7 +1051,7 @@ html(lang='ru-RU')
                       | Роллшторы системы МИНИ в большинстве случаев крепятся на створку окна. Сверху механизм с трубой, на которую наматывается ткань, крепится на пластиковое окно с помощью специального двухстороннего скотча или пластмасовых кронштейнов. Внизу шторы — металлический отвес. Чтобы рулонная штора плотно прилегала к окну, используют магниты или леску.
                 .col-lg-3.col-md-6.col-sm-12.focus-box(data-scrollreveal='enter left after 0.15s over 1s')
                   .service-icon
-                    i.pixeden.our-focus-widget-image(style='background:url(./images/types3.png) no-repeat center;')
+                    img(alt='Lite', url='./images/types3.png')
                   h5.red-border-bottom Уни 
                   p.sizelimitations
                     | Ширина: 40 - 140 см 
@@ -1068,7 +1062,7 @@ html(lang='ru-RU')
                       | Эта система также называется кассетной. Сверху на рулон крепится специальный металлический короб, который защищает ткань от пыли. Металлические направляющие плотно прилягают к окну, позволяя полностью защититься от солнца.  Выделяют две системы: Уни-1 и Уни-2 (в Уни-2 высота направляющих и короба больше).
                 .col-lg-3.col-md-6.col-sm-12.focus-box(data-scrollreveal='enter left after 0.15s over 1s')
                   .service-icon
-                    i.pixeden.our-focus-widget-image(style='background:url(./images/types4.png) no-repeat center;')
+                    img(alt='Lite', url='./images/types4.png')
                   h5.red-border-bottom ЛЮКС
                   p.sizelimitations
                     | Ширина: 50 - 300 см 
@@ -1077,13 +1071,17 @@ html(lang='ru-RU')
                     details
                       summary Показать описание...
                       | Эта система похожа на Мини, но ширина и длина Люкса может достигать 3-х метров. Такие рулонные шторы иногда еще называются классическими. Обычно крепятся на проем или в проем окна. Кроме того, на эту систему возможно установить моторизацию (электрический привод с пультом), позволяя автоматически регулировать длину шторы на окне.
+                style.
+                  background:url(./images/types4.png) no-repeat center;
+            // }}}
           section#team.our-team
+            // {{{
             .container
               .section-header
                 h2.dark-text Наше портфолио
                 h6 Руллонные шторы Мини, Уни, Люкс, Зебра, Рулонные шторы с фотопечатью
-                // {{{
                 section#portfolio.no-padding
+                  // {{{
                   .container-fluid
                     .row.no-gutter
                       
@@ -1140,8 +1138,10 @@ html(lang='ru-RU')
                             .portfolio-box-caption-content
                               .project-category.text-faded 
                                 | Рулонная штора Уни Зебра
-          // }}}
+                  // }}}
+            // }}}
           section#pricingtable.packages
+            // {{{
             .container
               .section-header
                 h2.white-text Закажите замеры/установку
@@ -1177,15 +1177,18 @@ html(lang='ru-RU')
                         li Мини с фиксацией - 500 руб./изделие
                         li Люкс, Зебра - 500 руб.
                       a.btn.btn-primary.custom-button(href='http://profkarniz.com/index/0-5', style='background:#43db5a') Заказать
-              // / END PACKAGES
+              // }}}
           section#ribbon_right.purchase-now
+            // {{{
             .container
               .row
                 .col-md-9.zerif-rtl-ribbon-text(data-scrollreveal='enter left after 0s over 1s')
                   h3.white-text Купить готовые рулонные шторы онлайн от 499 руб. 
                 .col-md-3.zerif-rtl-ribbon-btn(data-scrollreveal='enter right after 0s over 1s')
                   a.btn.btn-primary.custom-button.red-btn(href='http://profkarniz.com/shop/rulonnye-shtory') Купить онлайн
+            // }}}
           section#testimonials.testimonial
+            // {{{
             .container
               .section-header
                 h2.white-text Отзывы о нашей работе
@@ -1236,33 +1239,33 @@ html(lang='ru-RU')
                             a.client-name(target='_blank') Александр
                             .client-company
                           .client-image.hidden-xs
-                        // / END CLIENT INFORMATION
-                      // / END SINGLE FEEDBACK BOX
-            section#contact.contact-us
-              .container
-                // SECTION HEADER
-                .section-header
-                  h2.white-text Остались вопросы? 
-                  h6(style='font-size:32px') Позвоните нам! 
-                  h6(style='font-size:36px')
-                    i.fa.fa-phone
-                    | +7 960-524-18-78
-                    p.text-muted
-                    |  +7 (908) 278-19-07
-                    br
-                // / END SECTION HEADER
-              // / END CONTAINER
-            // / END CONTACT US SECTION
-        // .site-content
-        section#ribbon_bottom.separator-one
-          .color-overlay
-            h3.container.text(data-scrollreveal='enter left after 0s over 1s') Или оставьте заявку на консультацию 
-            | (она ни к чему Вас не обязывает)
-            
-        section#map
-          iframe.zerif_google_map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1057.0842766513183!2d56.22301686146444!3d58.00191407572968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x2804971caf167dd3!2z0J_RgNC-0YTQmtCw0YDQvdC40Lc!5e0!3m2!1sen!2sus!4v1457709856623', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')          
-          
+            // }}}
+          section#contact.contact-us
+            // Call us{{{
+            .container
+              .section-header
+                h2.white-text Остались вопросы? 
+                h6(style='font-size:32px') Позвоните нам! 
+                h6(style='font-size:36px')
+                  i.fa.fa-phone
+                  | +7 960-524-18-78
+                  p.text-muted
+                  |  +7 (908) 278-19-07
+                  br
+            // }}}
+            section#ribbon_bottom.separator-one
+            // Or rder consultation {{{
+            .color-overlay
+              h3.container.text(data-scrollreveal='enter left after 0s over 1s') Или оставьте заявку на консультацию 
+              | (она ни к чему Вас не обязывает)
+            // }}}
+          section#map
+            // {{{
+            iframe.zerif_google_map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1057.0842766513183!2d56.22301686146444!3d58.00191407572968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x2804971caf167dd3!2z0J_RgNC-0YTQmtCw0YDQvdC40Lc!5e0!3m2!1sen!2sus!4v1457709856623', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')          
+            // }}}
+          //}}}
         footer#footer(role='contentinfo', itemscope='itemscope', itemtype='http://schema.org/WPFooter')
+          // {{{
           .container
             .footer-box-wrap
               .col-md-3.footer-box.four-cell.company-details
@@ -1286,14 +1289,16 @@ html(lang='ru-RU')
                   br
                   |  ИП Новиков Алексей Олегович
       
-      
+          // }}}
+      // Links after page {{{
       link(href='./css/outline.css', type='text/css', media='all')
       script(src='js/jquery.min.js')
-      script(src='js/scripts.js')
       script(src='js/bootstrap.min.js')
       script(src='js/parallax.js?ver=v1')
       script(src='js/zerif.js?ver=20120206')
       script(src='js/scripts.js')
       // .zerif-mobile-bg-helper-content
       // .zerif-mobile-bg-helper-wrap-all
-  
+      // }}}
+
+      // vim:foldmethod=marker:foldlevel=0:nowrap

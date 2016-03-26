@@ -125,6 +125,13 @@ body {
 	line-height: 25px;
 	text-align: center;
 }
+body.custom-background {
+   background-image: url('./images/page_bg.jpg');
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-attachment: scroll;
+   }
+
 /* Internet Explorer 10 in Windows 8 and Windows Phone 8 Bug fix */
 @-webkit-viewport {
 	width: device-width;
@@ -3664,87 +3671,6 @@ ul.nav > li.current_page_item > a:before, .nav > li.current-menu-item a:before {
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 	background-size: cover;
-}
-
-/****************************************************************/
-/***********************  PIRATE FORMS style ********************/
-/****************************************************************/
-
-.pirate_forms {
-	padding-bottom: 55px;
-}
-.pirate_forms input, .pirate_forms textarea {
-	width: 100%;
-	margin: auto;
-	border-radius: 4px !important;
-}
-.pirate_forms input {
-	text-align: left;
-	text-transform: none;
-	padding: 9px;
-	min-height: 46px;
-	padding-left: 15px !important;
-	display: inline-block;
-	border-radius: 4px;
-	background: rgba(255,255,255, 0.95);
-}
-.pirate_forms textarea {
-	width: 100% !important;
-	text-align: left;
-	text-transform: none;
-	padding: 9px;
-	min-height: 250px;
-	padding-left: 15px;
-	display: inline-block;
-	border-radius: 4px;
-	background: rgba(255,255,255, 0.95);
-}
-.pirate_forms .custom-button {
-	float: right;
-	margin-right: 15px;
-}
-.pirate-forms-g-recaptcha {
-	margin-left: 15px;
-	display: none;
-}
-.pirate_forms .notification p {
-	border-radius: 3px;
-	color: #FFF;
-	padding: 5px 10px;
-	display: inline-block;
-	margin-bottom: 10px;
-}
-.pirate_forms_error_box p {
-	background: #E96656;
-	border-radius: 3px;
-	color: #FFF;
-	padding: 5px 10px;
-	display: inline-block;
-	margin-bottom: 10px;
-}
-.pirate_forms_thankyou_wrap p {
-	background: #34d293;
-	border-radius: 3px;
-	color: #FFF;
-	padding: 5px 10px;
-	display: inline-block;
-	margin-bottom: 10px;
-}
-.pirate_forms .pirate-forms-submit-button {
-	float: right;
-	margin-right: 15px;
-	color: #FFF !important;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.pirate_forms .pirate-forms-submit-button:hover {
-	color: #FFF;
-	background: #cb4332;
-}
-.pirate_forms_wrap label {
-	width: 100%;
-	float: left;
-	height: 1px;
 }
 
 /*---------------------------------------
