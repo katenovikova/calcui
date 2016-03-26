@@ -25,20 +25,19 @@ html(lang='ru-RU')
     //- }}}
     
   body.home.blog(itemscope='itemscope', itemtype='http://schema.org/WebPage').zerif_full_site_wrap
+      // background {{{
       .fadein-slider
-        .slide-item
+        .slide-item.bg-responsive(data-type="background")
 
       style.
         .fadein-slider > .slide-item {
-            background-image:url('./images/page_bg.jpg');
-            background-repeat:repeat;
-            background-position:left top;
-            background-size: auto auto;
-          }
-        // }}}
-
+              background-image: url('./images/page_bg.jpg');
+              background-repeat: repeat-y;
+              background-position: left top;
+              background-size: 100% auto;
+            }
+      // }}}
       .zerif_full_site
-
         header#home.header(itemscope='itemscope', itemtype='http://schema.org/WPHeader', role='banner')
           //  {{{
           #main-nav.navbar.navbar-inverse.bs-docs-nav
@@ -77,56 +76,86 @@ html(lang='ru-RU')
           section#aboutus.about-us
             // Our Advantage {{{
             .container
-              .section-header
-                section#services
-                  .container
-                    .row
-                      .col-lg-12.text-center
-                        h2.section-heading Наши приемущества
-                        hr.primary
-                  .container
-                    .row
-                      .col-lg-4.col-md-6.text-center
-                        .service-box
-                          i.fa.fa-4x.fa-gears.wow.bounceIn.text-primary
-                          h3 Собственное производство 
-                          p.text-muted
-                            | Изготовим под заказ любых размеров и цветов - быстро, гибко, по демократичной цене
-                      .col-lg-4.col-md-6.text-center
-                        .service-box
-                          i.fa.fa-4x.fa-arrows.wow.bounceIn.text-primary(data-wow-delay='.1s')
-                          h3 Бесплатный выезд на замеры
-                          p.text-muted
-                            | Замерщик приедет в удобное время с каталогами, поможет сделать выбор и измерит окна
-                      .col-lg-4.col-md-6.text-center
-                        .service-box
-                          i.fa.fa-4x.fa-tags.wow.bounceIn.text-primary
-                          h3 Низкие цены, акции
-                          p.text-muted Нашли дешевле? Позвоните нам, мы сделаем скидку больше, чем конкуренты:)
-                      .col-lg-4.col-md-6.text-center
-                        .service-box
-                          i.fa.fa-4x.fa-clock-o.wow.bounceIn.text-primary(data-wow-delay='.1s')
-                          h3 Быстрое время выполнения заказа
-                          p.text-muted
-                            | За счет собственного производства, соберем рулонную штору по Вашим размерам за 1-2 дня
-                      .col-lg-4.col-md-6.text-center
-                        .service-box
-                          i.fa.fa-4x.fa-diamond.wow.bounceIn.text-primary
-                          h3 Качественные комплектующие
-                          p.text-muted Мы искользуем комплектующие производства Польша и ткань Европейских марок
-                      .col-lg-4.col-md-6.text-center
-                        .service-box
-                          i.fa.fa-4x.fa-university.wow.bounceIn.text-primary(data-wow-delay='.1s')
-                          h3 Гибкая система скидок для юр. лиц и дизайнеров
-                          p.text-muted У Вас крупный заказ? Мы с радостью предложим особые условия сотрудничества.
+              .row.section-header
+                .col-lg-12.text-center
+                  h2.section-heading
+                    | Наши приемущества
+                  hr.primary
+              .row.advantages-list
+                .col-xs-12.col-sm-6.col-md-4.text-center
+                    i.fa.fa-4x.green-text.fa-gears.wow.bounceIn.text-primary
+                    h3 
+                      br
+                      | Собственное производство 
+                    hr.green-text.green-bg
+                    p.text-muted
+                      | Изготовим под заказ любых размеров и цветов - быстро, гибко, по демократичной цене
+                    br
+                    br
+                    br
+                .col-xs-12.col-sm-6.col-md-4.text-center
+                    i.fa.fa-4x.red-text.fa-arrows.wow.bounceIn.text-primary(data-wow-delay='.1s')
+                    h3 
+                      br
+                      | Бесплатный выезд на замеры
+                    hr.green-text.green-bg
+                    p.text-muted
+                      | Замерщик приедет в удобное время с каталогами, поможет сделать выбор и измерит окна
+                    br
+                    br
+                    br
+                .col-xs-12.col-sm-6.col-md-4.text-center
+                    i.fa.fa-4x.green-text.fa-tags.wow.bounceIn.text-primary
+                    h3 
+                      br
+                      | Низкие цены, акции
+                    hr.green-text.green-bg
+                    p.text-muted
+                      | Нашли дешевле? Позвоните нам, мы сделаем скидку больше, чем конкуренты:)
+                    br
+                    br
+                    br
+                .col-xs-12.col-sm-6.col-md-4.text-center
+                    i.fa.fa-4x.red-text.fa-clock-o.wow.bounceIn.text-primary(data-wow-delay='.1s')
+                    h3 
+                      br
+                      | Быстрое время выполнения заказа
+                    hr.green-text.green-bg
+                    p.text-muted
+                      | За счет собственного производства, соберем рулонную штору по Вашим размерам за 1-2 дня
+                    br
+                    br
+                    br
+                .col-xs-12.col-sm-6.col-md-4.text-center
+                    i.fa.fa-4x.green-text.fa-thumbs-up.wow.bounceIn.text-primary(data-wow-delay='.1s')
+                    h3 
+                      br
+                      | Качественные комплектующие
+                    hr.green-text.green-bg
+                    p.text-muted
+                      | Мы искользуем комплектующие производства Польша и ткань Европейских марок
+                    br
+                    br
+                    br
+                .col-xs-12.col-sm-6.col-md-4.text-center
+                    i.fa.fa-4x.red-text.fa-university.wow.bounceIn.text-primary(data-wow-delay='.1s')
+                    h3 
+                      br
+                      | Гибкая система скидок для юр. лиц и дизайнеров
+                    hr.green-text.green-bg
+                    p.text-muted 
+                      | У Вас крупный заказ? Мы с радостью предложим особые условия сотрудничества.
+                    br
+                    br
+                    br
             // }}}
           section#clients.our-clients
             // {{{
             .container
               .section-header
-                h2.dark-text Наши клиенты
-              .client-list
-                div(data-scrollreveal='enter right move 60px after 0.00s over 0.25s')
+                h2.dark-text
+                  | Наши клиенты
+              .client-list(data-scrollreveal='enter right move 60px after 0.00s over 0.25s')
                   .row
                     .col-xs-6.col-sm-3
                       a(href='http://pstu.ru/')
@@ -142,14 +171,16 @@ html(lang='ru-RU')
                       img(src='./images/client_sber.png', alt='Сбербанк')
         
             // }}}
-          section#team.our-team
+          //- section#team.our-team
             // How We work {{{
             .container
               .section-header
-                h2.dark-text Как мы работаем?
-                h6 Быстро, качественно, индивидуально
+                h2.dark-text.red-border-bottom
+                  | Как мы работаем?
+                h6
+                  | Быстро, качественно, индивидуально
                 .row
-                  p
+                  hr.primary
                 .row
                   .col-lg-4.col-sm-4.team-member
                     .newshit
@@ -1023,7 +1054,9 @@ html(lang='ru-RU')
             // Types {{{
             .container
               .section-header
-                h2.dark-text Виды систем
+                h2.dark-text
+                  | Виды систем
+                hr.primary
                 h6 Выберите, какая рулонная штора Вам подходит
               .row
                 .col-lg-3.col-md-6.col-sm-12.focus-box(data-scrollreveal='enter right after 0.15s over 1s')
@@ -1078,7 +1111,12 @@ html(lang='ru-RU')
             // {{{
             .container
               .section-header
-                h2.dark-text Наше портфолио
+                h2.dark-text
+                  | Наше портфолио 
+                hr.primary
+                br
+                br
+
                 h6 Руллонные шторы Мини, Уни, Люкс, Зебра, Рулонные шторы с фотопечатью
                 section#portfolio.no-padding
                   // {{{
@@ -1144,7 +1182,8 @@ html(lang='ru-RU')
             // {{{
             .container
               .section-header
-                h2.white-text Закажите замеры/установку
+                h2.white-text
+                  | Закажите замеры/установку
               .row
                 .package-box-wrap.col-lg-6.col-md-6.col-sm-12
                   .best-value
@@ -1191,7 +1230,8 @@ html(lang='ru-RU')
             // {{{
             .container
               .section-header
-                h2.white-text Отзывы о нашей работе
+                h2.white-text
+                  | Отзывы о нашей работе
                 h6.white-text Из Яндекс Маркета
               .row(data-scrollreveal='enter right after 0s over 1s')
                 .col-md-12
@@ -1241,23 +1281,28 @@ html(lang='ru-RU')
                           .client-image.hidden-xs
             // }}}
           section#contact.contact-us
-            // Call us{{{
-            .container
+            // Call us {{{
+            .container.color-overlay
               .section-header
                 h2.white-text Остались вопросы? 
-                h6(style='font-size:32px') Позвоните нам! 
-                h6(style='font-size:36px')
-                  i.fa.fa-phone
-                  | +7 960-524-18-78
-                  p.text-muted
-                  |  +7 (908) 278-19-07
+                br
+                br
+                h6(style='font-size:36px').white-text.muted Позвоните нам! 
+                br
+                h6(style='font-size:38px')
+                  i.fa.fa-phone.green-text
+                  |    +7 960-524-18-78
+                  br
+                  i.fa.fa-phone.green-text
+                  |    +7 (908) 278-19-07
                   br
             // }}}
-            section#ribbon_bottom.separator-one
+          section#ribbon_bottom.separator-one
             // Or rder consultation {{{
             .color-overlay
-              h3.container.text(data-scrollreveal='enter left after 0s over 1s') Или оставьте заявку на консультацию 
-              | (она ни к чему Вас не обязывает)
+              h3.container.text(data-scrollreveal='enter left after 0s over 1s')
+                | Или оставьте заявку на консультацию 
+                | (она ни к чему Вас не обязывает)
             // }}}
           section#map
             // {{{

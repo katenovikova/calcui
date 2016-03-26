@@ -368,10 +368,16 @@ h6 {
 /*--------------------------------------------------------------
 3.0 Elements
 --------------------------------------------------------------*/
+hr.primary {
+	background-color: #007345;
+	border: 0;
+	height: 2px;
+	margin-bottom: 1.5em;
+}
 hr {
 	background-color: #ccc;
 	border: 0;
-	height: 1px;
+	height: 2px;
 	margin-bottom: 1.5em;
 }
 ul, ol {
@@ -728,7 +734,8 @@ a:active {
 }
 .main-navigation li {
 	float: left;
-	position: relative;
+	position: fixed;
+	/*position: relative;*/
 }
 .main-navigation a {
 	display: block;
@@ -893,6 +900,7 @@ a:active {
  /*---------------------------------------
  **   9.0 Widgets                   -----
 -----------------------------------------*/
+
 .sidebar-wrap {
 	border-left: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -1407,7 +1415,6 @@ object {
 .section-header h6 {
 	font-size: 20px;
 	margin-bottom: 0;
-	color: #808080;
 }
 /* PRE LOADER */
 .preloader {
@@ -1713,7 +1720,8 @@ ul.nav > li.current_page_item.current > a:before {
 .focus {
 	padding-bottom: 50px;
 	overflow: hidden;
-	background: #FFFFFF;
+	background-color: rgba(255,255,255,.4);
+  z-index: 4;
 }
 .focus .row {
 	text-align:;
@@ -2033,10 +2041,18 @@ video::-webkit-media-controls {
 /*---------------------------------------
  **   Section: Abot us;              -----
 -----------------------------------------*/
-.about-us {
+.about-us .container > .advantages-list {
 	background: #272727;
 	color: #FFF;
+	padding-bottom: 120px;
+}
+.about-us {
+	background: rgba(23,23,23,.9);
+	color: #FFF;
 	padding-bottom: 50px;
+}
+.about-us .container > .advantages-list > * > i.fa.fa-4x {
+  margin-top: 20px;
 }
 .about-us .row {
 	margin-left: -15px;
@@ -2130,7 +2146,7 @@ video::-webkit-media-controls {
 .our-clients {
 	padding-bottom: 50px;
 	padding-top: 50px;
-	background: #FFFFFF;
+	background: #666;
 }
 .our-clients h2 {
 	color: #272727;
@@ -2756,13 +2772,16 @@ video::-webkit-media-controls {
  **   Testionial           -----
 -----------------------------------------*/
 .testimonial {
-	background: #dbbf56;
-	padding-bottom: 50px;
+	background: rgba(52, 210, 147, 0.8);
+	/*/
+  background: #e96656;
+	/*/
+  padding-bottom: 50px;
 }
 #client-feedbacks .feedback-box {
 	width: 30%;
 	float:left;
-	background: #FFFFFF;
+	background: #ffffff;
 	padding: 25px;
 	margin: 13px;
 	text-align: left;
@@ -2937,11 +2956,8 @@ video::-webkit-media-controls {
 	background: rgba(0, 0, 0, 0.5);
 	padding-bottom: 55px;
 }
-.contact-us .input-box,textarea {
-	width: 100% !important;
-	margin: auto;
-	margin-bottom: 20px;
-	border-radius: 4px;
+.contact-us h6 {
+  color:white;
 }
 .contact-us .custom-button {
 	float: right;

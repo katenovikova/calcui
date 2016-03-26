@@ -68,6 +68,32 @@ function iPrintPrices(indicesAll) {
 };
 
 
+// Parallax
+jQuery(document).ready(function() {
+
+	var jQuerywindow = jQuery(window);
+
+  jQuery('.bg-responsive').each(function() {
+
+		var jQuerybgobj = jQuery(this);
+
+		jQuery(window).scroll(function() {
+
+			var yPos = -(jQuerywindow.scrollTop() / jQuerybgobj.data('speed'));
+
+			var coords = '50% '+ yPos + 'px (!important)';
+
+			jQuerybgobj.css({
+
+				backgroundPosition: coords
+
+			});
+
+		});
+
+	});
+
+});
 $(function(){
   $("#winWidth1").show();
   $("#winWidth2").hide();

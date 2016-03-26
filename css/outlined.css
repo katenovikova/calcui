@@ -1,39 +1,3 @@
-.site-content {
-	background:
-}
-.navbar, .navbar-inverse .navbar-nav ul.sub-menu {
-	background: ;
-}
-.entry-title, .entry-title a, .widget-title, .widget-title a, .page-header .page-title, .comments-title, h1.page-title {
-	color:  !important
-}
-.widget .widget-title:before, .entry-title:before, .page-header .page-title:before, .entry-title:after, ul.nav > li.current_page_item > a:before, .nav > li.current-menu-item a:before, h1.page-title:before {
-	background:  !important;
-}
-body, button, input, select, textarea {
-	color:
-}
-.widget li a, article .entry-meta a, .entry-footer a, .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-nav ul.sub-menu li a, .home .nav > li.current_page_item a {
-	color:  !important;
-}
-.widget li a:hover, article .entry-meta a:hover, .entry-footer a:hover, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav ul.sub-menu li:hover a  {
-	color:  !important;
-}
-.big-title-container .intro-text {
-	color:
-}
-.big-title-container .red-btn {
-	background:
-}
-.big-title-container .red-btn:hover {
-	background:
-}
-.big-title-container .buttons .red-btn {
-	color:  !important
-}
-.big-title-container .green-btn {
-	background:
-}
 .big-title-container .green-btn:hover {
 	background: #86ad36
 }
