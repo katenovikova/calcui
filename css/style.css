@@ -2068,10 +2068,6 @@ video::-webkit-media-controls {
 .about-us .container > .advantages-list.row{
   overflow: hidden;
 }
-.about-us [class*="col-"]{
-  margin-bottom: -99999px;
-  padding-bottom: 99999px;
-}
 .about-us .container > .advantages-list > hr{
 	margin-top: -4px;
   vertical-align: baseline;
