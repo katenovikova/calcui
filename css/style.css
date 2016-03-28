@@ -2057,15 +2057,15 @@ video::-webkit-media-controls {
 	padding-bottom: 10px;
 }
 /*/
-.about-us .container > .advantages-list > .col-md-4 {
+.about-us .container > .advantages-list > * > .col-md-4 {
 	background: #232323;
 	color: #FFF;
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 5px;
-  width: 32%
+  margin-bottom: 100px
 }
-.about-us .container > .advantages-list.row{
+.about-us .container > .advantages-list > .row{
   overflow: hidden;
 }
 .about-us .container > .advantages-list > hr{
@@ -2082,7 +2082,11 @@ video::-webkit-media-controls {
 .about-us .container > .advantages-list > * > i.fa.fa-4x {
   margin-top: 15px;
 }
+.about-us .row > [class*=".col-"] {
+  width: 90%;
+}
 .about-us .row {
+  width: 110%;
 }
 .about-us .big-intro {
 	text-align: right;
@@ -3862,7 +3866,7 @@ ul.nav > li.current_page_item > a:before, .nav > li.current-menu-item a:before {
 		font-size: 8vw !important;
 	}
 	.about-us .column {
-		margin-bottom: 40px;
+		margin-bottom: 80px;
 	}
 	.skills {
 		margin-bottom: 78px !important;
@@ -4126,7 +4130,7 @@ ul.nav > li.current_page_item > a:before, .nav > li.current-menu-item a:before {
 	}
 	.about-us .column {
 	    margin-bottom: 0;
-	    width: 100%;
+	    width: 96%;
 	    float: left;
 	    margin-right: 0;
 	    margin-left: 0;
@@ -4148,13 +4152,15 @@ ul.nav > li.current_page_item > a:before, .nav > li.current-menu-item a:before {
 	    display: inline-block;
 	    clear: none;
 		float: left;
-		width: 25%;
+		width: 33%;
     height: auto;
     width: auto;
 		margin: 10px;
 	}
 	.about-us p {
 		text-align: center;
+    height: auto;
+    a
 	}
 	.our-team {
 	    padding-top: 30px;
