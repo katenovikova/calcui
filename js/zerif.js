@@ -37,7 +37,7 @@ jQuery(document).ready(function(){
 });
 
 
-/* RESPONSIVE BACKGROUND ON MOBILE */
+/* RESPONSIVE BACKGROUND ON MOBILE
 var portraitViewInit = 0, // Initial viewport orientation: Default Landscape
     resize = false;
 jQuery( document ).ready( zerif_bg_responsive );
@@ -111,29 +111,6 @@ var callback_mobile_dropdown = function () {
 jQuery(document).ready(callback_mobile_dropdown);
 
 
-/* show/hide reCaptcha */
-jQuery(document).ready(function() {
-
-  var thisOpen = false;
-  jQuery('.contact-form .form-control').each(function(){
-    if ( (typeof jQuery(this).val() != 'undefined') && (jQuery(this).val().length > 0) ){
-      thisOpen = true;
-      jQuery('.zerif-g-recaptcha').css('display','block').delay(1000).css('opacity','1');
-      return false;
-    }
-  });
-  if ( thisOpen == false && (typeof jQuery('.contact-form textarea').val() != 'undefined') && (jQuery('.contact-form textarea').val().length > 0) ) {
-    thisOpen = true;
-    jQuery('.zerif-g-recaptcha').css('display','block').delay(1000).css('opacity','1');
-  }
-  jQuery('.contact-form input, .contact-form textarea').focus(function(){
-    if ( !jQuery('.zerif-g-recaptcha').hasClass('recaptcha-display') ) {
-        jQuery('.zerif-g-recaptcha').css('display','block').delay(1000).css('opacity','1');
-    }
-  });
-
-});
-
 /* Bootstrap Fix */
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
@@ -153,9 +130,10 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
 }
 
+  /*
 jQuery(document).ready(function() {
 
-	/* PARALLAX */
+	/* PARALLAX
 	var jQuerywindow = jQuery(window);
 
 	jQuery('div[data-type="background"], header[data-type="background"], section[data-type="background"]').each(function(){
@@ -181,9 +159,13 @@ jQuery(document).ready(function() {
 });
 
 
+  */
+
+
+	/*
 jQuery(window).load(function() {
 
-	/* SUBSCRIBE  */
+	/* SUBSCRIBE
 	jQuery("form :input").each(function(index, elem) {
 
 		var eId = jQuery(elem).attr("class");
@@ -199,42 +181,7 @@ jQuery(window).load(function() {
 	});
 });
 
-
-/* TOP NAVIGATION MENU SELECTED ITEMS */
-jQuery(window).scroll(function(){
-
-	var zerif_scrollTop = jQuery(window).scrollTop();
-	var zerif_windowHeight = jQuery(window).height();
-
-	jQuery("section").each( function() {
-
-		var zerif_offset = jQuery(this).offset();
-
-		if (zerif_scrollTop <= zerif_offset.top && (jQuery(this).height() + zerif_offset.top) < (zerif_scrollTop + zerif_windowHeight) ) {
-
-			jQuery('ul.nav > li a').each( function() {
-				jQuery(this).removeClass('nav-active');
-			});
-
-			var zerif_current_id_visible = jQuery(this).attr('id');
-
-			jQuery('ul.nav > li a').each( function() {
-				if( jQuery(this).attr('href') ) {
-					if( jQuery(this).attr('href').indexOf(zerif_current_id_visible) >= 0 ) {
-						jQuery('ul.nav > li a').each( function() {
-							jQuery(this).removeClass('nav-active');
-						});
-						jQuery(this).addClass('nav-active');
-					}
-				}
-
-			});
-		}
-
-	});
-
-});
-
+*/
 
 /* SETS THE HEIGHT OF THE HEADER */
 jQuery(window).load(function(){
@@ -244,9 +191,9 @@ jQuery(window).resize(function() {
   setminHeightHeader();
 });
 function setminHeightHeader() {
-  if ( jQuery('#main-nav').css('min-height') != 75 || jQuery('.header').css('min-height') != 75 ) {
-    jQuery('#main-nav').css('min-height',75);
-    jQuery('.header').css('min-height',75);
+  if ( jQuery('#main-nav').css('min-height') != 55 || jQuery('.header').css('min-height') != 55 ) {
+    jQuery('#main-nav').css('min-height',55);
+    jQuery('.header').css('min-height',55);
   }
   if ( jQuery(window).width() > 750 ) {
       var minHeight = parseInt( jQuery('#main-nav').height() );
@@ -255,356 +202,3 @@ function setminHeightHeader() {
   }
 }
 /* - */
-
-
-/* STICKY FOOTER */
-jQuery(window).load(function(){
-  fixFooterBottom();
-});
-jQuery(window).resize(function() {
-  fixFooterBottom();
-});
-
-function fixFooterBottom(){
-
-	var header      = jQuery('header.header');
-	var footer      = jQuery('footer#footer');
-	var content     = jQuery('.site-content > .container');
-
-	content.css('min-height', '1px');
-
-	var headerHeight  = header.outerHeight();
-	var footerHeight  = footer.outerHeight();
-	var contentHeight = content.outerHeight();
-	var windowHeight  = jQuery(window).height();
-
-	var totalHeight = headerHeight + footerHeight + contentHeight;
-
-	if (totalHeight<windowHeight){
-	  content.css('min-height', windowHeight - headerHeight - footerHeight );
-	}else{
-	  content.css('min-height','1px');
-	}
-}
-
-
-/*** CENTERED MENU */
-var callback_menu_align = function () {
-
-	var headerWrap 		= jQuery('.header');
-	var navWrap 		= jQuery('#site-navigation');
-	var logoWrap 		= jQuery('.responsive-logo');
-	var containerWrap 	= jQuery('.container');
-	var classToAdd		= 'menu-align-center';
-
-	if ( headerWrap.hasClass(classToAdd) )
-	{
-        headerWrap.removeClass(classToAdd);
-	}
-    var logoWidth 		= logoWrap.outerWidth();
-    var menuWidth 		= navWrap.outerWidth();
-    var containerWidth 	= containerWrap.width();
-
-    if ( menuWidth + logoWidth > containerWidth ) {
-        headerWrap.addClass(classToAdd);
-    }
-    else
-    {
-        if ( headerWrap.hasClass(classToAdd) )
-        {
-            headerWrap.removeClass(classToAdd);
-        }
-    }
-}
-jQuery(window).load(callback_menu_align);
-jQuery(window).resize(callback_menu_align);
-
-var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-};
-
-/* Rollover on mobile devices */
-if( isMobile.any() ) {
-
-  /* Our team section */
-    jQuery('.team-member').on('click', function(){
-        jQuery('.team-member-open').removeClass('team-member-open');
-        jQuery(this).addClass('team-member-open');
-        event.stopPropagation();
-    });
-    jQuery("html").click(function() {
-      jQuery('.team-member-open').removeClass('team-member-open');
-  });
-
-  /* Portfolio section */
-  jQuery(document).ready(function(){
-      jQuery('.cbp-rfgrid li').prepend('<p class="cbp-rfgrid-tr"></p>');
-  });
-    jQuery('.cbp-rfgrid li').on('click', function(){
-        if ( !jQuery(this).hasClass('cbp-rfgrid-open') ){
-            jQuery('.cbp-rfgrid-tr').css('display','block');
-            jQuery('.cbp-rfgrid-open').removeClass('cbp-rfgrid-open');
-
-            jQuery(this).addClass('cbp-rfgrid-open');
-            jQuery(this).find('.cbp-rfgrid-tr').css('display','none');
-            event.stopPropagation();
-        }
-    });
-    jQuery("html").click(function() {
-        jQuery('.cbp-rfgrid-tr').css('display','block');
-        jQuery('.cbp-rfgrid-open').removeClass('cbp-rfgrid-open');
-  });
-
-}
-
-/* testimonial Masonry style */
-var window_width_old;
-var exist_class = false;
-jQuery(document).ready(function(){
-  if( jQuery('.testimonial-masonry').length>0 ){
-    exist_class = true;
-    window_width_old = jQuery('.container').outerWidth();
-    if( window_width_old < 970 ) {
-        jQuery('.testimonial-masonry').zerifgridpinterest({columns: 1,selector: '.zerif_testim'});
-    } else {
-        jQuery('.testimonial-masonry').zerifgridpinterest({columns: 3,selector: '.zerif_testim'});
-    }
-  }
-});
-
-jQuery(window).resize(function() {
-    if( window_width_old != jQuery('.container').outerWidth() && exist_class === true ){
-        window_width_old = jQuery('.container').outerWidth();
-        if( window_width_old < 970 ) {
-            jQuery('.testimonial-masonry').zerifgridpinterest({columns: 1,selector: '.zerif_testim'});
-        } else {
-            jQuery('.testimonial-masonry').zerifgridpinterest({columns: 3,selector: '.zerif_testim'});
-        }
-    }
-});
-
-
-(function ($, window, document, undefined) {
-    var defaults = {
-            columns:                3,
-            selector:               'div',
-            excludeParentClass:     '',
-        };
-    function ZerifGridPinterest(element, options) {
-        this.element    = element;
-        this.options    = $.extend({}, defaults, options);
-        this.defaults   = defaults;
-        this.init();
-    }
-    ZerifGridPinterest.prototype.init = function () {
-        var self            = this,
-            $container      = $(this.element);
-            $select_options = $(this.element).children();
-        self.make_magic( $container, $select_options );
-    };
-    ZerifGridPinterest.prototype.make_magic = function (container) {
-        var self            = this;
-            $container      = $(container),
-            columns_height  = [],
-            prefix          = 'zerif',
-            unique_class    = prefix + '_grid_' + self.make_unique();
-            local_class     = prefix + '_grid';
-        var classname;
-        var substr_index    = this.element.className.indexOf(prefix+'_grid_');
-        if( substr_index>-1 ) {
-            classname = this.element.className.substr( 0, this.element.className.length-unique_class.length-local_class.length );
-        } else {
-            classname = this.element.className;
-        }
-        var my_id;
-        if( this.element.id == '' ) {
-            my_id = prefix+'_id_' + self.make_unique();
-        } else {
-            my_id = this.element.id;
-        }
-        $container.after('<div id="' + my_id + '" class="' + classname + ' ' + local_class + ' ' + unique_class + '"></div>');
-        var i;
-        for(i=1; i<=this.options.columns; i++){
-            columns_height.push(0);
-            var first_cols = '';
-            var last_cols = '';
-            if( i%self.options.columns == 1 ) { first_cols = prefix + '_grid_first'; }
-            if( i%self.options.columns == 0 ) { first_cols = prefix + '_grid_last'; }
-            $('.'+unique_class).append('<div class="' + prefix + '_grid_col_' + this.options.columns +' ' + prefix + '_grid_column_' + i +' ' + first_cols + ' ' + last_cols + '"></div>');
-        }
-        if( this.element.className.indexOf(local_class)<0 ){
-            $container.children(this.options.selector).each(function(index){
-                var min = Math.min.apply(null,columns_height);
-                var this_index = columns_height.indexOf(min)+1;
-                $(this).attr(prefix+'grid-attr','this-'+index).appendTo('.'+unique_class +' .' + prefix + '_grid_column_'+this_index);
-                columns_height[this_index-1] = $('.'+unique_class +' .' + prefix + '_grid_column_'+this_index).height();
-            });
-        } else {
-            var no_boxes = $container.find(this.options.selector).length;
-            var i;
-            for( i=0; i<no_boxes; i++ ){
-                var min = Math.min.apply(null,columns_height);
-                var this_index = columns_height.indexOf(min)+1;
-                $('#'+this.element.id).find('['+prefix+'grid-attr="this-'+i+'"]').appendTo('.'+unique_class +' .' + prefix + '_grid_column_'+this_index);
-                columns_height[this_index-1] = $('.'+unique_class +' .' + prefix + '_grid_column_'+this_index).height();
-            }
-        }
-        $container.remove();
-    }
-    ZerifGridPinterest.prototype.make_unique = function () {
-        var text = "";
-        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-        for( var i=0; i<10; i++ )
-            text += possible.charAt(Math.floor(Math.random() * possible.length));
-        return text;
-    }
-    $.fn.zerifgridpinterest = function (options) {
-        return this.each(function () {
-            var value = '';
-            if (!$.data(this, value)) {
-                $.data(this, value, new ZerifGridPinterest(this, options) );
-            }
-        });
-    }
-})(jQuery);
-/* Header section */
-jQuery(window).load(zerif_parallax_effect);
-jQuery(window).resize(zerif_parallax_effect);
-
-function zerif_parallax_effect(){
-
-    if( jQuery('#parallax_move').length>0 ) {
-      var scene = document.getElementById('parallax_move');
-      var window_width = jQuery(window).outerWidth();
-      jQuery('#parallax_move').css({
-        'width':            window_width + 120,
-        'margin-left':      -60,
-        'margin-top':       -60,
-        'position':         'absolute',
-      });
-      var h = jQuery('header#home').outerHeight();
-      jQuery('#parallax_move').children().each(function(){
-        jQuery(this).css({
-            'height': h+100,
-        });
-      });
-      if( !isMobile.any() ) {
-        var parallax = new Parallax(scene);
-      } else {
-        jQuery('#parallax_move').css({
-          'z-index': '0',
-        });
-        jQuery('#parallax_move .layer').css({
-          'position': 'absolute',
-          'top': '0',
-          'left': '0',
-          'z-index': '1',
-        });
-      }
-    }
-
-}
-
-
-/* Menu levels */
-jQuery( document ).ready( function() {
-  jQuery( '#site-navigation' ).zerifsubmenuorientation();
-} );
-;(function ($, window) {
-    var defaults = {
-        // 'true'   -> if there is a big submenu all submenu will be aligned to the right
-        // 'false'  -> Only big submenu will be aligned to the right
-        allItems: false,
-      };
-    function ZerifSubmenuOrientation(element, options) {
-      this.element  = element;
-      this.options  = $.extend({}, defaults, options);
-      this.defaults = defaults;
-      this.init();
-    }
-    ZerifSubmenuOrientation.prototype.init = function () {
-      var self            = this,
-          $container      = $(this.element),
-          $select_options = $(this.element).children();
-      var resize_finish;
-      if( self.options.allItems !== true ) {
-        $(window).resize(function() {
-            clearTimeout(resize_finish);
-            resize_finish = setTimeout( function () {
-                self.make_magic($container, $select_options);
-            }, 11);
-        });
-      }
-      self.make_magic($container, $select_options);
-      if( self.options.allItems !== true ) {
-        setTimeout(function() {
-            $(window).resize();
-        }, 500);
-      }
-    };
-    ZerifSubmenuOrientation.prototype.make_magic = function (container, select_options) {
-      var self            = this,
-          $container      = $(container),
-          $select_options = $(select_options);
-      var itemWrap;
-      if( $container[0].tagName == 'UL' ) {
-        itemWrap = $container[0];
-      } else {
-        itemWrap = $container.find( 'ul' )[0];
-      }
-      var windowsWidth = window.innerWidth;
-      var itemId = '#' + itemWrap.id;
-      $( itemId ).children( 'li' ).each( function() {
-        if ( this.id == '' ) { return; }
-        var max_deep = self.max_deep( '#'+this.id );
-        var offsetLeft        = $( "#"+this.id ).offset().left;
-        var submenuWidthItem  = $( "#"+this.id ).find( 'ul' ).width();
-        var submenuTotalWidth = max_deep * submenuWidthItem;
-        if( submenuTotalWidth > 0 && windowsWidth < offsetLeft + submenuTotalWidth ) {
-          if( self.options.allItems === true ) {
-            $( '#'+itemWrap.id ).addClass( 'menu-item-open-left-all' );
-            return false;
-          }
-          $( '#'+this.id ).addClass( 'menu-item-open-left' );
-        } else if( $( '#'+this.id ).hasClass( 'menu-item-open-left' ) ) {
-          $( '#'+this.id ).removeClass( 'menu-item-open-left' );
-        }
-      } );
-    };
-    ZerifSubmenuOrientation.prototype.max_deep = function ( item ) {
-      var maxDepth      = -1,
-          currentDepth  = -1;
-      $( item + " li:not(:has(ul))").each(function() {
-        currentDepth = $(this).parents("ul").length;
-        if (currentDepth > maxDepth) {
-           maxDepth = currentDepth;
-        }
-      });
-      return maxDepth - 1;
-    }
-    $.fn.zerifsubmenuorientation = function (options) {
-      return this.each(function () {
-        var value = '';
-          if (!$.data(this, value)) {
-              $.data(this, value, new ZerifSubmenuOrientation(this, options) );
-          }
-      });
-    }
-})(jQuery,window);

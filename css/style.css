@@ -335,6 +335,9 @@ h6 {
 .red-btn {
 	background: #e96656;
 }
+.green-transp-btn {
+	background: rgba(55,250,100,.4);
+}
 .green-btn {
 	background: #5dc064;
 }
@@ -454,13 +457,6 @@ thead th{
 	background: #e96656;
 }
 .green-bg {
-	background: #5dc064;
-}
-.green-transp-bg {
-	background: rgba(75, 250, 100, .4);
-}
-.blue-bg {
-.green-transp-bg {
 	background: #5dc064;
 }
 .blue-bg {
@@ -1520,7 +1516,7 @@ object {
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
-	min-height: 45px;
+	min-height: 75px;
 	margin-bottom: 0;
 }
 .navbar-inverse .navbar-nav {
@@ -1825,6 +1821,7 @@ section#calculator.section-header h2 {
 	font-size: 14px;
   text-align: justify;
 }
+/*----OTHER FOCUSES ----*/
 .other-focuses .section-footer-title {
 	padding: 0 15px;
 	color: #404040;
@@ -1850,11 +1847,11 @@ section#calculator.section-header h2 {
  **   Secction:  Separator one        -----
 -----------------------------------------*/
 .separator-one {
-	background: rgba(93, 192, 100, .9);
+	background: rgba(52, 210, 147, 0.8);
 	padding: 100px 0 100px 0;
 }
 .separator-one .green-btn {
-	background: #00ff55;
+	background: #5dc064;
 }
 .separator-one .green-btn:hover {
 	background: #007345;
@@ -2781,6 +2778,21 @@ video::-webkit-media-controls {
 
 
 
+
+.customNavigation {
+	text-align: center;
+}
+.owl-theme .owl-controls .owl-page span {
+	background: #886e0e;
+	border-radius: 50%;
+}
+.customNavigation a {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
 .zerif_grid_col_4 > div,
 .zerif_grid_col_3 > div,

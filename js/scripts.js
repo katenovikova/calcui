@@ -40,8 +40,10 @@ function iPrintPrices(indicesAll) {
   var Puni = $uniPs[indexUni];
   var Plux = $luxPs[indexLux];
 
+  document.getElementById("Price_1_1_1").innerHTML = Plite[0];
   document.getElementById("Price_1_1_2").innerHTML = Plite[1];
   document.getElementById("Price_1_1_3").innerHTML = Plite[2];
+
   document.getElementById("Price_1_2_1").innerHTML = Pmini[0];
   document.getElementById("Price_1_2_2").innerHTML = Pmini[1];
   document.getElementById("Price_1_2_3").innerHTML = Pmini[2];
