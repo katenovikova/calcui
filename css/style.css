@@ -456,6 +456,13 @@ thead th{
 .green-bg {
 	background: #5dc064;
 }
+.green-transp-bg {
+	background: rgba(75, 250, 100, .4);
+}
+.blue-bg {
+.green-transp-bg {
+	background: #5dc064;
+}
 .blue-bg {
 	background: rgba(52, 210, 147, 1);
 }
