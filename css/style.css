@@ -2079,14 +2079,8 @@ video::-webkit-media-controls {
 	padding-bottom: 20px;
 	padding-top: 20px;
 }
-.about-us .container > .advantages-list > * > i.fa.fa-4x {
+.about-us .container > .advantages-list > * > * > i.fa.fa-4x {
   margin-top: 15px;
-}
-.about-us .row > [class*=".col-"] {
-  width: 90%;
-}
-.about-us .row {
-  width: 110%;
 }
 .about-us .big-intro {
 	text-align: right;
