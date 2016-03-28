@@ -711,7 +711,7 @@ input:focus {
  **   5.1 Links                 -----
 -----------------------------------------*/
 a {
-	color: royalblue;
+	color: green;
 }
 a:visited {
 	color: purple;
@@ -848,7 +848,7 @@ a:active {
 	text-decoration: none;
 	top: 5px;
 	width: auto;
-	z-index: 100000; /* Above WP toolbar */
+	z-index: 100; /* Above WP toolbar */
 }
  /*---------------------------------------
  **   7.0 Alignments                   -----
