@@ -2051,15 +2051,26 @@ video::-webkit-media-controls {
 /*---------------------------------------
  **   Section: Abot us;              -----
 -----------------------------------------*/
-.about-us .container > .advantages-list {
+/*/.about-us .container > .advantages-list {
 	background: #121212;
 	color: #FFF;
 	padding-bottom: 10px;
 }
-.about-us .container > .advantages-list > .col-xs-12 {
+/*/
+.about-us .container > .advantages-list > .col-md-4 {
 	background: #232323;
 	color: #FFF;
-  margin: 5px 5px 5px 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 32%
+}
+.about-us .container > .advantages-list.row{
+  overflow: hidden;
+}
+.about-us [class*="col-"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
 }
 .about-us .container > .advantages-list > hr{
 	margin-top: -4px;
@@ -2076,8 +2087,6 @@ video::-webkit-media-controls {
   margin-top: 15px;
 }
 .about-us .row {
-	margin-left: 5px;
-	margin-right: 5px;
 }
 .about-us .big-intro {
 	text-align: right;
@@ -3236,9 +3245,9 @@ article .posted-on a:hover{
 	margin: 1em 0 0;
 }
 .row{
-    float: left;
-    width: 100%;
-    margin-right: 0;
+  float: left;
+  width: 100%;
+  margin-right: 0;
 	margin-left: 0;
 }
 /* Calendar style */
