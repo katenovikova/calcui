@@ -336,7 +336,7 @@ h6 {
 	background: #e96656;
 }
 .green-transp-btn {
-	background: rgba(55,250,100,.4);
+	background: rgba(55, 250, 100, .4);
 }
 .green-btn {
 	background: #5dc064;
@@ -1516,7 +1516,7 @@ object {
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
-	min-height: 75px;
+	min-height: 50px;
 	margin-bottom: 0;
 }
 .navbar-inverse .navbar-nav {
@@ -1581,10 +1581,10 @@ object {
 	display: block;
 }
 .navbar-brand {
-	height: 76px;
+	height: 50px;
 	position: relative;
-	line-height: 60px;
-	padding: 7px 15px;
+	line-height: 50px;
+	padding: 5px 5px;
 	display: inline-block;
 }
 .navbar-brand > img {
@@ -1597,7 +1597,7 @@ object {
 .navbar-toggle {
 	border: 0;
 	background-color: #808080;
-	margin-top: 23px;
+	margin-top: 13px;
 }
 .navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus {
 	background-color: #e96656;
@@ -2059,7 +2059,7 @@ video::-webkit-media-controls {
 .about-us .container > .advantages-list > .col-xs-12 {
 	background: #232323;
 	color: #FFF;
-  margin: 15px 15px 15px 15px;
+  margin: 5px 5px 5px 5px;
 }
 .about-us .container > .advantages-list > hr{
 	margin-top: -4px;
