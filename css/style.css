@@ -2065,14 +2065,14 @@ video::-webkit-media-controls {
  **   Section: Abot us;              -----
 -----------------------------------------*/
 .about-us .container > .advantages-list {
-	background: #222;
+	background: #121212;
 	color: #FFF;
 	padding-bottom: 10px;
 }
 .about-us .container > .advantages-list > .col-xs-12 {
-	background: #444;
+	background: #232323;
 	color: #FFF;
-	padding-bottom: 10px;
+  margin: 15px 15px 15px 15px;
 }
 .about-us .container > .advantages-list > hr{
 	margin-top: -4px;
