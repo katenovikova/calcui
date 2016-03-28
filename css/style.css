@@ -2069,6 +2069,11 @@ video::-webkit-media-controls {
 	color: #FFF;
 	padding-bottom: 10px;
 }
+.about-us .container > .advantages-list > .col-xs-12 {
+	background: #444;
+	color: #FFF;
+	padding-bottom: 10px;
+}
 .about-us .container > .advantages-list > hr{
 	margin-top: -4px;
   vertical-align: baseline;
