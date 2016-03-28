@@ -1513,7 +1513,7 @@ object {
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
-	min-height: 75px;
+	min-height: 45px;
 	margin-bottom: 0;
 }
 .navbar-inverse .navbar-nav {
@@ -2774,21 +2774,6 @@ video::-webkit-media-controls {
 
 
 
-
-.customNavigation {
-	text-align: center;
-}
-.owl-theme .owl-controls .owl-page span {
-	background: #886e0e;
-	border-radius: 50%;
-}
-.customNavigation a {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
 
 .zerif_grid_col_4 > div,
 .zerif_grid_col_3 > div,
