@@ -39,7 +39,7 @@ html(lang='ru-RU')
       // }}}
       .zerif_full_site
         header#home.header(itemscope='itemscope', itemtype='http://schema.org/WPHeader', role='banner')
-          //  {{{
+          //- Nav_Bar {{{
           #main-nav.navbar.navbar-inverse.bs-docs-nav
             .container
               .navbar-header.responsive-logo
@@ -62,115 +62,135 @@ html(lang='ru-RU')
                     a(href='http://profkarniz.com/shop/rulonnye-shtory') Купить онлайн
                   li#menu-item-27.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-27
                     a(href='http://profkarniz.com/index/0-5') Вызвать замерщика
+          //- end_Nav_Bar }}}
+          //- First_Glance {{{
           .home-header-wrap
             .header-content-wrap
               .container.big-title-container
                 h1.intro-text Рулонные шторы в Перми от 499 руб.
                 .buttons
-                  a.btn.btn-primary.custom-button.red-btn(href='http://profkarniz.com/index/0-5') Заказать бесплатный замер
-                  a.btn.btn-primary.custom-button.green-btn(href='http://profkarniz.com/shop/rulonnye-shtory') Купить готовые шторы онлайн
+                  a.btn.btn-lg.btn-primary.custom-button.red-btn(href='http://profkarniz.com/index/0-5')
+                    | Заказать бесплатный замер
+                  a.btn.btn-lg.btn-primary.custom-button.green-btn(href='#calculator')
+                    | Рассчитать цены штор для вашего окна
             .clear
-            // }}}
+          //- end_First_Glance }}}
         #content.site-content.zerif-fp-site-content
-          //{{{
           section#aboutus.about-us
-            // Our Advantage {{{
+            //- Advantages {{{
             .container
+              //- Header Advantages {{{
               .row.section-header
                 .col-lg-12.text-center
                   h2.section-heading
                     | Наши приемущества
-                  hr.primary
+              //- end_Header Advantage }}}
               .row.advantages-list
+                hr.primary
+                //- Bullet_1 Advantages {{{
                 .col-xs-12.col-sm-6.col-md-4.text-center
                     i.fa.fa-4x.green-text.fa-gears.wow.bounceIn.text-primary
                     h3 
                       br
                       | Собственное производство 
-                    hr.green-text.green-bg
+                    hr.green-text.green-bg(style="margin-bottom: 20px;")
                     p.text-muted
                       | Изготовим под заказ любых размеров и цветов - быстро, гибко, по демократичной цене
                     br
                     br
-                    br
+                //- end_Bullet_1 Advantages }}}
+                //- Bullet_2 Advantages {{{
                 .col-xs-12.col-sm-6.col-md-4.text-center
                     i.fa.fa-4x.red-text.fa-arrows.wow.bounceIn.text-primary(data-wow-delay='.1s')
                     h3 
                       br
                       | Бесплатный выезд на замеры
-                    hr.green-text.green-bg
+                    hr.green-text.green-bg(style="margin-bottom: 20px;")
                     p.text-muted
                       | Замерщик приедет в удобное время с каталогами, поможет сделать выбор и измерит окна
                     br
                     br
-                    br
+                //- end_Bullet_2 Advantages }}}
+                //- Bullet_3 Advantages {{{
                 .col-xs-12.col-sm-6.col-md-4.text-center
                     i.fa.fa-4x.green-text.fa-tags.wow.bounceIn.text-primary
                     h3 
                       br
                       | Низкие цены, акции
-                    hr.green-text.green-bg
+                    hr.green-text.green-bg(style="margin-bottom: 20px;")
                     p.text-muted
                       | Нашли дешевле? Позвоните нам, мы сделаем скидку больше, чем конкуренты:)
                     br
                     br
-                    br
+                //- end_Bullet_3 Advantages }}}
+                //- Bullet_4 Advantages {{{
                 .col-xs-12.col-sm-6.col-md-4.text-center
                     i.fa.fa-4x.red-text.fa-clock-o.wow.bounceIn.text-primary(data-wow-delay='.1s')
                     h3 
                       br
                       | Быстрое время выполнения заказа
-                    hr.green-text.green-bg
+                    hr.green-text.green-bg(style="margin-bottom: 20px;")
                     p.text-muted
                       | За счет собственного производства, соберем рулонную штору по Вашим размерам за 1-2 дня
                     br
                     br
-                    br
+                //- end_Bullet_4 Advantages }}}
+                //- Bullet_5 Advantages {{{
                 .col-xs-12.col-sm-6.col-md-4.text-center
                     i.fa.fa-4x.green-text.fa-thumbs-up.wow.bounceIn.text-primary(data-wow-delay='.1s')
                     h3 
                       br
                       | Качественные комплектующие
-                    hr.green-text.green-bg
+                    hr.green-text.green-bg(style="margin-bottom: 20px;")
                     p.text-muted
                       | Мы искользуем комплектующие производства Польша и ткань Европейских марок
                     br
                     br
-                    br
+                //- end_Bullet_5 Advantages }}}
+                //- Bullet_6 Advantages {{{
                 .col-xs-12.col-sm-6.col-md-4.text-center
                     i.fa.fa-4x.red-text.fa-university.wow.bounceIn.text-primary(data-wow-delay='.1s')
                     h3 
                       br
                       | Гибкая система скидок для юр. лиц и дизайнеров
-                    hr.green-text.green-bg
+                    hr.green-text.green-bg(style="margin-bottom: 20px;")
                     p.text-muted 
                       | У Вас крупный заказ? Мы с радостью предложим особые условия сотрудничества.
                     br
                     br
-                    br
-            // }}}
+                //- end_Bullet_6 Advantages }}}
+            //- end_Advantages }}}
           section#clients.our-clients
-            // {{{
+            //- Clients {{{
             .container
+              //- Header Clients {{{
               .section-header
-                h2.dark-text
+                h3.dark-text
                   | Наши клиенты
-              .client-list(data-scrollreveal='enter right move 60px after 0.00s over 0.25s')
-                  .row
-                    .col-xs-6.col-sm-3
-                      a(href='http://pstu.ru/')
-                      img(src='./images/client_pnipu.png', alt='ПНИПУ')
-                    .col-xs-6.col-sm-3
-                      a(href='https://megafon.ru/')
-                      img(src='./images/client_megafon.png', alt='Мегафон')
-                    .col-xs-6.col-sm-3
-                      a(href='http://alendvic.ru/')
-                      img(src='./images/client_alendvik.png', alt='Алендвик')
-                    .col-xs-6.col-sm-3
-                      a(href='https://www.sberbank.ru/')
-                      img(src='./images/client_sber.png', alt='Сбербанк')
-        
-            // }}}
+              //- end_Header Clients }}}
+              .client-list(data-scrollreveal='enter right move 60px after 0.00s over 0.25s').row
+                  //- Client_1 {{{
+                  .col-xs-6.col-sm-3
+                    a(href='http://pstu.ru/')
+                    img(src='./images/client_pnipu.png', alt='ПНИПУ')
+                  //- end_Client_1 }}}
+                  //- Client_2 {{{
+                  .col-xs-6.col-sm-3
+                    a(href='https://megafon.ru/')
+                    img(src='./images/client_megafon.png', alt='Мегафон')
+                  //- end_Client_2 }}}
+                  //- Client_3 {{{
+                  .col-xs-6.col-sm-3
+                    a(href='http://alendvic.ru/')
+                    img(src='./images/client_alendvik.png', alt='Алендвик')
+                  //- end_Client_3 }}}
+                  //- Client_4 {{{
+                  .col-xs-6.col-sm-3
+                    a(href='https://www.sberbank.ru/')
+                    img(src='./images/client_sber.png', alt='Сбербанк')
+                  //- end_Client_4 }}}
+            //- end_Clients }}}
+            
           //- section#team.our-team
             // How We work {{{
             .container
@@ -202,59 +222,55 @@ html(lang='ru-RU')
                     // p Профессиональный работник установит рулонные шторы за 300 руб./изделие
         
             // }}}
+
           section#calculator.packages
             // {{{
-            .section-header.white-text
-              br
-              h2
-                | Калькулятор
-            // Tabs===========================================================
-            //{{{
+            .container-fluid.green-bg.center-block
+              .row
+                .col-xs-12.section-header.white-text
+                  br
+                  h2
+                    | Калькулятор
+                  br
+
             .container
               .row
+                //- Mount_Opts {{{
                 .col-xs-12
                   h3.white-text
-                    |  Выберите вариант крепления
                     br
+                    hr
+                    |  Выберите вариант крепления
+                    hr
                     br
                   #tabs-433998.tabbable
-                    //{{{
                     ul.nav.nav-pills.nav-justified.row
-                      //{{{
+                      //- Tabs Mount_Opts {{{
                       li.active.col-xs-4
                         a(href='#mountOne', data-toggle='pill')
-                          //{{{
                           h2.text-center
                             span.label.label-pill.calcuLabel
                               | На створки
                           span
                             img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
-                          //}}}
-                          
                       li.col-xs-4
                         a(href='#mountTwo', data-toggle='pill')
-                          //{{{
                           h2.text-center
                             span.label.label-pill.calcuLabel
                               | В проем 
                           span
                             img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
-                          //}}}
-
                       li.col-xs-4
                         a(href='#mountThree', data-toggle='pill')
-                          //{{{
                           h2.text-center
                             span.label.label-pill.calcuLabel
                               | На проем 
                           span
                             img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
-                          //}}}
-                      //}}}
+                      //- Tabs Mount_Opts }}}
                     .tab-content
-                      //{{{
                       #mountOne.tab-pane(role='tabpanel').active
-                        // {{{
+                        //- Count_Panes {{{
                         br
                         br
                         br
@@ -264,7 +280,6 @@ html(lang='ru-RU')
                             br
                             h3.white-text
                               | Выберите число створок
-                        
                         .btn-group(data-toggle="buttons")#winLenB
                           .row
                             .col-xs-3
@@ -305,764 +320,468 @@ html(lang='ru-RU')
                         br
                         br
                         br
-                        //=======================================================================================================================================================================================
-                        .row
-                          .col-xs-12
-                            h3.white-text
-                              | Укажите высоту и ширину створок
-                              
-                        .row
-                          .col-xs-12.col-sm-6
-                            br
-                            h3.winMeasureLabel.white-text
-                              span.label.label-pill.label-success.calcuLabel
-                                | Высота: 
-                            span
-                              img.center-block.img-responsive.img-rounded(alt='', src='images/measure_height.png').
-                            br
-
-
-                            //111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-                            .panel.panel-default.winWidth-panel.winWidth1-panel#winHeight1
-                              .panel-body
-                                h6.winMeasureLabel
-                                  | Высота окна
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane1 
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#height1_1(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                            
-                            //22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
-                            .panel.panel-default.winWidth-panel.winWidth2-panel#winHeight2
-                              .panel-body
-                                h6.winMeasureLabel
-                                  | Высота левой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane2  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#height1_2_1(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                br
-                                h6.winMeasureLabel
-                                  | Высота правой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane2  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#height1_2_2(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-
-                            //333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
-                            .panel.panel-default.winWidth-panel.winWidth3-panel#winHeight3
-                              .panel-body
-                                
-                                h6.winMeasureLabel 
-                                  | Высота левой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#height1_3_1(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                    
-                                br
-                                h6.winMeasureLabel 
-                                  | Высота центральной створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#height1_3_2(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                    
-                                br
-                                h6.winMeasureLabel 
-                                  | Высота правой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#height1_3_3(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                            
-                            //44444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
-                            .panel.panel-default.winWidth-panel.winWidth4-panel#winHeight4
-                              .panel-body
-                                
-                                h6.winMeasureLabel 
-                                  | Высота первой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#height1_4_1(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                br
-
-
-                                h6.winMeasureLabel 
-                                  | Высота второй створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#height1_4_2(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                br
-                                    
-                                
-                                h6.winMeasureLabel 
-                                  | Высота третьей створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#height1_4_3(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                br
-
-
-                                h6.winMeasureLabel 
-                                  | Высота четвертой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#height1_4_4(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                br
-
-
-                                h6.winMeasureLabel 
-                                  | Высота пятой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#height1_4_5(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-
-                            
-                            
-                          //wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww  
-                          .col-xs-12.col-sm-6
-                            br
-                            h3.winMeasureLabel.white-text
-                              span.label.label-pill.label-success.calcuLabel
-                                | Ширина:
-                            span
-                              img.center-block.img-responsive.img-rounded(alt='', src='images/measure_width.png').
-                            br
-
-
-
-
-                            //1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-                            .panel.panel-default.winWidth-panel.winWidth1-panel#winWidth1
-                              .panel-body
-                                h6.winMeasureLabel
-                                  | Ширина окна
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane1 
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#width1_1(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-
-
-                            //2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
-                            .panel.panel-default.winWidth-panel.winWidth2-panel#winWidth2
-                              .panel-body
-                                h6.winMeasureLabel
-                                  | Ширина левой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane2  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#width1_2_1(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                br
-
-
-                                h6.winMeasureLabel
-                                  | Ширина правой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane2  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#width1_2_2(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-
-
-                            //3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
-                            .panel.panel-default.winWidth-panel.winWidth3-panel#winWidth3
-                              .panel-body
-                                
-                                h6.winMeasureLabel 
-                                  | Ширина левой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#width1_3_1(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                br
-
-
-                                h6.winMeasureLabel 
-                                  | Ширина центральной створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#width1_3_2(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                br
-                                    
-
-                                h6.winMeasureLabel 
-                                  | Ширина правой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#width1_3_3(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-
-
-
-                            //44444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
-                            .panel.panel-default.winWidth-panel.winWidth4-panel#winWidth4
-                              .panel-body
-                                
-                                h6.winMeasureLabel 
-                                  | Ширина первой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#width1_4_1(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                br
-                                    
-                                    
-                                h6.winMeasureLabel 
-                                  | Ширина второй створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#width1_4_2(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                br
-                                    
-                                    
-                                h6.winMeasureLabel 
-                                  | Ширина третьей створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#width1_4_3(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                br
-                                    
-                                    
-                                h6.winMeasureLabel 
-                                  | Ширина четвертой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#width1_4_4(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-                                br
-
-                                
-                                h6.winMeasureLabel 
-                                  | Ширина пятой створки:
-                                .input-group
-                                  span.input-group-addon
-                                    .fa-winPane3  
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square-o.fa-stack-2x
-                                      span.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                  span.input-group-lg
-                                    input.form-control.measurementInputOne#width1_4_5(type='text', placeholder='120')
-                                  span.input-group-addon 
-                                    | мм 
-
-
-                        //==================================================================================================================================================================
-                        //==================================================================================================================================================================
-                        .row
-                          .col-xs-12
-                            br
-                            br
-                            h3.white-text
-                              | Выберите тип рулонных штор и категорию ткани 
-                          .col-xs-12.col-sm-6.col-md-3 
-                            .panel.panel-default
-                              .panel-body
-                                h6
-                                  span.label.label-pill.label-success.center-block
-                                    | Лайт
-                                span
-                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
-                                br
-                                
-                                .panel.panel-primary.theFirstPriceTag
-                                  .panel-heading
-                                    .priceTagLabel
-                                      | Категория 1
-                                  .panel-body
-                                      .row
-                                        h.col-xs-6.thePriceItself#Price_1_1_1
-                                          
-                                        .col-xs-6.showFabricLink
-                                          a(alt="", href="")
-                                            p
-                                              | Показать ткани
-                                
-                                
-                                .panel.panel-default.theSecondPriceTag
-                                  .panel-heading
-                                    .priceTagLabel
-                                      | Категория 2
-                                  .panel-body
-                                      .row
-                                        h.col-xs-6.thePriceItself#Price_1_1_2
-                                            
-                                        .col-xs-6.showFabricLink
-                                          a(alt="", href="")
-                                            p
-                                              | Показать ткани
-                                
-                                
-                                .panel.panel-default.theThirdPriceTag
-                                  .panel-heading
-                                    .priceTagLabel
-                                      | Ткань "Зебра"
-                                  .panel-body
-                                      .row
-                                        h.col-xs-6.thePriceItself#Price_1_1_3
-                                            
-                                        .col-xs-6.showFabricLink
-                                          a(alt="", href="")
-                                            p
-                                              | Показать ткани
-                                
-                                
-
-                          .col-xs-12.col-sm-6.col-md-3
-                            .panel.panel-default
-                              .panel-body.center-block
-                                h6
-                                  span.label.label-pill.label-success.center-block
-                                    | Мини
-                                span
-                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
-                                br
-                                
-                                .panel.panel-primary.theFirstPriceTag
-                                  .panel-heading
-                                    .priceTagLabel
-                                      | Категория 1
-                                  .panel-body.container-fluid
-                                    .row
-                                      .col-xs-6
-                                        h.thePriceItself#Price_1_2_1
-                                      .col-xs-6
-                                        .showFabricLink
-                                          a(alt="", href="")
-                                            p
-                                              | Показать ткани
-                                
-                                
-                                .panel.panel-default.theSecondPriceTag
-                                  .panel-heading
-                                    .priceTagLabel
-                                      | Категория 2
-                                  .panel-body.container-fluid
-                                    .row
-                                      .col-xs-6
-                                        h.thePriceItself#Price_1_2_2
-                                      .col-xs-6
-                                        .showFabricLink
-                                          a(alt="", href="")
-                                            p
-                                              | Показать ткани
-                                
-                                
-                                .panel.panel-default.theThirdPriceTag
-                                  .panel-heading
-                                    .priceTagLabel
-                                      | Ткань "Зебра"
-                                  .panel-body.container-fluid
-                                    .row
-                                      .col-xs-6
-                                        h.thePriceItself#Price_1_2_3
-                                      .col-xs-6
-                                        .showFabricLink
-                                          a(alt="", href="")
-                                            p
-                                              | Показать ткани
-                                
-                                
-
-                          .col-xs-12.col-sm-6.col-md-3
-                            .panel.panel-default
-                              .panel-body
-                                h6
-                                  span.label.label-pill.label-success.center-block
-                                    | Уни
-                                span
-                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
-                                br
-                                
-                                .panel.panel-primary.theFirstPriceTag
-                                  .panel-heading
-                                    .priceTagLabel
-                                      | Категория 1
-                                  .panel-body.container-fluid
-                                    .row
-                                      .col-xs-6
-                                        h.thePriceItself#Price_1_3_1
-                                            
-                                      .col-xs-6
-                                        .showFabricLink
-                                          a(alt="", href="")
-                                            p
-                                              | Показать ткани
-                                
-                                
-                                .panel.panel-default.theSecondPriceTag
-                                  .panel-heading
-                                    .priceTagLabel
-                                      | Категория 2
-                                  .panel-body.container-fluid
-                                    .row
-                                      .col-xs-6
-                                        h.thePriceItself#Price_1_3_2
-                                            
-                                      .col-xs-6
-                                        .showFabricLink
-                                          a(alt="", href="")
-                                            p
-                                              | Показать ткани
-                                
-                                
-                                .panel.panel-default.theThirdPriceTag
-                                  .panel-heading
-                                    .priceTagLabel
-                                      | Ткань "Зебра"
-                                  .panel-body.container-fluid
-                                    .row
-                                      .col-xs-6
-                                        h.thePriceItself#Price_1_3_3
-                                            
-                                      .col-xs-6
-                                        .showFabricLink
-                                          a(alt="", href="")
-                                            p
-                                              | Показать ткани
-                                
-                                
-
-                          .col-xs-12.col-sm-6.col-md-3
-                            .panel.panel-default
-                              .panel-body
-                                h6
-                                  span.label.label-pill.label-success.center-block
-                                    | Люкс
-                                span
-                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
-                                br
-                                
-                                .panel.panel-primary.theFirstPriceTag
-                                  .panel-heading
-                                    .priceTagLabel
-                                      | Категория 1
-                                  .panel-body.container-fluid
-                                    .row
-                                      .col-xs-6
-                                        h.thePriceItself#Price_1_4_1
-                                          | -  
-                                      .col-xs-6
-                                        .showFabricLink
-                                          a(alt="", href="")
-                                            p
-                                              | Показать ткани
-                                
-                                
-                                .panel.panel-default.theSecondPriceTag
-                                  .panel-heading
-                                    .priceTagLabel
-                                      | Категория 2
-                                  .panel-body.container-fluid
-                                    .row
-                                      .col-xs-6
-                                        h.thePriceItself#Price_1_4_2
-                                          | -
-                                      .col-xs-6
-                                        .showFabricLink
-                                          a(alt="", href="")
-                                            p
-                                              | Показать ткани
-                                
-                                
-                                .panel.panel-default.theThirdPriceTag
-                                  .panel-heading
-                                    .priceTagLabel
-                                      | Ткань "Зебра"
-                                  .panel-body.container-fluid
-                                    .row
-                                      .col-xs-6
-                                        h.thePriceItself#Price_1_4_3
-                                          | -
-                                      .col-xs-6
-                                        .showFabricLink
-                                          a(alt="", href="")
-                                            p
-                                              | Показать ткани
-                                
-                                
-                        //}}}
+                        //- }}}
                       #mountTwo.tab-pane(role='tabpanel')
-                        //{{{
-                        br
-                        br
-                        br
-                        .row
-                            h3
-                              | Укажите ширину и высоту оконного проема
-                            br
-                          .col-xs-12.col-sm-6
-                            h6.winMeasureLabel 
-                              | Ширина проема:
-                            .input-group.input-group-lg
-                              span.input-group-addon 
-                                i.fa.fa-fw.fa-arrows-h
-                              input.form-control.measurementInputTwo#width2(type='text', placeholder='120')
-                              span.input-group-addon 
-                                | мм 
-                          .col-xs-12.col-sm-6
-                            h6.winMeasureLabel 
-                              | Высота проема
-                            .input-group.input-group-lg
-                              span.input-group-addon 
-                                i.fa.fa-fw.fa-arrows-v
-                              input.form-control.measurementInputTwo#height2(type='text', placeholder='180')
-                              span.input-group-addon 
-                                | мм 
-
-
-                        //}}}
+                        hr.white-text
                       #mountThree.tab-pane(role='tabpanel')
-                        //{{{
-                        br
-                        br
-                        br
-                        .row
-                          .col-xs-12
-                            h3
-                              | Укажите ширину и высоту оконного проема
-                            h6
-                              | Ширина проема:
-                            br
-                            .input-group.input-group-lg
-                              span.input-group-addon 
-                                i.fa.fa-fw.fa-arrows-h
-                              input.form-control.measurementInputThree#width3(type='text', placeholder='120')
-                              span.input-group-addon 
-                                | мм 
-                            h6
-                              | Высота проема
-                            br
-                            .input-group.input-group-lg
-                              span.input-group-addon 
-                                i.fa.fa-fw.fa-arrows-v
-                              input.form-control.measurementInputThree#height3(type='text', placeholder='180')
-                              span.input-group-addon 
-                                | мм 
-                        //}}}
-                      //}}}
-                    //}}}
+                        hr.white-text
+                //- end_Mount_Opts }}}
+              //- Measure_Panes {{{
               .row
-            //}}}
-            // }}}
-          section#focus.focus
+                //- Visuals Measure_Panes {{{
+                .showOnMnt1
+                  //- How_to_Measure {{{
+                  .col-xs-12
+                    h3.white-text
+                      | Укажите высоту и ширину створок
+                  //- end_How_to_Measure }}}
+                .showOnMnt2.showOnMnt3
+                  //- Thou_Shall_Not_Count {{{
+                  .col-xs-12
+                    h3.white-text
+                      | Укажите ширину и высоту оконного проема
+                  //- end_Thou_Shall_Not_Count }}}
+                //- Visuals Measure_Panes }}}
+              .row
+                //- Height {{{
+                .col-xs-12.col-sm-6
+                  howto_advise.center-block
+                    //- Picture_Text Height {{{
+                    .showOnMnt1
+                      span
+                        img.img-fluid.img-responsive(alt='how to measure height', src='images/measure_height.png')
+                    .showOnMnt2.showOnMnt3
+                      span.center-block
+                        p.clarifyingReminder.center-block
+                    //- end_Picture_Text Height }}}
+                .col-xs-12.col-sm-6
+                  .measurements_area
+                    .showOn_SinglePane
+                      //- SinglePane Height {{{
+                      .panel.panel-default.measurements_panel
+                        .panel-heading
+                          .showOnMnt1
+                            h3.winMeasureLabel
+                              | Высота окна:
+                          .showOnMnt2.showOnMnt3
+                            h3.winMeasureLabel
+                              | Высота проема:
+                        .panel-body
+                          .input-group
+                            span.input-group-addon
+                              .fa-winPane1
+                                span.fa.fa-stack.fa-fw
+                                  i.fa.fa-square.fa-stack-2x
+                                  i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
+                            span.input-group.input-group-lg
+                              input.form-control.height_1(type='number', name='height1_' min=50, max=300, placeholder=120)
+                            span.input-group-addon
+                              | mm
+                      //- end_SinglePane Heigh }}}
+                //- end_Height }}}
+                //- Width {{{
+                .col-xs-12.col-sm-6
+                  .howto_advise.center-block
+                    //- Picture_Text Width {{{
+                    .showOnMnt1
+                      span
+                        img.img-fluid.img-responsive(alt='how to measure width', src='images/measure_width.png')
+                    .showOnMnt2.showOnMnt3
+                      span.center-block
+                        p.clarifyingReminder.center-block
+                    //- end_Picture_Text Width }}}
+                .col-xs-12.col-sm-6
+                  .measurements_area
+                    .showOn_SinglePane
+                      //- SinglePane Width {{{
+                      .panel.panel-default.measurements_panel
+                        .panel-heading
+                          .showOnMnt1
+                            h3.winMeasureLabel
+                              | Ширина окна:
+                          .showOnMnt2.showOnMnt3
+                            h3.winMeasureLabel
+                              | Ширина проема:
+                        .panel-body
+                          .input-group
+                            span.input-group-addon
+                              .fa-winPane1
+                                span.fa.fa-stack.fa-fw
+                                  i.fa.fa-square.fa-stack-2x
+                                  i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                            span.input-group.input-group-lg
+                              input.form-control.width_1(type='number', name='width_1', min=50 ,max=300, placeholder=120)
+                            span.input-group-addon
+                              | mm
+                      //- end_SinglePane Width }}}
+                    .showOn_DoublePane
+                      //- DoublePane Width {{{
+                      .panel.panel-default.multipannel_wrapper_pannel
+                        .panel-body
+                          //- left_DoublePane Width {{{
+                          .panel.panel-default.measurements_panel
+                            .panel-heading
+                              h3.winMeasureLabel
+                                | LEFT_PANE_WIDTH
+                            .panel-body
+                              .input-group
+                                span.input-group-addon
+                                  .fa-winPane2
+                                    span.fa.fa-stack.fa-fw
+                                      span.fa.fa-stack.fa-fw
+                                        i.fa.fa-square.fa-stack-2x
+                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                                      i.fa.fa-square-o.fa-2x
+                                span.input-group.input-group-lg
+                                  input.form-control.width_1(type='number', name='width_1', min=50 ,max=300, placeholder=120)
+                                span.input-group-addon
+                                  | mm
+                          //- end_left_DoublePane Width }}}
+                          //- right_DoublePane Width {{{
+                          .panel.panel-default.measurements_panel
+                            .panel-heading
+                              h3.winMeasureLabel
+                                | RIGHT_PANE_WIDTH
+                            
+                            .panel-body
+                              .input-group
+                                span.input-group-addon
+                                  .fa-winPane2
+                                    span.fa.fa-stack.fa-fw
+                                      i.fa.fa-square-o.fa-2x
+                                      span.fa.fa-stack.fa-fw
+                                        i.fa.fa-square.fa-stack-2x
+                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                                span.input-group.input-group-lg
+                                  input.form-control.width_2(type='number', name='width_2', min=50 ,max=300, placeholder=120)
+                                span.input-group-addon
+                                  | mm
+                          //- end_right_DoublePane Width }}}
+                      //- end_DoublePane Width }}}
+                    .showOn_TriplePane
+                      //- TriplePane Width {{{
+                      .panel.panel-default.multipannel_wrapper_pannel
+                        .panel-body
+                          //- left___TriplePane Width {{{
+                          .panel.panel-default.measurements_panel
+                            .panel-heading
+                              h3.winMeasureLabel
+                                | LEFT_PANE_WIDTH
+                            .panel-body
+                              .input-group
+                                span.input-group-addon
+                                  .fa-winPane2
+                                    span.fa.fa-stack.fa-fw
+                                      span.fa.fa-stack.fa-fw
+                                        i.fa.fa-square.fa-stack-2x
+                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                                      i.fa.fa-square-o.fa-2x
+                                span.input-group.input-group-lg
+                                  input.form-control.width_1(type='number', name='width_1', min=50 ,max=300, placeholder=120)
+                                span.input-group-addon
+                                  | mm
+                          //- end_left_TriplePane Width }}}
+                          //- middle_TriplePane Width {{{
+                          .panel.panel-default.measurements_panel
+                            .panel-heading
+                              h3.winMeasureLabel
+                                | MIDDLE_PANE_WIDTH
+                            .panel-body
+                              .input-group
+                                span.input-group-addon
+                                  .fa-winPane2
+                                    span.fa.fa-stack.fa-fw
+                                      span.fa.fa-stack.fa-fw
+                                        i.fa.fa-square.fa-stack-2x
+                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                                      i.fa.fa-square-o.fa-2x
+                                span.input-group.input-group-lg
+                                  input.form-control.width_1(type='number', name='width_1', min=50 ,max=300, placeholder=120)
+                                span.input-group-addon
+                                  | mm
+                          //- end_middle_TriplePane Width }}}
+                          //- right__TriplePane Width {{{
+                          .panel.panel-default.measurements_panel
+                            .panel-heading
+                              h3.winMeasureLabel
+                                | RIGHT_PANE_WIDTH
+                            
+                            .panel-body
+                              .input-group
+                                span.input-group-addon
+                                  .fa-winPane2
+                                    span.fa.fa-stack.fa-fw
+                                      i.fa.fa-square-o.fa-2x
+                                      span.fa.fa-stack.fa-fw
+                                        i.fa.fa-square.fa-stack-2x
+                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                                span.input-group.input-group-lg
+                                  input.form-control.width_2(type='number', name='width_2', min=50 ,max=300, placeholder=120)
+                                span.input-group-addon
+                                  | mm
+                          //- end_right_TriplePane Width }}}
+                      //- end_TriplePane Width }}}
+                //- end_Width}}}
+              //- end_Meaure_Panes }}}
+              //- PriceTable {{{
+              .row
+                //- Heading PriceTable {{{
+                .col-xs-12
+                  br
+                  br
+                  h3.white-text
+                    | Выберите тип рулонных штор и категорию ткани 
+                //- end_Heading PriceTable }}}
+                //- Column_Lite {{{
+                .col-xs-12.col-sm-6.col-md-3 
+                  .panel.panel-default
+                    .panel-body
+                      h6
+                        span.label.label-pill.label-success.center-block
+                          | Лайт
+                      span
+                        img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                      br
+                      
+                      .panel.panel-primary.theFirstPriceTag
+                        .panel-heading
+                          .priceTagLabel
+                            | Категория 1
+                        .panel-body
+                            .row
+                              h.col-xs-6.thePriceItself#Price_1_1_1
+                                
+                              .col-xs-6.showFabricLink
+                                a(alt="", href="")
+                                  p
+                                    | Показать ткани
+                      
+                      
+                      .panel.panel-default.theSecondPriceTag
+                        .panel-heading
+                          .priceTagLabel
+                            | Категория 2
+                        .panel-body
+                            .row
+                              h.col-xs-6.thePriceItself#Price_1_1_2
+                                  
+                              .col-xs-6.showFabricLink
+                                a(alt="", href="")
+                                  p
+                                    | Показать ткани
+                      
+                      
+                      .panel.panel-default.theThirdPriceTag
+                        .panel-heading
+                          .priceTagLabel
+                            | Ткань "Зебра"
+                        .panel-body
+                            .row
+                              h.col-xs-6.thePriceItself#Price_1_1_3
+                                  
+                              .col-xs-6.showFabricLink
+                                a(alt="", href="")
+                                  p
+                                    | Показать ткани
+                      
+                      
+
+                //- end_Column_Lite }}}
+                //- Column_Mini {{{
+                .col-xs-12.col-sm-6.col-md-3
+                  .panel.panel-default
+                    .panel-body.center-block
+                      h6
+                        span.label.label-pill.label-success.center-block
+                          | Мини
+                      span
+                        img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                      br
+                      
+                      .panel.panel-primary.theFirstPriceTag
+                        .panel-heading
+                          .priceTagLabel
+                            | Категория 1
+                        .panel-body.container-fluid
+                          .row
+                            .col-xs-6
+                              h.thePriceItself#Price_1_2_1
+                            .col-xs-6
+                              .showFabricLink
+                                a(alt="", href="")
+                                  p
+                                    | Показать ткани
+                      
+                      
+                      .panel.panel-default.theSecondPriceTag
+                        .panel-heading
+                          .priceTagLabel
+                            | Категория 2
+                        .panel-body.container-fluid
+                          .row
+                            .col-xs-6
+                              h.thePriceItself#Price_1_2_2
+                            .col-xs-6
+                              .showFabricLink
+                                a(alt="", href="")
+                                  p
+                                    | Показать ткани
+                      
+                      
+                      .panel.panel-default.theThirdPriceTag
+                        .panel-heading
+                          .priceTagLabel
+                            | Ткань "Зебра"
+                        .panel-body.container-fluid
+                          .row
+                            .col-xs-6
+                              h.thePriceItself#Price_1_2_3
+                            .col-xs-6
+                              .showFabricLink
+                                a(alt="", href="")
+                                  p
+                                    | Показать ткани
+                      
+                      
+
+                //- end_Column_Mini }}}
+                //- Column_Uni {{{
+                .col-xs-12.col-sm-6.col-md-3
+                  .panel.panel-default
+                    .panel-body
+                      h6
+                        span.label.label-pill.label-success.center-block
+                          | Уни
+                      span
+                        img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                      br
+                      
+                      .panel.panel-primary.theFirstPriceTag
+                        .panel-heading
+                          .priceTagLabel
+                            | Категория 1
+                        .panel-body.container-fluid
+                          .row
+                            .col-xs-6
+                              h.thePriceItself#Price_1_3_1
+                                  
+                            .col-xs-6
+                              .showFabricLink
+                                a(alt="", href="")
+                                  p
+                                    | Показать ткани
+                      
+                      
+                      .panel.panel-default.theSecondPriceTag
+                        .panel-heading
+                          .priceTagLabel
+                            | Категория 2
+                        .panel-body.container-fluid
+                          .row
+                            .col-xs-6
+                              h.thePriceItself#Price_1_3_2
+                                  
+                            .col-xs-6
+                              .showFabricLink
+                                a(alt="", href="")
+                                  p
+                                    | Показать ткани
+                      
+                      
+                      .panel.panel-default.theThirdPriceTag
+                        .panel-heading
+                          .priceTagLabel
+                            | Ткань "Зебра"
+                        .panel-body.container-fluid
+                          .row
+                            .col-xs-6
+                              h.thePriceItself#Price_1_3_3
+                                  
+                            .col-xs-6
+                              .showFabricLink
+                                a(alt="", href="")
+                                  p
+                                    | Показать ткани
+                      
+                      
+
+                //- end_Column_Uni }}}
+                //- Column_Lux {{{
+                .col-xs-12.col-sm-6.col-md-3
+                  .panel.panel-default
+                    .panel-body
+                      h6
+                        span.label.label-pill.label-success.center-block
+                          | Люкс
+                      span
+                        img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                      br
+                      
+                      .panel.panel-primary.theFirstPriceTag
+                        .panel-heading
+                          .priceTagLabel
+                            | Категория 1
+                        .panel-body.container-fluid
+                          .row
+                            .col-xs-6
+                              h.thePriceItself#Price_1_4_1
+                                | -  
+                            .col-xs-6
+                              .showFabricLink
+                                a(alt="", href="")
+                                  p
+                                    | Показать ткани
+                      
+                      
+                      .panel.panel-default.theSecondPriceTag
+                        .panel-heading
+                          .priceTagLabel
+                            | Категория 2
+                        .panel-body.container-fluid
+                          .row
+                            .col-xs-6
+                              h.thePriceItself#Price_1_4_2
+                                | -
+                            .col-xs-6
+                              .showFabricLink
+                                a(alt="", href="")
+                                  p
+                                    | Показать ткани
+                      
+                      
+                      .panel.panel-default.theThirdPriceTag
+                        .panel-heading
+                          .priceTagLabel
+                            | Ткань "Зебра"
+                        .panel-body.container-fluid
+                          .row
+                            .col-xs-6
+                              h.thePriceItself#Price_1_4_3
+                                | -
+                            .col-xs-6
+                              .showFabricLink
+                                a(alt="", href="")
+                                  p
+                                    | Показать ткани
+                //- end_Column_Lux }}}
+              //- end_PriceTable }}}
+          section#infos.infos
             // Types {{{
             .container
               .section-header
+                // Header Types {{{
                 h2.dark-text
                   | Виды систем
                 hr.primary
                 h6 Выберите, какая рулонная штора Вам подходит
+                // end_Header Types }}}
               .row
-                .col-lg-3.col-md-6.col-sm-12.focus-box(data-scrollreveal='enter right after 0.15s over 1s')
+                // Info_Lite Types {{{
+                .col-lg-3.col-md-6.col-sm-12.infos-box(data-scrollreveal='enter right after 0.15s over 1s')
                   .service-icon
                     img(alt='Lite', url='./images/types1.png')
-                  h5.red-border-bottom Лайт
+                  h5.red-border-bottom
+                    | Лайт
                   p.sizelimitations
                     | Ширина: 40 - 180 см
                     br
@@ -1071,10 +790,13 @@ html(lang='ru-RU')
                       summary Показать описание...
                       | Недорогой вариант рулонных штор с пластиковым механизом и отвесом ПВХ, зашитым в ткань. В комплекте роллторы подъемный механизм, заглушки, кронштейны и зацепы на пластиковое окно. Длина регулируется с помощью цепи управления.  Управление — справа. Эти рулонные шторы можно 
                       a(href='http://profkarniz.com/shop/rulonnye-shtory', target='_blank') купить онлайн без замеров
-                .col-lg-3.col-md-6.col-sm-12.focus-box(data-scrollreveal='enter right after 0.15s over 1s')
+                // end_Info_Lite Types }}}
+                // Info_Mini Types {{{
+                .col-lg-3.col-md-6.col-sm-12.infos-box(data-scrollreveal='enter right after 0.15s over 1s')
                   .service-icon
                     img(alt='Lite', url='./images/types2.png')
-                  h5.red-border-bottom Мини
+                  h5.red-border-bottom
+                    | Мини
                   p.sizelimitations
                     | Ширина: 40 - 140 см
                     br
@@ -1082,10 +804,13 @@ html(lang='ru-RU')
                     details
                       summary Показать описание...
                       | Роллшторы системы МИНИ в большинстве случаев крепятся на створку окна. Сверху механизм с трубой, на которую наматывается ткань, крепится на пластиковое окно с помощью специального двухстороннего скотча или пластмасовых кронштейнов. Внизу шторы — металлический отвес. Чтобы рулонная штора плотно прилегала к окну, используют магниты или леску.
-                .col-lg-3.col-md-6.col-sm-12.focus-box(data-scrollreveal='enter left after 0.15s over 1s')
+                // end_Info_Mini Types }}}
+                // Info_Uni Types {{{
+                .col-lg-3.col-md-6.col-sm-12.infos-box(data-scrollreveal='enter left after 0.15s over 1s')
                   .service-icon
                     img(alt='Lite', url='./images/types3.png')
-                  h5.red-border-bottom Уни 
+                  h5.red-border-bottom
+                    | Уни 
                   p.sizelimitations
                     | Ширина: 40 - 140 см 
                     br
@@ -1093,10 +818,13 @@ html(lang='ru-RU')
                     details
                       summary Показать описание...
                       | Эта система также называется кассетной. Сверху на рулон крепится специальный металлический короб, который защищает ткань от пыли. Металлические направляющие плотно прилягают к окну, позволяя полностью защититься от солнца.  Выделяют две системы: Уни-1 и Уни-2 (в Уни-2 высота направляющих и короба больше).
-                .col-lg-3.col-md-6.col-sm-12.focus-box(data-scrollreveal='enter left after 0.15s over 1s')
+                // end_Info_Uni Types }}}
+                // Info_Lux Types {{{
+                .col-lg-3.col-md-6.col-sm-12.infos-box(data-scrollreveal='enter left after 0.15s over 1s')
                   .service-icon
                     img(alt='Lite', url='./images/types4.png')
-                  h5.red-border-bottom ЛЮКС
+                  h5.red-border-bottom
+                    | Люкс
                   p.sizelimitations
                     | Ширина: 50 - 300 см 
                     br
@@ -1106,7 +834,8 @@ html(lang='ru-RU')
                       | Эта система похожа на Мини, но ширина и длина Люкса может достигать 3-х метров. Такие рулонные шторы иногда еще называются классическими. Обычно крепятся на проем или в проем окна. Кроме того, на эту систему возможно установить моторизацию (электрический привод с пультом), позволяя автоматически регулировать длину шторы на окне.
                 style.
                   background:url(./images/types4.png) no-repeat center;
-            // }}}
+                // end_Info_Lux Types }}}
+            // end_Types }}}
           section#team.our-team
             // {{{
             .container
@@ -1232,7 +961,8 @@ html(lang='ru-RU')
               .section-header
                 h2.white-text
                   | Отзывы о нашей работе
-                h6.white-text Из Яндекс Маркета
+                h6.white-text
+                  | Из Яндекс Маркета
               .row(data-scrollreveal='enter right after 0s over 1s')
                 .col-md-12
                   #client-feedbacks.owl-carousel.owl-theme
@@ -1339,9 +1069,9 @@ html(lang='ru-RU')
       link(href='./css/outline.css', type='text/css', media='all')
       script(src='js/jquery.min.js')
       script(src='js/bootstrap.min.js')
-      script(src='js/parallax.js?ver=v1')
       script(src='js/zerif.js?ver=20120206')
       script(src='js/scripts.js')
+      script(src='js/reklk.js')
       // .zerif-mobile-bg-helper-content
       // .zerif-mobile-bg-helper-wrap-all
       // }}}

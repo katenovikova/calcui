@@ -12,26 +12,14 @@ function hideEmAll() {
 
 function clearMeasurements() {
 
-  $("#height1_1"  )[0].value = 0;
-  $("#width1_1"  )[0].value = 0;
+  $(".height1")[0].value = 0;
+  $(".width1")[0].value = 0;
 
-  $("#height1_2_1")[0].value = 0;
-  $("#height1_2_2")[0].value = 0;
-  $("#width1_2_1")[0].value = 0;
-  $("#width1_2_2")[0].value = 0;
+  $(".height2")[0].value = 0;
+  $(".width2")[0].value = 0;
 
-  $("#height1_3_1")[0].value = 0;
-  $("#height1_3_2")[0].value = 0;
-  $("#height1_3_3")[0].value = 0;
-  $("#width1_3_1")[0].value = 0;
-  $("#width1_3_2")[0].value = 0;
-  $("#width1_3_3")[0].value = 0;
-
-  $("#height2")[0].value = 0;
-  $("#width2" )[0].value = 0;
-
-  $("#height3")[0].value = 0;
-  $("#width3" )[0].value = 0;
+  $(".height3")[0].value = 0;
+  $(".width3")[0].value = 0;
 };
 
 
@@ -52,7 +40,6 @@ function iPrintPrices(indicesAll) {
   var Puni = $uniPs[indexUni];
   var Plux = $luxPs[indexLux];
 
-  document.getElementById("Price_1_1_1").innerHTML = Plite[0];
   document.getElementById("Price_1_1_2").innerHTML = Plite[1];
   document.getElementById("Price_1_1_3").innerHTML = Plite[2];
   document.getElementById("Price_1_2_1").innerHTML = Pmini[0];
