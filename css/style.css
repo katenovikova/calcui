@@ -335,9 +335,6 @@ h6 {
 .red-btn {
 	background: #e96656;
 }
-.green-transp-btn {
-	background: rgba(55, 250, 100, .4);
-}
 .green-btn {
 	background: #5dc064;
 }
@@ -459,6 +456,9 @@ thead th{
 .green-bg {
 	background: #5dc064;
 }
+.green-transp-bg {
+	background: rgba(55, 250, 100, .4);
+}
 .blue-bg {
 	background: rgba(52, 210, 147, 1);
 }
@@ -481,6 +481,10 @@ thead th{
 .blue-text {
 	color: #3ab0e2;
 }
+.text-mutedish {
+	color: #cccccc;
+}
+.dark-text {
 .yellow-text {
 	color: #f7d861;
 }
@@ -2063,12 +2067,11 @@ video::-webkit-media-controls {
   margin-top: 5px;
   margin-left: 5px;
   margin-right: 5px;
-  margin-bottom: 100px
 }
 .about-us .container > .advantages-list > .row{
   overflow: hidden;
 }
-.about-us .container > .advantages-list > hr{
+.about-us .container > .advantages-list > .row > * > hr.primary {
 	margin-top: -4px;
   vertical-align: baseline;
   height: 3px;
@@ -2079,7 +2082,7 @@ video::-webkit-media-controls {
 	padding-bottom: 20px;
 	padding-top: 20px;
 }
-.about-us .container > .advantages-list > * > * > i.fa.fa-4x {
+.about-us .container > .advantages-list > .row > * > i.fa.fa-4x {
   margin-top: 15px;
 }
 .about-us .big-intro {
@@ -2098,6 +2101,7 @@ video::-webkit-media-controls {
 .about-us .column {
 	margin-bottom: 40px;
 }
+-
 
 /*--SKILLS --*/
 /*//*/
@@ -2152,13 +2156,18 @@ video::-webkit-media-controls {
 
 /*--OUR CLIENTS --*/
 .our-clients {
-	padding-bottom: 120px;
+	padding-bottom: 20px;
 	padding-top: 0px;
-	background: rgba(23,23,23,.9);
+	background: rgba(23,23,23,.85);
+}
+.our-clients > .container > .row {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background: #232323
 }
 .our-clients h3 {
-	color: #aaaaaa;
-	padding: 10px;
+	padding-top: : 5px;
+	padding-top: : 5px;
 }
 .our-clients h2 {
 	font-weight: 700;
@@ -3546,7 +3555,10 @@ article .posted-on a:hover{
     z-index: 1;
 }
 
-
+#calculator .white-text {
+  color: #fff;
+}
+#MountOptsSection
 
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
@@ -4278,10 +4290,6 @@ ul.nav > li.current_page_item > a:before, .nav > li.current-menu-item a:before {
 
 	#contact .h6 .white-text {
     font-size: 24px !important;
-  }
-
-  .darkish-bg {
-    background-color: rgba(0,0,0,50)
   }
 
 
