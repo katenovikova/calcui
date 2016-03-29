@@ -202,8 +202,8 @@ html(lang='ru-RU')
                   //- end_Client_4 }}}
             //- end_Clients }}}
 
-          section#calculator.packages
-            // {{{
+          section#calculator.calculator
+            //- Calculator {{{
             .container-fluid.green-transp-bg.center-block
               .row
                 .col-xs-12.section-header.white-text
@@ -744,6 +744,7 @@ html(lang='ru-RU')
                                     | Показать ткани
                 //- end_Column_Lux }}}
               //- end_PriceTable }}}
+            //- end_Calculator }}}
           section#infos.infos
             // Types {{{
             .container
@@ -963,7 +964,7 @@ html(lang='ru-RU')
               // end_Pictures Portfolio }}}
             // end_Portfolio }}}
           section#pricingtable.packages
-            // {{{
+            //- PricingTables {{{
             .container
               .section-header
                 h2.white-text
@@ -1000,18 +1001,20 @@ html(lang='ru-RU')
                         li Мини с фиксацией - 500 руб./изделие
                         li Люкс, Зебра - 500 руб.
                       a.btn.btn-primary.custom-button(href='http://profkarniz.com/index/0-5', style='background:#43db5a') Заказать
-              // }}}
+            //- end_PricingTables }}}
           section#ribbon_right.purchase-now
-            // {{{
+            //- Purchase_Ribbon {{{
             .container
               .row
-                .col-md-9.zerif-rtl-ribbon-text(data-scrollreveal='enter left after 0s over 1s')
-                  h3.white-text Купить готовые рулонные шторы онлайн от 499 руб. 
+                .col-md-2
+                .col-md-7.zerif-rtl-ribbon-text(data-scrollreveal='enter left after 0s over 1s')
+                  h3.black-text
+                    |       Выбрать готовые рулонные шторы онлайн от 499 руб. 
                 .col-md-3.zerif-rtl-ribbon-btn(data-scrollreveal='enter right after 0s over 1s')
                   a.btn.btn-primary.custom-button.red-btn(href='http://profkarniz.com/shop/rulonnye-shtory') Купить онлайн
-            // }}}
+            //- end_Purchase_Ribbon }}}
           section#testimonials.testimonial
-            // {{{
+            //- Testimonials {{{
             .container
               .section-header
                 h2.white-text
@@ -1064,7 +1067,7 @@ html(lang='ru-RU')
                             a.client-name(target='_blank') Александр
                             .client-company
                           .client-image.hidden-xs
-            // }}}
+            //- end_Testimonials }}}
           section#contact.contact-us
             // Call us {{{
             .container.color-overlay
@@ -1076,7 +1079,7 @@ html(lang='ru-RU')
                 br
                 h6(style='font-size:38px')
                   i.fa.fa-phone.green-text
-                  |    +7 960-524-18-78
+                  |    +7 (960) 524-18-78
                   br
                   i.fa.fa-phone.green-text
                   |    +7 (908) 278-19-07
@@ -1085,7 +1088,7 @@ html(lang='ru-RU')
           section#ribbon_bottom.separator-one
             // Or rder consultation {{{
             .color-overlay
-              h3.container.text(data-scrollreveal='enter left after 0s over 1s')
+              h3.container(data-scrollreveal='enter left after 0s over 1s')
                 | Или оставьте заявку на консультацию 
                 | (она ни к чему Вас не обязывает)
             // }}}
