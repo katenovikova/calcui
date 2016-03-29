@@ -288,7 +288,7 @@ html(lang='ru-RU')
                             .col-xs-3
                               .btn.btn-default.btn-block.btn-lg.text-center#win4b
                                 span.label.label-success.calcuLabel
-                                  | Четыре или больше 
+                                  | Четыре 
                                 span  
                                   img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
                                   .sr-only
@@ -296,12 +296,12 @@ html(lang='ru-RU')
                         br
                         br
                         br
-                        //- }}}
+  az                      //- }}}
                       #mountTwo.tab-pane(role='tabpanel')
                         hr.white-text
                       #mountThree.tab-pane(role='tabpanel')
                         hr.white-text
-              //- end_Mount_Opts }}}
+za              //- end_Mount_Opts }}}
               //- Measure_Panes {{{
               .row
                 //- Visuals Measure_Panes {{{
@@ -366,42 +366,108 @@ html(lang='ru-RU')
                         p.clarifyingReminder.center-block
                     //- end_Picture_Text Width }}}
                 .col-xs-12.col-sm-6
-                  .measurements_area
+                  .measurements_area.white-bg
                     //- Width_1 {{{
                     .panel.panel-default.measurements_panel
                       .showOnMnt2.showOnMnt3.panel-heading
-                          h6 WBH
-                      .showOn_SinglePane.panel-heading
-                          h6 MntOne_Pane_1_of_1_heading
-                      .showOn_DoublePane.panel-heading
-                          h6 MntOne_Pane_1_of_2_heading
-                      .showOn_TriplePane.panel-heading
-                          h6 MntOne_Pane_1_of_3_heading
+                          h6 Ширина проема
+                      .showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.panel-heading
+                          h6 Ширина левой створки
                       .showOn_QuadroPane.panel-heading
-                          h6 MntOne_Pane_1_of_4_heading
+                          h6 Ширина первой створки слева
                       .panel-body
                         .container-fluid
                           .row
-                            .col-xs-2
-                              TODO 
-                            .col-xs-2
-                              TODO
-                            .col-xs-2
-                              TODO
-                            .col-xs-6
+                            .col-xs-1
+                              span.showOnMnt2.showOn_QuadroPane.FILLED
+                            .col-xs-1
+                              span.showOnMnt2.showOnMnt3.showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.FILLED
+                              span.showOnMnt2.showOn_QuadroPane.EMPTY
+                            .col-xs-1
+                              span.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.EMPTY
+
+                            .col-xs-4
+                              span.showOn_TriplePane.showOn_QuadroPane.EMPTY
                               .input-group
-                                input.form-control#width_1.width_1(type='number', min=400,max=3000,aria-describedby='width_1_units_addon')
+                                input.form-control#width_1.width_1(type='number',name='width_1', min=400,max=3000,aria-describedby='width_1_units_addon')
                                 span.input-group-addon#width_1_units_addon
                                   | мм
                     //- end_Width_1 }}}
                     //- Width_2 {{{
                     .panel.panel-default.measurements_panel
+                      .showOn_DoublePane.panel-heading
+                          h6 Ширина правой створки
+                      .showOn_TriplePane.panel-heading
+                          h6 Ширина центральной створки
+                      .showOn_QuadroPane.panel-heading
+                          h6 Ширина второй створки слева
+                      .panel-body
+                        .container-fluid
+                          .row
+                            .col-xs-2
+                              span.showOnMnt2.showOn_QuadroPane.EMPTY
+                            .col-xs-2
+                              span.showOnMnt2.showOn_QuadroPane..FILLED
+                              span.showOnMnt2.showOn_TriplePane.EMPTY
+                            .col-xs-2
+                              span.showOnMnt2.showOn_QuadroPane.EMPTY
+                            .col-xs-2
+                              span.showOnMnt2.showOn_QuadroPane.showOn_TriplePane.EMPTY
+                              span.showOnMnt2.showOn_QuadroPane.EMPTY
+
+                            .col-xs-4
+                              .input-group
+                                input.form-control#width_2.width_2(type='number',name='width_2', min=400,max=3000,aria-describedby='width_2_units_addon')
+                                span.input-group-addon#width_2_units_addon
+                                  | мм
                     //- end_Width_2 }}}
                     //- Width_3 {{{
                     .panel.panel-default.measurements_panel
+                      .showOn_TriplePane.panel-heading
+                          h6 Ширина правой створки
+                      .showOn_QuadroPane.panel-heading
+                          h6 Ширина второй створки справа
+                      .panel-body
+                        .container-fluid
+                          .row
+                            .col-xs-2
+                              span.showOnMnt2.showOn_QuadroPane.EMPTY
+                            .col-xs-2
+                              span.showOnMnt2.showOn_TriplePane.showOn_QuadroPane.EMPTY
+                            .col-xs-2
+                              span.showOnMnt2.showOn_TriplePane.EMPTY
+                              span.showOnMnt2.showOn_QuadroPane.FILLED
+                            .col-xs-2
+                              span.showOnMnt2.showOn_TriplePane.FILLED
+                              span.showOnMnt2.showOn_QuadroPane.EMPTY
+
+                            .col-xs-4
+                              .input-group
+                                input.form-control#width_3.width_3(type='number',name='width_3', min=400,max=3000,aria-describedby='width_3_units_addon')
+                                span.input-group-addon#width_3_units_addon
+                                  | мм
                     //- end_Width_3 }}}
                     //- Width_4 {{{
                     .panel.panel-default.measurements_panel
+                      .showOn_QuadroPane.panel-heading
+                          h6 Ширина первой створки справа
+                      .panel-body
+                        .container-fluid
+                          .row
+                            .col-xs-2
+                              span.showOnMnt2.showOn_QuadroPane.EMPTY
+                            .col-xs-2
+                              span.showOnMnt2.showOn_QuadroPane.EMPTY
+                            .col-xs-2
+                              span.showOnMnt2.showOn_QuadroPane.EMPTY
+                            .col-xs-2
+                              span.showOnMnt2.showOn_QuadroPane.FILLED
+
+                            .col-xs-4
+                              .input-group
+                                input.form-control#width_4.width_4(type='number',name='width_4', min=400,max=3000,aria-describedby='width_4_units_addon')
+                                span.input-group-addon#width_4_units_addon
+                                  | мм
                     //- end_Width_4 }}}
                     
 
@@ -1030,7 +1096,7 @@ html(lang='ru-RU')
                   |  ИП Новиков Алексей Олегович
       
           // }}}
-      // Links after page {{{
+        // Links after page {{{
       link(href='./css/outline.css', type='text/css', media='all')
       script(src='js/jquery.min.js')
       script(src='js/bootstrap.min.js')
