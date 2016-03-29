@@ -1529,11 +1529,11 @@ object {
 	margin-left: 0;
 }
 .navbar {
-	background: rgba(200,200,200,.6);
+	background: white;
+  box-shadow: 0 4px 9px rgba(20,200,20,.9);
 	border: 0;
 	border-radius: 0 !important;
 	text-align: left;
-  box-shadow: 0 4px 6px rgba(200,200,200,.7);
 }
 #main-nav {
 	position: fixed;
