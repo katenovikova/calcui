@@ -478,8 +478,24 @@ thead th{
 .green-text {
 	color: #5dc064;
 }
-.blue-text {
-	color: #3ab0e2;
+.white-glow-panel {
+  box-shadow: 0 0 7px rgba(255,255,255,.2);
+  padding: 0 !important;
+}
+.dark-shadow {
+  text-shadow:
+   0 0px 16px #5dc064,
+   0 0px 16px rgba(0,0,0,.5);
+
+}
+.white-glow {
+  text-shadow: 0 0 3px rgba(255,255,255,.5);
+}
+.green-glow {
+  text-shadow: 0 0 3px rgba(55, 255, 55, .5);
+}
+.red-glow {
+  text-shadow: 0 0 3px rgba(255, 55, 55, .5);
 }
 .black-text {
 	color: rgba(0,0,0,.75);
@@ -1513,10 +1529,11 @@ object {
 	margin-left: 0;
 }
 .navbar {
-	background: #FFF;
+	background: rgba(200,200,200,.6);
 	border: 0;
 	border-radius: 0 !important;
 	text-align: left;
+  box-shadow: 0 4px 6px rgba(200,200,200,.7);
 }
 #main-nav {
 	position: fixed;
@@ -2066,26 +2083,36 @@ video::-webkit-media-controls {
 .about-us .container > .advantages-list > * > .col-md-4 {
 	background: #232323;
 	color: #FFF;
-  margin-top: 5px;
+  margin-top: 25px;
   margin-left: 5px;
   margin-right: 5px;
+}
+.about-us .section-header {
+	padding-bottom: 5px;
 }
 .about-us .container > .advantages-list > .row{
   overflow: hidden;
 }
-.about-us .container > .advantages-list > .row > * > hr.primary {
-	margin-top: -4px;
-  vertical-align: baseline;
-  height: 3px;
+.about-us .container > .advantages-list > .row > * > i.fa.fa-4x {
+	margin-top: 15px;
+}
+.about-us .container > .advantages-list > .row > * > hr.red-bg {
+  box-shadow: 0 0 4px rgba(255,55,55,.5);
+  height: 2px;
+}
+.about-us .container > .advantages-list > .row > * > hr.green-bg {
+  box-shadow: 0 0 4px rgba(55,255,55,.5);
+  height: 2px;
+}
+.about-us .container > .advantages-list > * > .col-md-4 > * {
+  margin-left: 17px !important;
+  margin-right: 17px !important;
 }
 .about-us {
 	background: rgba(23,23,23,.85);
 	color: #FFF;
 	padding-bottom: 20px;
 	padding-top: 20px;
-}
-.about-us .container > .advantages-list > .row > * > i.fa.fa-4x {
-  margin-top: 15px;
 }
 .about-us .big-intro {
 	text-align: right;
@@ -2222,17 +2249,7 @@ video::-webkit-media-controls {
 }
 .client-list div img {
 	max-width: 130px;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-	filter: alpha(opacity=80);
-	opacity: 0.8;
-	-webkit-transition: all ease .55s;
-	transition: all ease .55s;
 	padding-bottom: 15px;
-}
-.client-list div img:hover {
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	opacity: 1;
 }
 .client-list div a:last-child {
 	margin-right: 0;
