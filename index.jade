@@ -367,138 +367,46 @@ html(lang='ru-RU')
                     //- end_Picture_Text Width }}}
                 .col-xs-12.col-sm-6
                   .measurements_area
-                    .showOn_SinglePane
-                      //- SinglePane Width {{{
-                      .panel.panel-default.measurements_panel
-                        .panel-heading
-                          .showOnMnt1
-                            h3.winMeasureLabel
-                              | Ширина окна:
-                          .showOnMnt2.showOnMnt3
-                            h3.winMeasureLabel
-                              | Ширина проема:
-                        .panel-body
-                          .input-group
-                            span.input-group-addon
-                              .fa-winPane1
-                                span.fa.fa-stack.fa-fw
-                                  i.fa.fa-square.fa-stack-2x
-                                  i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                            span.input-group.input-group-lg
-                              input.form-control.width_1(type='number', name='width_1', min=50 ,max=300, placeholder=120)
-                            span.input-group-addon
-                              | mm
-                      //- end_SinglePane Width }}}
-                    .showOn_DoublePane
-                      //- DoublePane Width {{{
-                      .panel.panel-default.multipannel_wrapper_pannel
-                        .panel-body
-                          //- left_DoublePane Width {{{
-                          .panel.panel-default.measurements_panel
-                            .panel-heading
-                              h3.winMeasureLabel
-                                | LEFT_PANE_WIDTH
-                            .panel-body
+                    //- Width_1 {{{
+                    .panel.panel-default.measurements_panel
+                      .showOnMnt2.showOnMnt3.panel-heading
+                          h6 WBH
+                      .showOn_SinglePane.panel-heading
+                          h6 MntOne_Pane_1_of_1_heading
+                      .showOn_DoublePane.panel-heading
+                          h6 MntOne_Pane_1_of_2_heading
+                      .showOn_TriplePane.panel-heading
+                          h6 MntOne_Pane_1_of_3_heading
+                      .showOn_QuadroPane.panel-heading
+                          h6 MntOne_Pane_1_of_4_heading
+                      .panel-body
+                        .container-fluid
+                          .row
+                            .col-xs-2
+                              TODO 
+                            .col-xs-2
+                              TODO
+                            .col-xs-2
+                              TODO
+                            .col-xs-6
                               .input-group
-                                span.input-group-addon
-                                  .fa-winPane2
-                                    span.fa.fa-stack.fa-fw
-                                      span.fa.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                      i.fa.fa-square-o.fa-2x
-                                span.input-group.input-group-lg
-                                  input.form-control.width_1(type='number', name='width_1', min=50 ,max=300, placeholder=120)
-                                span.input-group-addon
-                                  | mm
-                          //- end_left_DoublePane Width }}}
-                          //- right_DoublePane Width {{{
-                          .panel.panel-default.measurements_panel
-                            .panel-heading
-                              h3.winMeasureLabel
-                                | RIGHT_PANE_WIDTH
-                            
-                            .panel-body
-                              .input-group
-                                span.input-group-addon
-                                  .fa-winPane2
-                                    span.fa.fa-stack.fa-fw
-                                      i.fa.fa-square-o.fa-2x
-                                      span.fa.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                span.input-group.input-group-lg
-                                  input.form-control.width_2(type='number', name='width_2', min=50 ,max=300, placeholder=120)
-                                span.input-group-addon
-                                  | mm
-                          //- end_right_DoublePane Width }}}
-                      //- end_DoublePane Width }}}
-                    .showOn_TriplePane
-                      //- TriplePane Width {{{
-                      .panel.panel-default.multipannel_wrapper_pannel
-                        .panel-body
-                          //- left___TriplePane Width {{{
-                          .panel.panel-default.measurements_panel
-                            .panel-heading
-                              h3.winMeasureLabel
-                                | LEFT_PANE_WIDTH
-                            .panel-body
-                              .input-group
-                                span.input-group-addon
-                                  .fa-winPane3
-                                    span.fa.fa-stack.fa-fw
-                                      span.fa.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                      i.fa.fa-square-o.fa-2x
-                                      i.fa.fa-square-o.fa-2x
-                                span.input-group.input-group-lg
-                                  input.form-control.width_1(type='number', name='width_1', min=50 ,max=300, placeholder=120)
-                                span.input-group-addon
-                                  | mm
-                          //- end_left_TriplePane Width }}}
-                          //- middle_TriplePane Width {{{
-                          .panel.panel-default.measurements_panel
-                            .panel-heading
-                              h3.winMeasureLabel
-                                | MIDDLE_PANE_WIDTH
-                            .panel-body
-                              .input-group
-                                span.input-group-addon
-                                  .fa-winPane2
-                                    span.fa.fa-stack.fa-fw
-                                      i.fa.fa-square-o.fa-2x
-                                      span.fa.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                      i.fa.fa-square-o.fa-2x
-                                span.input-group.input-group-lg
-                                  input.form-control.width_2(type='number', name='width_2', min=50 ,max=300, placeholder=120)
-                                span.input-group-addon
-                                  | mm
-                          //- end_middle_TriplePane Width }}}
-                          //- right__TriplePane Width {{{
-                          .panel.panel-default.measurements_panel
-                            .panel-heading
-                              h3.winMeasureLabel
-                                | RIGHT_PANE_WIDTH
-                            
-                            .panel-body
-                              .input-group
-                                span.input-group-addon
-                                  .fa-winPane3
-                                    span.fa.fa-stack.fa-fw
-                                      i.fa.fa-square-o.fa-2x
-                                      i.fa.fa-square-o.fa-2x
-                                      span.fa.fa-stack.fa-fw
-                                        i.fa.fa-square.fa-stack-2x
-                                        i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                                span.input-group.input-group-lg
-                                  input.form-control.width_3(type='number', name='width_3', min=50 ,max=300, placeholder=120)
-                                span.input-group-addon
-                                  | mm
-                          //- end_right_TriplePane Width }}}
-                      //- end_TriplePane Width }}}
+                                input.form-control#width_1.width_1(type='number', min=400,max=3000,aria-describedby='width_1_units_addon')
+                                span.input-group-addon#width_1_units_addon
+                                  | мм
+                    //- end_Width_1 }}}
+                    //- Width_2 {{{
+                    .panel.panel-default.measurements_panel
+                    //- end_Width_2 }}}
+                    //- Width_3 {{{
+                    .panel.panel-default.measurements_panel
+                    //- end_Width_3 }}}
+                    //- Width_4 {{{
+                    .panel.panel-default.measurements_panel
+                    //- end_Width_4 }}}
+                    
+
+
+
                 //- end_Width}}}
               //- end_Meaure_Panes }}}
               //- PriceTable {{{

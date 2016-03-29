@@ -2614,7 +2614,20 @@ video::-webkit-media-controls {
 /*/
 
 
+.fa-winPane1 {
+  min-width: 30%;
+  transform: scale(1,1);
+}
+.fa-winPane1 {
+  min-width: 30%;
+  transform: scale(1,1);
+}
+.fa-winPane1 {
+  min-width: 30%;
+  transform: scale(1,1);
+}
 
+/*/
 .fa-winPane1 {
   transform: scale(1,1);
 }
@@ -2624,6 +2637,7 @@ video::-webkit-media-controls {
 .fa-winPane3 {
   transform: scale(.66,1);
 }
+/*/
 .winMeasureLabel {
   font-size: 16px;
 }
