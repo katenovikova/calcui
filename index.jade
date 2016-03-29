@@ -200,14 +200,15 @@ html(lang='ru-RU')
             //- end_Clients }}}
 
             //- Calculator {{{
-          .container-fluid.green-transp-bg.center-block
-            section#calculator.calculator.row
+          section#calculator.calculator
+            .container-fluid.green-transp-bg.center-block
+              .row
                 .col-xs-12.section-header.white-text
                   h2.white-text.dark-shadow
                     | Калькулятор
                   br
                   br
-
+          section#MountOptsSection.calculator
             .container
               //- Mount_Opts {{{
               .row#MountOptsSection
@@ -320,7 +321,7 @@ html(lang='ru-RU')
               .row
                 //- Height {{{
                 .col-xs-12.col-sm-6
-                  howto_advise.center-block
+                  .howto_advise.center-block
                     //- Picture_Text Height {{{
                     .showOnMnt1
                       span
@@ -329,8 +330,7 @@ html(lang='ru-RU')
                       span.center-block
                         p.clarifyingReminder.center-block
                     //- end_Picture_Text Height }}}
-                .col-xs-12.col-sm-6
-                  .measurements_area
+                  .measurements_area.center-block
                     .showOn_SinglePane
                       //- SinglePane Height {{{
                       .panel.panel-default.measurements_panel
@@ -445,11 +445,12 @@ html(lang='ru-RU')
                             .panel-body
                               .input-group
                                 span.input-group-addon
-                                  .fa-winPane2
+                                  .fa-winPane3
                                     span.fa.fa-stack.fa-fw
                                       span.fa.fa-stack.fa-fw
                                         i.fa.fa-square.fa-stack-2x
                                         i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                                      i.fa.fa-square-o.fa-2x
                                       i.fa.fa-square-o.fa-2x
                                 span.input-group.input-group-lg
                                   input.form-control.width_1(type='number', name='width_1', min=50 ,max=300, placeholder=120)
@@ -466,12 +467,13 @@ html(lang='ru-RU')
                                 span.input-group-addon
                                   .fa-winPane2
                                     span.fa.fa-stack.fa-fw
+                                      i.fa.fa-square-o.fa-2x
                                       span.fa.fa-stack.fa-fw
                                         i.fa.fa-square.fa-stack-2x
                                         i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
                                       i.fa.fa-square-o.fa-2x
                                 span.input-group.input-group-lg
-                                  input.form-control.width_1(type='number', name='width_1', min=50 ,max=300, placeholder=120)
+                                  input.form-control.width_2(type='number', name='width_2', min=50 ,max=300, placeholder=120)
                                 span.input-group-addon
                                   | mm
                           //- end_middle_TriplePane Width }}}
@@ -484,14 +486,15 @@ html(lang='ru-RU')
                             .panel-body
                               .input-group
                                 span.input-group-addon
-                                  .fa-winPane2
+                                  .fa-winPane3
                                     span.fa.fa-stack.fa-fw
+                                      i.fa.fa-square-o.fa-2x
                                       i.fa.fa-square-o.fa-2x
                                       span.fa.fa-stack.fa-fw
                                         i.fa.fa-square.fa-stack-2x
                                         i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
                                 span.input-group.input-group-lg
-                                  input.form-control.width_2(type='number', name='width_2', min=50 ,max=300, placeholder=120)
+                                  input.form-control.width_3(type='number', name='width_3', min=50 ,max=300, placeholder=120)
                                 span.input-group-addon
                                   | mm
                           //- end_right_TriplePane Width }}}

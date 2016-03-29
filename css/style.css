@@ -2185,7 +2185,7 @@ video::-webkit-media-controls {
 
 /*--OUR CLIENTS --*/
 .our-clients {
-	padding-bottom: 20px;
+	padding-bottom: 85px;
 	padding-top: 0px;
 	background: rgba(23,23,23,.85);
 }
@@ -3576,7 +3576,6 @@ article .posted-on a:hover{
 }
 
 #calculator .white-text {
-  color: #fff;
 }
 #MountOptsSection{}
 
