@@ -47,6 +47,9 @@ $(function(){
     $(".showOnMnt3").hide();
     $(".showOnMnt1").show();
     $(".showOn_SinglePane").show();
+    $(".showOn_DoublePane").hide();
+    $(".showOn_TriplePane").hide();
+    $(".showOn_QuadroPane").hide();
   });
   $("#MntTwoTab").on("click", function() {
     $(".showOn_SinglePane").hide();
