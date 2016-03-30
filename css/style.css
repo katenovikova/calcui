@@ -4303,7 +4303,26 @@ ul.nav > li.current_page_item > a:before, .nav > li.current-menu-item a:before {
 	#contact .h6 .white-text {
     font-size: 24px !important;
   }
+}
 
+.modal-body .form-horizontal .col-sm-2,
+.modal-body .form-horizontal .col-sm-10 {
+    width: 100%
+}
 
+.modal-body .form-horizontal .control-label {
+    text-align: left;
+}
+.modal-body .form-horizontal .col-sm-offset-2 {
+    margin-left: 15px;
+}
+/*/
+TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+/*/
+.modal-backdrop {
+  z-index: 0;
 
+}
+.modal-dialog {
+  z-index: 3000;
 }

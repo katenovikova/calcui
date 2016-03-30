@@ -225,21 +225,21 @@ html(lang='ru-RU')
                       li.active.col-xs-4
                         a(href='#mountOne', data-toggle='pill')
                           h2.text-center
-                            span.label.label-pill.calcuLabel
+                            span.label.label-pill.calcuLabel.center-block.label-success
                               | На створки
                           span
                             img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
                       li.col-xs-4
                         a(href='#mountTwo', data-toggle='pill')
                           h2.text-center
-                            span.label.label-pill.calcuLabel
+                            span.label.label-pill.calcuLabel.center-block.label-success
                               | В проем
                           span
                             img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
                       li.col-xs-4
                         a(href='#mountThree', data-toggle='pill')
                           h2.text-center
-                            span.label.label-pill.calcuLabel
+                            span.label.label-pill.calcuLabel.center-block.label-success
                               | На проем 
                           span
                             img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
@@ -261,7 +261,7 @@ html(lang='ru-RU')
                           .row
                             .col-xs-3
                               .btn.btn-default.btn-block.btn-lg.text-center.active#win1b
-                                span.label.label-success.calcuLabel
+                                span.label.label-success.calcuLabel.center-block
                                   | Одна
                                 span  
                                   img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/')
@@ -270,7 +270,7 @@ html(lang='ru-RU')
                               
                             .col-xs-3
                               .btn.btn-default.btn-block.btn-lg.text-centera#win2b
-                                span.label.label-success.calcuLabel
+                                span.label.label-success.calcuLabel.center-block
                                   | Две
                                 span  
                                   img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/')
@@ -279,7 +279,7 @@ html(lang='ru-RU')
                               
                             .col-xs-3
                               .btn.btn-default.btn-block.btn-lg.text-center#win3b
-                                span.label.label-success.calcuLabel
+                                span.label.label-success.calcuLabel.center-block
                                   | Три
                                 span  
                                   img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/')
@@ -288,7 +288,7 @@ html(lang='ru-RU')
                               
                             .col-xs-3
                               .btn.btn-default.btn-block.btn-lg.text-center#win4b
-                                span.label.label-success.calcuLabel
+                                span.label.label-success.calcuLabel.center-block
                                   | Четыре 
                                 span  
                                   img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/')
@@ -630,7 +630,7 @@ html(lang='ru-RU')
                   .panel.panel-default
                     .panel-body.center-block
                       //- Lite_Header PriceTable {{{
-                      h5
+                      h6
                         span.label.label-pill.label-success.center-block
                           | Лайт
                       span
@@ -656,7 +656,7 @@ html(lang='ru-RU')
                               h.col-xs-6.thePriceItself#Price_1_1_1
                                 
                               .col-xs-6.showFabricLink
-                                a(alt="", href="")
+                                a(alt="", href="", data-toggle="modal" data-target="#myModalHorizontal")
                                   p
                                     | Показать ткани
                       //- end_Lite_Price_One PriceTable }}}
@@ -898,7 +898,52 @@ html(lang='ru-RU')
                       //- end_Lux_Price_Three PriceTable }}}
                 //- end_Column_Lux }}}
               //- end_PriceTable }}}
+
+
+
+            //- Modal
+            #myModalHorizontal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+                  .modal-dialog
+                    .modal-content
+                      // Modal Header
+                      .modal-header
+                        button.close(type='button', data-dismiss='modal')
+                          span(aria-hidden='true') ×
+                          span.sr-only Close
+                        h4#myModalLabel.modal-title
+                          | Modal title
+                      // Modal Body
+                      .modal-body
+                        form.form-horizontal(role='form')
+                          .form-group
+                            label.col-sm-2.control-label(for='inputEmail3') Email
+                            .col-sm-10
+                              input#inputEmail3.form-control(type='email', placeholder='Email')
+                          .form-group
+                            label.col-sm-2.control-label(for='inputPassword3') Phone
+                            .col-sm-10
+                              input#inputPassword3.form-control(type='text', placeholder='Phone')
+                          .form-group
+                            .col-sm-offset-2.col-sm-10
+                              .checkbox
+                                label
+                                  input(type='checkbox')
+                                  |  attach data
+                          .form-group
+                            .col-sm-offset-2.col-sm-10
+                              button.btn.btn-default(type='submit') Send
+                      // Modal Footer
+                      .modal-footer
+                        button.btn.btn-default(type='button', data-dismiss='modal')
+                          | Close
+                        button.btn.btn-primary(type='button')
+                          | Send Later
+
             //- end_Calculator }}}
+
+
+
+
           // section#team.our-team
             //- How_We_Work (OFF) {{{
               .container
