@@ -209,9 +209,8 @@ html(lang='ru-RU')
                   br
                   br
             .container-fluid#MountOptsSection.calculator
-            .container
               //- Mount_Opts {{{
-              .row#MountOptsSection
+              .row#MountOptsRow
                 .col-xs-12
                   h2.subsection-label
                     br
@@ -303,7 +302,7 @@ html(lang='ru-RU')
                       #mountThree.tab-pane(role='tabpanel')
                         hr.white-text
               //- end_Mount_Opts }}}
-            .container#MeasurePanes.calculator
+            .container-fluid#MeasurePanesSection.calculator
               //- Measure_Panes {{{
               .row
                 //- SubHeader Measure_Panes {{{
@@ -319,19 +318,9 @@ html(lang='ru-RU')
                   subsection-label
                     hr.subsection-label  
                 //- end_SubHeader Meaure_Panes }}}
-              .row.show_SinglePane.show_DoublePan.show_TriplePan.show_QuadroPaneee.showOnMnt2.showOnMnt3
-                //- Visuals Measure_Panes {{{
-                .showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane
-                .showOnMnt2.showOnMnt3
-                  //- Thou_Shall_Not_Add_Or_Substrac {{{
-                  .col-xs-12
-                    h3.white-text
-                      | Укажите ширину и высоту оконного проема
-                  //- end_Thou_Shall_Not_Add_Or_Substract }}}
-                //- Visuals Measure_Panes }}}
               .row
                 //- Height {{{
-                .col-xs-6.col-sm-3
+                .col-xs-6.col-sm-3.no-padding
                   .howto_advise.center-block
                     //- Picture_Text Height {{{
                     .showOnMnt1.show_SinglePane.show_DoublePan.show_TriplePan.show_QuadroPaneee
@@ -352,7 +341,7 @@ html(lang='ru-RU')
                       .showOn_DoublePane.showOn_TriplePane.panel-heading
                           h6 Высота левой створки
                       .showOn_QuadroPane.panel-heading
-                          h6 Высота первой створки слева
+                          h6 Высота первой створки
                       .panel-body
                         .container-fluid
                           .row
@@ -387,7 +376,7 @@ html(lang='ru-RU')
                       .showOn_TriplePane.panel-heading
                           h6 Высота центральной створки
                       .showOn_QuadroPane.panel-heading
-                          h6 Высота второй створки слева
+                          h6 Высота второй створки
                       .panel-body
                         .container-fluid
                           .row
@@ -419,7 +408,7 @@ html(lang='ru-RU')
                       .showOn_TriplePane.panel-heading
                           h6 Высота правой створки
                       .showOn_QuadroPane.panel-heading
-                          h6 Высота второй створки справа
+                          h6 Высота третьей створки
                       .panel-body
                         .container-fluid
                           .row
@@ -448,7 +437,7 @@ html(lang='ru-RU')
                     //- Height_4 {{{
                     .showOn_QuadroPane.panel.panel-default.measurements_panel.white-bg
                       .panel-heading
-                          h6 Высота первой створки справа
+                          h6 Высота четвертой створки
                       .panel-body
                         .container-fluid
                           .row
@@ -619,6 +608,7 @@ html(lang='ru-RU')
                     //- end_Width_4 }}}
                 //- end_Width }}}
               //- end_Meaure_Panes }}}
+            .container-fluid#PriceTableSection.calculator
               //- PriceTable {{{
               .row
                 //- SubHeader PriceTable {{{

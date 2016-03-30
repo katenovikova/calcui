@@ -1713,7 +1713,7 @@ ul.nav > li.current_page_item.current > a:before {
 
 
 section#calculator > .container-fluid > .row >.section-header.top-section-header < col-xs-12{
-  padding-top: 25px;
+  padding-top: 25px;1
   padding-bottom: 20px;
 }
 
@@ -3559,7 +3559,13 @@ article .posted-on a:hover{
   padding-bottom: 0px;
 }
 #MountOptsSection{
-  background: rgba(255,255,255,.5)
+  background: rgba(255,255,255,.7);
+}
+#MeasurePanesSection{
+  background: rgba(55,255,55,.7);
+}
+#PriceTableSection{
+  background: rgba(255,55,55,.7);
 }
 
 
