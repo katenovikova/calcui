@@ -544,50 +544,6 @@ thead th{
 	bottom: -9px;
 	left: 25%;
 }
-.red-border-bottom:before {
-	position: absolute;
-	margin: auto;
-	z-index: 1;
-	content: "";
-	width: 75%;
-	height: 2px;
-	background: #e96656;
-	bottom: -9px;
-	left: 12.5%;
-}
-.green-border-bottom:before {
-	position: absolute;
-	margin: auto;
-	z-index: 1;
-	content: "";
-	width: 75%;
-	height: 2px;
-	background: #5dc064;
-	bottom: -9px;
-	left: 12.5%;
-}
-.blue-border-bottom:before {
-	position: absolute;
-	margin: auto;
-	z-index: 1;
-	content: "";
-	width: 75%;
-	height: 2px;
-	background: #3ab0e2;
-	bottom: -9px;
-	left: 12.5%;
-}
-.yellow-border-bottom:before {
-	position: absolute;
-	margin: auto;
-	z-index: 1;
-	content: "";
-	width: 75%;
-	height: 2px;
-	background: #f7d861;
-	bottom: -9px;
-	left: 12.5%;
-}
 /*---------------------------------------
  **   4.0 Forms                     -----
 -----------------------------------------*/
@@ -1849,8 +1805,6 @@ hr.subsection-label {
 	position: relative;
 	display: inline-block;
 	text-transform: uppercase;
-	margin-bottom: 30px;
-	font-weight: bold;
 	font-size: 18px;
 	float: none;
     width: auto;
