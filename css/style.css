@@ -454,10 +454,10 @@ thead th{
 	background: #e96656;
 }
 .green-bg {
-	background: #5dc064;
+	background: #5dc024;
 }
 .green-transp-bg {
-	background: rgba(55, 250, 100, .4);
+	background: rgba(25, 125, 10, .9);
 }
 .blue-bg {
 	background: rgba(52, 210, 147, 1);
@@ -475,24 +475,31 @@ thead th{
 .red-text {
 	color: #e96656;
 }
+.glowingreen{
+  box-shadow:
+   0 0 6px rgba(255,255,255,1),
+   0 0 6px rgba(5,255,5,.5);
+}
 .green-text {
 	color: #5dc064;
 }
 .white-glow-panel {
-  box-shadow: 0 0 7px rgba(255,255,255,.2);
+  box-shadow:
+   0px -2px 12px rgba(255,255,255,.4);
   padding: 0 !important;
 }
 .dark-shadow {
   text-shadow:
-   0 0px 16px #5dc064,
-   0 0px 16px rgba(0,0,0,.5);
+   0px 0px 40px rgba(0,0,0,1);
 
 }
 .white-glow {
   text-shadow: 0 0 3px rgba(255,255,255,.5);
 }
 .green-glow {
-  text-shadow: 0 0 3px rgba(55, 255, 55, .5);
+  text-shadow:
+   0 0 2px rgba(255,255,255,7),
+   0 0 3px rgba(55,255,5,.5);
 }
 .red-glow {
   text-shadow: 0 0 3px rgba(255, 55, 55, .5);
@@ -1530,7 +1537,6 @@ object {
 }
 .navbar {
 	background: white;
-  box-shadow: 0 4px 9px rgba(20,200,20,.9);
 	border: 0;
 	border-radius: 0 !important;
 	text-align: left;
@@ -1761,7 +1767,20 @@ section#calculator.packages {
 
 section#calculator.section-header h2 {
 }
-
+h2.subsection-label {
+  color: rgba(35, 35, 35, .8);
+  font-size: 30px;
+}
+h3.subsection-label {
+  color: rgba(35, 35, 35, .8);
+  font-size: 30px;
+}
+hr.subsection-label {
+  height: 2px;
+  color: rgba(35, 35, 35, .8);
+  background-color: rgba(35, 35, 35, .9);
+  margin-bottom: 20px;
+}
 .our-infos-widget-image {
 	width:100%;
 	height:100%;
@@ -1785,8 +1804,8 @@ section#calculator.section-header h2 {
 /* FOCUS BOX */
 .infos-box .service-icon {
 	margin-bottom: 30px;
-	width: 145px;
-	height: 145px;
+	width: 150px;
+	height: 150px;
 	margin: auto;
 	border-radius: 50%;
 	border: 10px solid #ececec;
@@ -1812,10 +1831,10 @@ section#calculator.section-header h2 {
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
-.infos-box:nth-child(2n+1) .service-icon:hover {
-	border: 3px solid #e96656;
+.infos-box:nth-child(2n+1) .service-icon {
+	border: 3px solid rgba(255, 100, 100, 1);
 }
-.infos-box:nth-child(2n+2) .service-icon:hover{
+.infos-box:nth-child(2n+2) .service-icon {
 	border: 3px solid #5dc064;
 }
 .infos-box:nth-child(2n+1) .red-border-bottom:before {
@@ -2097,11 +2116,15 @@ video::-webkit-media-controls {
 	margin-top: 15px;
 }
 .about-us .container > .advantages-list > .row > * > hr.red-bg {
-  box-shadow: 0 0 4px rgba(255,55,55,.5);
+  box-shadow:
+   0 0 4px rgba(255,255,255,1),
+   0 0 4px rgba(255,5,5,.5);
   height: 2px;
 }
 .about-us .container > .advantages-list > .row > * > hr.green-bg {
-  box-shadow: 0 0 4px rgba(55,255,55,.5);
+  box-shadow:
+   0 0 4px rgba(255,255,255,1),
+   0 0 4px rgba(5,255,5,.5);
   height: 2px;
 }
 .about-us .container > .advantages-list > * > .col-md-4 > * {
@@ -3591,7 +3614,9 @@ article .posted-on a:hover{
 
 #calculator .white-text {
 }
-#MountOptsSection{}
+#MountOptsSection{
+  background: rgba(255,255,255,.5)
+}
 
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
