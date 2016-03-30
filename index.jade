@@ -222,21 +222,21 @@ html(lang='ru-RU')
                   #tabs-433998.tabbable
                     ul.nav.nav-pills.nav-justified.row
                       //- Tabs Mount_Opts {{{
-                      li.active.col-xs-4
+                      li.active.col-xs-4#MntOneTab
                         a(href='#mountOne', data-toggle='pill')
                           h2.text-center
                             span.label.label-pill.calcuLabel.center-block.label-success
                               | На створки
                           span
                             img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
-                      li.col-xs-4
+                      li.col-xs-4#MntTwoTab
                         a(href='#mountTwo', data-toggle='pill')
                           h2.text-center
                             span.label.label-pill.calcuLabel.center-block.label-success
                               | В проем
                           span
                             img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
-                      li.col-xs-4
+                      li.col-xs-4#MntThreeTab
                         a(href='#mountThree', data-toggle='pill')
                           h2.text-center
                             span.label.label-pill.calcuLabel.center-block.label-success
@@ -305,6 +305,15 @@ html(lang='ru-RU')
               //- end_Mount_Opts }}}
             .container#MeasurePanes.calculator
               //- Measure_Panes {{{
+                //- SubHeader Measure_Panes {{{
+              .row
+                .col-xs-12
+                  br
+                  br
+                  h2.subsection-label
+                    | Выберите число створок
+                    hr.subsection-label  
+                //- end_SubHeader Meaure_Panes }}}
               .row.show_SinglePane.show_DoublePan.show_TriplePan.show_QuadroPaneee.showOnMnt2.showOnMnt3
                 //- Visuals Measure_Panes {{{
                 .showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane
@@ -608,22 +617,18 @@ html(lang='ru-RU')
                                 span.input-group-addon#width_4_units_addon
                                   | мм
                     //- end_Width_4 }}}
-                    
-
-
-
                 //- end_Width}}}
               //- end_Meaure_Panes }}}
               //- PriceTable {{{
               .row
-                //- Heading PriceTable {{{
+                //- SubHeader PriceTable {{{
                 .col-xs-12
                   br
                   br
                   h2.subsection-label
                     | Выберите тип рулонных штор и категорию ткани 
                     hr.subsection-label  
-                //- end_Heading PriceTable }}}
+                //- end_SubHeader PriceTable }}}
               .row
                 //- Column_Lite {{{
                 .col-xs-12.col-sm-6.col-md-3.infos-box(data-scrollreveal='enter right after 0.5s over 1s')
@@ -654,11 +659,8 @@ html(lang='ru-RU')
                         .panel-body
                             .row
                               h.col-xs-6.thePriceItself#Price_1_1_1
-                                
-                              .col-xs-6.showFabricLink
-                                a(alt="", href="", data-toggle="modal" data-target="#myModalHorizontal")
-                                  p
-                                    | Показать ткани
+                              a.col-xs-6.showFabricLink(alt="", href="", data-toggle="modal" data-target="#myModalHorizontal")
+                                  p Показать ткани
                       //- end_Lite_Price_One PriceTable }}}
                       //- Lite_Price_Two PriceTable {{{
                       .panel.panel-default.theSecondPriceTag
@@ -668,11 +670,8 @@ html(lang='ru-RU')
                         .panel-body
                             .row
                               h.col-xs-6.thePriceItself#Price_1_1_2
-                                  
-                              .col-xs-6.showFabricLink
-                                a(alt="", href="")
-                                  p
-                                    | Показать ткани
+                              a.col-xs-6.showFabricLink(alt="", href="")
+                                  p Показать ткани
                       //- end_Lite_Price_Two PriceTable }}}
                       //- Lite_Price_Three PriceTable {{{
                       .panel.panel-default.theThirdPriceTag
@@ -682,11 +681,8 @@ html(lang='ru-RU')
                         .panel-body
                             .row
                               h.col-xs-6.thePriceItself#Price_1_1_3
-                                  
-                              .col-xs-6.showFabricLink
-                                a(alt="", href="")
-                                  p
-                                    | Показать ткани
+                              a.col-xs-6.showFabricLink(alt="", href="")
+                                  p Показать ткани
                       //- end_Lite_Price_Three PriceTable }}}
                 //- end_Column_Lite }}}
                 //- Column_Mini {{{

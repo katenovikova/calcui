@@ -34,14 +34,36 @@ function iPrintPrices(indicesAll) {
 
 
 $(function(){
-  $(".showOnMnt1").hide();
+  $(".showOnMnt1").show();
   $(".showOnMnt2").hide();
   $(".showOnMnt3").hide();
-  $(".showOn_SinglePane").hide();
+  $(".showOn_SinglePane").show();
   $(".showOn_DoublePane").hide();
   $(".showOn_TriplePane").hide();
   $(".showOn_QuadroPane").hide();
 
+  $("#MntOneTab").on("click", function() {
+    $(".showOnMnt2").hide();
+    $(".showOnMnt3").hide();
+    $(".showOnMnt1").show();
+    $(".showOn_SinglePane").show();
+  });
+  $("#MntTwoTab").on("click", function() {
+    $(".showOn_SinglePane").hide();
+    $(".showOn_DoublePane").hide();
+    $(".showOn_TriplePane").hide();
+    $(".showOn_QuadroPane").hide();
+    $(".showOnMnt3").hide();
+    $(".showOnMnt2").show();
+  });
+  $("#MntThreeTab").on("click", function() {
+    $(".showOn_SinglePane").hide();
+    $(".showOn_DoublePane").hide();
+    $(".showOn_TriplePane").hide();
+    $(".showOn_QuadroPane").hide();
+    $(".showOnMnt2").hide();
+    $(".showOnMnt3").show();
+  });
 
   $("#win1b").on("click", function() {
     $(".showOn_TriplePane").hide();
