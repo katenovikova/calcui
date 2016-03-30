@@ -1686,7 +1686,7 @@ ul.nav > li.current_page_item.current > a:before {
 	font-size: 55px;
 	float:none;
 }
-.intro-text
+.intro-text {
 	text-align: center;
 	color: #FFF;
 	line-height: 65px;
@@ -3718,7 +3718,7 @@ ul.nav > li.current_page_item > a:before, .nav > li.current-menu-item a:before {
 	}
 	.intro-text{
       	color: #FFF;
-        font-size: 45px;
+        font-size: 40px;
         line-height: 55px;
     }
     .section-header h2{
@@ -3867,7 +3867,7 @@ ul.nav > li.current_page_item > a:before, .nav > li.current-menu-item a:before {
 		padding-top: 30%;
 	}
 	.intro-text{
-        font-size: 41px;
+        font-size: 38px;
         line-height: 49px;
     }
 	.infos-box {
