@@ -38,7 +38,7 @@ html(lang='ru-RU')
             }
       // }}}
       .zerif_full_site
-        header#home.header(itemscope='itemscope', itemtype='http://schema.org/WPHeader', role='banner')
+        header#home.header(itemscope='itemscope', role='banner')
           //- Nav_Bar {{{
           #main-nav.navbar.navbar-inverse.bs-docs-nav
             .container
@@ -208,8 +208,7 @@ html(lang='ru-RU')
                     | Калькулятор
                   br
                   br
-          section#MountOptsSection.calculator
-            .container
+            .container#MountOptsSection.calculator
               //- Mount_Opts {{{
               .row#MountOptsSection
                 .col-xs-12
@@ -263,7 +262,7 @@ html(lang='ru-RU')
                                 span.label.label-success.calcuLabel
                                   | Одна
                                 span  
-                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/')
                                   .sr-only
                                     input#win1x(type="radio", name="winLen", value=1, autocomplete="off", checked="")
                               
@@ -272,7 +271,7 @@ html(lang='ru-RU')
                                 span.label.label-success.calcuLabel
                                   | Две
                                 span  
-                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/')
                                   .sr-only
                                     input#win2x(type="radio", name="winLen", value=2, autocomplete="off")
                               
@@ -281,7 +280,7 @@ html(lang='ru-RU')
                                 span.label.label-success.calcuLabel
                                   | Три
                                 span  
-                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/')
                                   .sr-only
                                     input#win3x(type="radio", name="winLen", value=3, autocomplete="off")
                               
@@ -290,22 +289,23 @@ html(lang='ru-RU')
                                 span.label.label-success.calcuLabel
                                   | Четыре 
                                 span  
-                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/').
+                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/')
                                   .sr-only
                                     input#win4x(type="radio", name="winLen", value=4, autocomplete="off")
                         br
                         br
                         br
-  az                      //- }}}
+                        //- }}}
                       #mountTwo.tab-pane(role='tabpanel')
                         hr.white-text
                       #mountThree.tab-pane(role='tabpanel')
                         hr.white-text
-za              //- end_Mount_Opts }}}
+              //- end_Mount_Opts }}}
+        .container#MeasurePanes.calculator
               //- Measure_Panes {{{
-              .row
+              .row.show_SinglePane.show_DoublePan.show_TriplePan.show_QuadroPaneee.showOnMnt2.showOnMnt3
                 //- Visuals Measure_Panes {{{
-                .showOnMnt1
+                .showOnMnt1.show_SinglePane.show_DoublePan.show_TriplePan.show_QuadroPaneee
                   //- How_to_Measure {{{
                   .col-xs-12
                     h3.white-text
@@ -323,7 +323,7 @@ za              //- end_Mount_Opts }}}
                 .col-xs-12.col-sm-6
                   .howto_advise.center-block
                     //- Picture_Text Height {{{
-                    .showOnMnt1
+                    .showOnMnt1.show_SinglePane.show_DoublePan.show_TriplePan.show_QuadroPaneee
                       span
                         img.img-fluid.img-responsive(alt='how to measure height', src='images/measure_height.png')
                     .showOnMnt2.showOnMnt3
@@ -331,34 +331,142 @@ za              //- end_Mount_Opts }}}
                         p.clarifyingReminder.center-block
                     //- end_Picture_Text Height }}}
                   .measurements_area.center-block
-                    .showOn_SinglePane
-                      //- SinglePane Height {{{
-                      .panel.panel-default.measurements_panel
-                        .panel-heading
-                          .showOnMnt1
-                            h3.winMeasureLabel
-                              | Высота окна:
-                          .showOnMnt2.showOnMnt3
-                            h3.winMeasureLabel
-                              | Высота проема:
-                        .panel-body
-                          .input-group
-                            span.input-group-addon
-                              .fa-winPane1
-                                span.fa.fa-stack.fa-fw
-                                  i.fa.fa-square.fa-stack-2x
-                                  i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                            span.input-group.input-group-lg
-                              input.form-control.height_1(type='number', name='height1_' min=50, max=300, placeholder=120)
-                            span.input-group-addon
-                              | mm
-                      //- end_SinglePane Heigh }}}
+                    //- Height_1 {{{
+                    .showOn_SinglePane.showOnMnt1.showOnMnt2.showOnMnt3.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.panel.panel-default.measurements_panel.white-bg
+                      .showOnMnt2.showOnMnt3.panel-heading
+                          h6 Высота проема
+                      .showOn_SinglePane.panel-heading
+                          h6 Высота окна
+                      .showOn_DoublePane.showOn_TriplePane.panel-heading
+                          h6 Высота левой створки
+                      .showOn_QuadroPane.panel-heading
+                          h6 Высота первой створки слева
+                      .panel-body
+                        .container-fluid
+                          .row
+                            .showOn_SinglePane.col-sm-4
+                            .showOn_DoublePane.col-sm-3
+                            .showOn_TriplePane.col-sm-2
+                            .showOn_QuadroPane.col-sm-1
+                            .showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
+                              span.fa.fa-stack
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
+                            .showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .showOn_QuadroPane.col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+
+                            .col-xs-12.col-sm-6
+                              .input-group
+                                input.form-control#height_1.height_1(type='number',name='height_1', min=400,max=3000,aria-describedby='height_1_units_addon')
+                                span.input-group-addon#height_1_units_addon
+                                  | мм
+                    //- end_Height_1 }}}
+                    //- Height_2 {{{
+                    .showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.panel.panel-default.measurements_panel.white-bg
+                      .showOn_DoublePane.panel-heading
+                          h6 Высота правой створки
+                      .showOn_TriplePane.panel-heading
+                          h6 Высота центральной створки
+                      .showOn_QuadroPane.panel-heading
+                          h6 Высота второй створки слева
+                      .panel-body
+                        .container-fluid
+                          .row
+                            .showOn_DoublePane.col-sm-3
+                            .showOn_TriplePane.col-sm-2
+                            .showOn_QuadroPane.col-sm-1
+                            .col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .col-xs-1.col-sm-1
+                              span.fa.fa-stack
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
+                            .showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .showOn_QuadroPane.col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+
+                            .col-xs-12.col-sm-6
+                              .input-group
+                                input.form-control#height_2.height_2(type='number',name='height_2', min=400,max=3000,aria-describedby='height_2_units_addon')
+                                span.input-group-addon#height_2_units_addon
+                                  | мм
+                    //- end_Height_2 }}}
+                    //- Height_3 {{{
+                    .showOn_TriplePane.showOn_QuadroPane.panel.panel-default.measurements_panel.white-bg
+                      .showOn_TriplePane.panel-heading
+                          h6 Высота правой створки
+                      .showOn_QuadroPane.panel-heading
+                          h6 Высота второй створки справа
+                      .panel-body
+                        .container-fluid
+                          .row
+                            .showOn_TriplePane.col-sm-2
+                            .showOn_QuadroPane.col-sm-1
+                            .col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .col-xs-1.col-sm-1
+                              span.fa.fa-stack
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
+                            .showOn_QuadroPane.col-xs-3.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+
+                            .col-xs-12.col-sm-6
+                              .input-group
+                                input.form-control#height_3.height_3(type='number',name='height_3', min=400,max=3000,aria-describedby='height_3_units_addon')
+                                span.input-group-addon#height_3_units_addon
+                                  | мм
+                    //- end_Height_3 }}}
+                    //- Height_4 {{{
+                    .showOn_QuadroPane.panel.panel-default.measurements_panel.white-bg
+                      .panel-heading
+                          h6 Высота первой створки справа
+                      .panel-body
+                        .container-fluid
+                          .row
+                            .col-sm-1
+                            .col-xs-1.col-sm-1
+                              span.fa.fa-stack
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
+                            .col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .col-xs-3.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+
+                            .col-xs-12.col-sm-6
+                              .input-group
+                                input.form-control#height_4.height_4(type='number',name='height_4', min=400,max=3000,aria-describedby='height_4_units_addon')
+                                span.input-group-addon#height_4_units_addon
+                                  | мм
+                    //- end_Height_4 }}}
                 //- end_Height }}}
                 //- Width {{{
                 .col-xs-12.col-sm-6
                   .howto_advise.center-block
                     //- Picture_Text Width {{{
-                    .showOnMnt1
+                    .showOnMnt1.show_SinglePane.show_DoublePan.show_TriplePan.show_QuadroPaneee
                       span
                         img.img-fluid.img-responsive(alt='how to measure width', src='images/measure_width.png')
                     .showOnMnt2.showOnMnt3
@@ -366,35 +474,46 @@ za              //- end_Mount_Opts }}}
                         p.clarifyingReminder.center-block
                     //- end_Picture_Text Width }}}
                 .col-xs-12.col-sm-6
-                  .measurements_area.white-bg
+                  .measurements_area
                     //- Width_1 {{{
-                    .panel.panel-default.measurements_panel
+                    .showOn_SinglePane.showOnMnt1.showOnMnt2.showOnMnt3.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.panel.panel-default.measurements_panel.white-bg
                       .showOnMnt2.showOnMnt3.panel-heading
                           h6 Ширина проема
-                      .showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.panel-heading
+                      .showOn_SinglePane.panel-heading
+                          h6 Ширина окна
+                      .showOn_DoublePane.showOn_TriplePane.panel-heading
                           h6 Ширина левой створки
                       .showOn_QuadroPane.panel-heading
                           h6 Ширина первой створки слева
                       .panel-body
                         .container-fluid
                           .row
-                            .col-xs-1
-                              span.showOnMnt2.showOn_QuadroPane.FILLED
-                            .col-xs-1
-                              span.showOnMnt2.showOnMnt3.showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.FILLED
-                              span.showOnMnt2.showOn_QuadroPane.EMPTY
-                            .col-xs-1
-                              span.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.EMPTY
+                            .showOn_SinglePane.col-sm-4
+                            .showOn_DoublePane.col-sm-3
+                            .showOn_TriplePane.col-sm-2
+                            .showOn_QuadroPane.col-sm-1
+                            .showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
+                              span.fa.fa-stack
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                            .showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .showOn_QuadroPane.col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
 
-                            .col-xs-4
-                              span.showOn_TriplePane.showOn_QuadroPane.EMPTY
+                            .col-xs-12.col-sm-6
                               .input-group
                                 input.form-control#width_1.width_1(type='number',name='width_1', min=400,max=3000,aria-describedby='width_1_units_addon')
                                 span.input-group-addon#width_1_units_addon
                                   | мм
                     //- end_Width_1 }}}
                     //- Width_2 {{{
-                    .panel.panel-default.measurements_panel
+                    .showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.panel.panel-default.measurements_panel.white-bg
                       .showOn_DoublePane.panel-heading
                           h6 Ширина правой створки
                       .showOn_TriplePane.panel-heading
@@ -404,25 +523,31 @@ za              //- end_Mount_Opts }}}
                       .panel-body
                         .container-fluid
                           .row
-                            .col-xs-2
-                              span.showOnMnt2.showOn_QuadroPane.EMPTY
-                            .col-xs-2
-                              span.showOnMnt2.showOn_QuadroPane..FILLED
-                              span.showOnMnt2.showOn_TriplePane.EMPTY
-                            .col-xs-2
-                              span.showOnMnt2.showOn_QuadroPane.EMPTY
-                            .col-xs-2
-                              span.showOnMnt2.showOn_QuadroPane.showOn_TriplePane.EMPTY
-                              span.showOnMnt2.showOn_QuadroPane.EMPTY
+                            .showOn_DoublePane.col-sm-3
+                            .showOn_TriplePane.col-sm-2
+                            .showOn_QuadroPane.col-sm-1
+                            .col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .col-xs-1.col-sm-1
+                              span.fa.fa-stack
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                            .showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .showOn_QuadroPane.col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
 
-                            .col-xs-4
+                            .col-xs-12.col-sm-6
                               .input-group
                                 input.form-control#width_2.width_2(type='number',name='width_2', min=400,max=3000,aria-describedby='width_2_units_addon')
                                 span.input-group-addon#width_2_units_addon
                                   | мм
                     //- end_Width_2 }}}
                     //- Width_3 {{{
-                    .panel.panel-default.measurements_panel
+                    .showOn_TriplePane.showOn_QuadroPane.panel.panel-default.measurements_panel.white-bg
                       .showOn_TriplePane.panel-heading
                           h6 Ширина правой створки
                       .showOn_QuadroPane.panel-heading
@@ -430,40 +555,51 @@ za              //- end_Mount_Opts }}}
                       .panel-body
                         .container-fluid
                           .row
-                            .col-xs-2
-                              span.showOnMnt2.showOn_QuadroPane.EMPTY
-                            .col-xs-2
-                              span.showOnMnt2.showOn_TriplePane.showOn_QuadroPane.EMPTY
-                            .col-xs-2
-                              span.showOnMnt2.showOn_TriplePane.EMPTY
-                              span.showOnMnt2.showOn_QuadroPane.FILLED
-                            .col-xs-2
-                              span.showOnMnt2.showOn_TriplePane.FILLED
-                              span.showOnMnt2.showOn_QuadroPane.EMPTY
+                            .showOn_TriplePane.col-sm-2
+                            .showOn_QuadroPane.col-sm-1
+                            .col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .col-xs-1.col-sm-1
+                              span.fa.fa-stack
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                            .showOn_QuadroPane.col-xs-3.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
 
-                            .col-xs-4
+                            .col-xs-12.col-sm-6
                               .input-group
                                 input.form-control#width_3.width_3(type='number',name='width_3', min=400,max=3000,aria-describedby='width_3_units_addon')
                                 span.input-group-addon#width_3_units_addon
                                   | мм
                     //- end_Width_3 }}}
                     //- Width_4 {{{
-                    .panel.panel-default.measurements_panel
-                      .showOn_QuadroPane.panel-heading
+                    .showOn_QuadroPane.panel.panel-default.measurements_panel.white-bg
+                      .panel-heading
                           h6 Ширина первой створки справа
                       .panel-body
                         .container-fluid
                           .row
-                            .col-xs-2
-                              span.showOnMnt2.showOn_QuadroPane.EMPTY
-                            .col-xs-2
-                              span.showOnMnt2.showOn_QuadroPane.EMPTY
-                            .col-xs-2
-                              span.showOnMnt2.showOn_QuadroPane.EMPTY
-                            .col-xs-2
-                              span.showOnMnt2.showOn_QuadroPane.FILLED
+                            .col-sm-1
+                            .col-xs-1.col-sm-1
+                              span.fa.fa-stack
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                            .col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .col-xs-1.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
+                            .col-xs-3.col-sm-1
+                              span
+                                  i.fa.fa-square-o.fa-2x
 
-                            .col-xs-4
+                            .col-xs-12.col-sm-6
                               .input-group
                                 input.form-control#width_4.width_4(type='number',name='width_4', min=400,max=3000,aria-describedby='width_4_units_addon')
                                 span.input-group-addon#width_4_units_addon
@@ -1069,9 +1205,8 @@ za              //- end_Mount_Opts }}}
             // {{{
             iframe.zerif_google_map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1057.0842766513183!2d56.22301686146444!3d58.00191407572968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x2804971caf167dd3!2z0J_RgNC-0YTQmtCw0YDQvdC40Lc!5e0!3m2!1sen!2sus!4v1457709856623', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')          
             // }}}
-          //}}}
         footer#footer(role='contentinfo', itemscope='itemscope', itemtype='http://schema.org/WPFooter')
-          // {{{
+          // Footer {{{
           .container
             .footer-box-wrap
               .col-md-3.footer-box.four-cell.company-details
@@ -1094,9 +1229,8 @@ za              //- end_Mount_Opts }}}
                   | ©ПрофКарниз 
                   br
                   |  ИП Новиков Алексей Олегович
-      
-          // }}}
-        // Links after page {{{
+          // end_Footer }}}
+      // Links after page {{{
       link(href='./css/outline.css', type='text/css', media='all')
       script(src='js/jquery.min.js')
       script(src='js/bootstrap.min.js')
@@ -1107,4 +1241,4 @@ za              //- end_Mount_Opts }}}
       // .zerif-mobile-bg-helper-wrap-all
       // }}}
 
-      // vim:foldmethod=marker:foldlevel=0:nowrap:textwidth=9999
+// vim:foldmethod=marker:foldlevel=0:nowrap:textwidth=9999

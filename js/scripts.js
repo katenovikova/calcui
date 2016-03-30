@@ -1,28 +1,4 @@
 indicesAll=[1,1,1,1];
-function hideEmAll() {
-  $("#winWidth1").hide();
-  $("#winWidth2").hide();
-  $("#winWidth3").hide();
-  $("#winWidth4").hide();
-  $("#winHeight1").hide();
-  $("#winHeight2").hide();
-  $("#winHeight3").hide();
-  $("#winHeight4").hide();
-};
-
-function clearMeasurements() {
-
-  $(".height1")[0].value = 0;
-  $(".width1")[0].value = 0;
-
-  $(".height2")[0].value = 0;
-  $(".width2")[0].value = 0;
-
-  $(".height3")[0].value = 0;
-  $(".width3")[0].value = 0;
-};
-
-
 
 function iPrintPrices(indicesAll) {
   var miniPs = require('./mini.json');
@@ -57,63 +33,40 @@ function iPrintPrices(indicesAll) {
 };
 
 
-// Parallax
-jQuery(document).ready(function() {
-
-	var jQuerywindow = jQuery(window);
-
-  jQuery('.bg-responsive').each(function() {
-
-		var jQuerybgobj = jQuery(this);
-
-		jQuery(window).scroll(function() {
-
-			var yPos = -(jQuerywindow.scrollTop() / jQuerybgobj.data('speed'));
-
-			var coords = '50% '+ yPos + 'px (!important)';
-
-			jQuerybgobj.css({
-
-				backgroundPosition: coords
-
-			});
-
-		});
-
-	});
-
-});
 $(function(){
-  $("#winWidth1").show();
-  $("#winWidth2").hide();
-  $("#winWidth3").hide();
-  $("#winWidth4").hide();
-  $("#winHeight1").show();
-  $("#winHeight2").hide();
-  $("#winHeight3").hide();
-  $("#winHeight4").hide();
+  $(".showOnMnt1").hide();
+  $(".showOnMnt2").hide();
+  $(".showOnMnt3").hide();
+  $(".showOn_SinglePane").hide();
+  $(".showOn_DoublePane").hide();
+  $(".showOn_TriplePane").hide();
+  $(".showOn_QuadroPane").hide();
 
 
   $("#win1b").on("click", function() {
-    hideEmAll();
-    clearMeasurements();
-    $("#winWidth1").show();
-    $("#winHeight1").show();
+    $(".showOn_TriplePane").hide();
+    $(".showOn_QuadroPane").hide();
+    $(".showOn_DoublePane").hide();
+    $(".showOn_SinglePane").show();
 
   });
-
   $("#win2b").on("click", function() {
-    hideEmAll();
-    clearMeasurements();
-    $("#winWidth2").show();
-    $("#winHeight2").show();
+    $(".showOn_SinglePane").hide();
+    $(".showOn_TriplePane").hide();
+    $(".showOn_QuadroPane").hide();
+    $(".showOn_DoublePane").show();
   });
-
   $("#win3b").on("click", function() {
-    hideEmAll();
-    clearMeasurements();
-    $("#winWidth3").show();
-    $("#winHeight3").show();
+    $(".showOn_SinglePane").hide();
+    $(".showOn_DoublePane").hide();
+    $(".showOn_QuadroPane").hide();
+    $(".showOn_TriplePane").show();
+  });
+  $("#win4b").on("click", function() {
+    $(".showOn_SinglePane").hide();
+    $(".showOn_DoublePane").hide();
+    $(".showOn_TriplePane").hide();
+    $(".showOn_QuadroPane").show();
   });
 
 
