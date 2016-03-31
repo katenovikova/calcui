@@ -493,6 +493,12 @@ thead th{
    0px 0px 40px rgba(0,0,0,1);
 
 }
+.white-glow-alot {
+  text-shadow:
+    0 0 6px rgba(255,255,255,.3),
+    0 0 3px rgba(255,255,255,.5);
+
+}
 .white-glow {
   text-shadow: 0 0 3px rgba(255,255,255,.5);
 }
