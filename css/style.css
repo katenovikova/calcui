@@ -3554,12 +3554,31 @@ article .posted-on a:hover{
     z-index: 1;
 }
 
+.client-list span{
+  overflow: hidden;
+  border-i
+
+}
+.client-list .clientIcon img{
+  max-width: 120px;
+  max-width: 120px;
+  width: auto;
+  height: 120px;
+  overflow: hidden;
+}
+
 #calculator .section-header h2 {
   padding-top: 40px;
   padding-bottom: 0px;
 }
 #MountOptsSection{
   background: rgba(255,255,255,.7);
+}
+#MountOptsSection .nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus {
+  color: #fff;
+  background-color: #5cb85c;
+  box-shadow:
+    0 0 25px rgba(5,5,0,1);
 }
 #MeasurePanesSection{
   background: rgba(55,255,55,.7);
@@ -4316,4 +4335,16 @@ TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
 }
 .modal-dialog {
   z-index: 3000;
+}
+
+#tabs-433998 > ul > li > a > span img
+ {
+  opacity: 0.5;
+}
+#tabs-433998 > ul > li.active > a > span img,
+#tabs-433998 > ul > li:focus > a > span img,
+#tabs-433998 > ul > li:checked > a > span img,
+#tabs-433998 > ul > li:hover > a > span img
+ {
+  opacity: 1;
 }

@@ -178,25 +178,32 @@ html(lang='ru-RU')
               //- end_Header Clients }}}
               .client-list(data-scrollreveal='enter right move 60px after 0.00s over 0.25s').row
                   //- Client_1 {{{
-                  .col-xs-6.col-sm-3
-                    a(href='http://pstu.ru/')
-                    img(src='./images/client_pnipu.png', alt='ПНИПУ')
+                  .col-sm-1
+                  .col-xs-6.col-sm-2.clientIcon
+                    span
+                      img(src='./images/client_pnipu.png', alt='ПНИПУ')
                   //- end_Client_1 }}}
                   //- Client_2 {{{
-                  .col-xs-6.col-sm-3
-                    a(href='https://megafon.ru/')
-                    img(src='./images/client_megafon.png', alt='Мегафон')
+                  .col-xs-6.col-sm-2.clientIcon
+                    span
+                      img(src='./images/client_megafon.png', alt='Мегафон')
                   //- end_Client_2 }}}
                   //- Client_3 {{{
-                  .col-xs-6.col-sm-3
-                    a(href='http://alendvic.ru/')
-                    img(src='./images/client_alendvik.png', alt='Алендвик')
+                  .col-xs-6.col-sm-2.clientIcon
+                    span
+                      img(src='./images/client_alendvik.png', alt='Алендвик')
                   //- end_Client_3 }}}
                   //- Client_4 {{{
-                  .col-xs-6.col-sm-3
-                    a(href='https://www.sberbank.ru/')
-                    img(src='./images/client_sber.png', alt='Сбербанк')
+                  .col-xs-6.col-sm-2.clientIcon
+                    span
+                      img(src='./images/client_sber.png', alt='Сбербанк')
                   //- end_Client_4 }}}
+                  //- Client_5 {{{
+                  .col-xs-6.col-sm-2.clientIcon
+                    span
+                      img(src='./images/client_edro.png', alt='Единая Россия')
+                  .col-sm-1
+                  //- end_Client_5 }}}
             //- end_Clients }}}
 
             //- Calculator {{{
@@ -226,21 +233,21 @@ html(lang='ru-RU')
                           h2.text-center
                             span.label.label-pill.calcuLabel.center-block.label-success
                               | На створки
-                          span
+                          span.misteriousGray
                             img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
                       li.col-xs-4#MntTwoTab
                         a(href='#mountTwo', data-toggle='pill')
                           h2.text-center
                             span.label.label-pill.calcuLabel.center-block.label-success
                               | В проем
-                          span
+                          span.misteriousGray
                             img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
                       li.col-xs-4#MntThreeTab
                         a(href='#mountThree', data-toggle='pill')
                           h2.text-center
                             span.label.label-pill.calcuLabel.center-block.label-success
                               | На проем 
-                          span
+                          span.misteriousGray
                             img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
                       //- Tabs Mount_Opts }}}
                     .tab-content
@@ -302,7 +309,7 @@ html(lang='ru-RU')
                       #mountThree.tab-pane(role='tabpanel')
                         hr.white-text
               //- end_Mount_Opts }}}
-            .container-fluid#MeasurePanesSection.calculator
+            .container-fluid#MeasurePanesSection.calculator.showOnMnt1.showOnMnt2.showOnMnt3.showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane
               //- Measure_Panes {{{
               .row
                 //- SubHeader Measure_Panes {{{
@@ -443,10 +450,6 @@ html(lang='ru-RU')
                           .row
                             .col-sm-1
                             .col-xs-1.col-sm-1
-                              span.fa.fa-stack
-                                i.fa.fa-square.fa-stack-2x
-                                i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                            .col-xs-1.col-sm-1
                               span
                                   i.fa.fa-square-o.fa-2x
                             .col-xs-1.col-sm-1
@@ -455,6 +458,10 @@ html(lang='ru-RU')
                             .col-xs-3.col-sm-1
                               span
                                   i.fa.fa-square-o.fa-2x
+                            .col-xs-1.col-sm-1
+                              span.fa.fa-stack
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
 
                             .col-xs-12.col-sm-6
                               .input-group
@@ -587,10 +594,6 @@ html(lang='ru-RU')
                           .row
                             .col-sm-1
                             .col-xs-1.col-sm-1
-                              span.fa.fa-stack
-                                i.fa.fa-square.fa-stack-2x
-                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                            .col-xs-1.col-sm-1
                               span
                                   i.fa.fa-square-o.fa-2x
                             .col-xs-1.col-sm-1
@@ -599,6 +602,10 @@ html(lang='ru-RU')
                             .col-xs-3.col-sm-1
                               span
                                   i.fa.fa-square-o.fa-2x
+                            .col-xs-1.col-sm-1
+                              span.fa.fa-stack
+                                i.fa.fa-square.fa-stack-2x
+                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
 
                             .col-xs-12.col-sm-6
                               .input-group
