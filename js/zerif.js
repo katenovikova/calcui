@@ -2,7 +2,7 @@
 jQuery(document).ready(function(){
 
 	var zerif_frame = jQuery('iframe.zerif_google_map');
-	var zerif_frameSrc = new Array();
+	var zerif_frameSrc = [];
 
     if( zerif_frame.length ){
 		jQuery.each( zerif_frame, function(i, f){
@@ -114,7 +114,7 @@ jQuery(document).ready(callback_mobile_dropdown);
 /* Bootstrap Fix */
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
-	var msViewportStyle = document.createElement('style')
+	var msViewportStyle = document.createElement('style');
 
 	msViewportStyle.appendChild(
 
@@ -124,7 +124,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
 		)
 
-	)
+	);
 
 	document.querySelector('head').appendChild(msViewportStyle);
 

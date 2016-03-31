@@ -30,7 +30,7 @@ function iPrintPrices(indicesAll) {
   document.getElementById("Price_1_4_2").innerHTML = Plux[1];
   document.getElementById("Price_1_4_3").innerHTML = Plux[2];
 
-};
+}
 
 
 $(function(){
@@ -102,10 +102,10 @@ $(function(){
     iPrintPrices();
   });
   $(".measurementInputTwo").change(function() {
-    calculateThePrice2()
+    calculateThePrice2();
   });
   $(".measurementInputThree").change(function() {
-    calculateThePrice3()
+    calculateThePrice3();
   });
 
 });
