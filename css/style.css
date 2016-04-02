@@ -3618,8 +3618,12 @@ article .posted-on a:hover{
 
 #PriceTableSection{
   background: #bee170;
+  padding-bottom: 20px;
 }
 
+#PriceTableSection .infos-box .panel{
+  margin-bottom: 0
+}
 #PriceTableSection .infos-box:hover{
   box-shadow:
     0 0 25px rgba(5,5,0,1);
