@@ -327,7 +327,7 @@ h6 {
 	display: inline-block !important;
 	text-align: center;
 	text-transform: uppercase;
-	padding: 13px 35px 13px 35px;
+	padding: 16px 35px 16px 35px;
 	border-radius: 4px;
 	margin: 10px;
 	border: none;
@@ -495,8 +495,8 @@ thead th{
 }
 .white-glow-alot {
   text-shadow:
-    0 0 6px rgba(255,255,255,.3),
-    0 0 3px rgba(255,255,255,.5);
+    0 0 8px rgba(255,255,255,.3),
+    0 0 5px rgba(255,255,255,.5);
 
 }
 .white-glow {
@@ -3545,6 +3545,12 @@ article .posted-on a:hover{
   width: auto;
   height: 120px;
   overflow: hidden;
+}
+
+#home .firstGlanceButtons {
+  height: 200%;
+}
+#home .firstGlanceButtons > * {
 }
 
 #calculator .section-header h2 {
