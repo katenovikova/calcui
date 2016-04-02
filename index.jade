@@ -1095,9 +1095,10 @@ html(lang='ru-RU')
                 | Или оставьте заявку на консультацию
                 | (она ни к чему Вас не обязывает)
             //- end_Order_Consult }}}
-          section#map
+          section#Map
             //- Map {{{
-            iframe.zerif_google_map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1057.0842766513183!2d56.22301686146444!3d58.00191407572968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x2804971caf167dd3!2z0J_RgNC-0YTQmtCw0YDQvdC40Lc!5e0!3m2!1sen!2sus!4v1457709856623', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
+            .container-fluid
+                  iframe.scrolloff.zerif_google_map#MapIframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1057.0842766513183!2d56.22301686146444!3d58.00191407572968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x2804971caf167dd3!2z0J_RgNC-0YTQmtCw0YDQvdC40Lc!5e0!3m2!1sen!2sus!4v1457709856623', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
             //- end_Map }}}
         footer#footer(role='contentinfo', itemscope='itemscope', itemtype='http://schema.org/WPFooter')
           //- Footer {{{
