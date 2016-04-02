@@ -1,0 +1,54 @@
+doctype html
+  head
+    title Bootstrap Example
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link.btn.btn-info.btn-lg(rel='stylesheet', href='http://maxcdn.bootstrap<!-- Trigger the modal with a button -->\
+    <button type=', data-toggle='modal', data-target='#myModal')
+    | Open Modal
+    // Modal
+    #myModal.modal.fade(role='dialog')
+      .modal-dialog
+        // Modal content
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal') ×
+            h4.modal-title Modal Header
+          .modal-body
+            p Some text in the modal.
+          .modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal') Close
+      // Trigger the modal with a button
+      button.btn.btn-info.btn-lg(type='button', data-toggle='modal', data-target='#myModal') Open Modal
+      // Modal
+      #myModal.modal.fade(role='dialog')
+        .modal-dialog
+          // Modal content
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal') ×
+              h4.modal-title Modal Header
+            .modal-body
+              p Some text in the modal.
+            .modal-footer
+              button.btn.btn-default(type='button', data-dismiss='modal') Close
+        | cdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
+        script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+  .container
+    h2 Modal Example
+    // Trigger the modal with a button
+    button.btn.btn-info.btn-lg(type='button', data-toggle='modal', data-target='#myModal') Open Modal
+    // Modal
+    #myModal.modal.fade(role='dialog')
+      .modal-dialog
+        // Modal content
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal') ×
+            h4.modal-title Modal Header
+          .modal-body
+            p Some text in the modal.
+          .modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal') Close
+
