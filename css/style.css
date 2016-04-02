@@ -1750,19 +1750,18 @@ hr.subsection-label {
 /* FOCUS BOX */
 .infos-box {
   width:24%;
-  padding-left: 5px;
-  padding-right: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
   margin-left: 5px;
   margin-right: 4px;
 }
 .infos-box .service-icon {
-	margin-bottom: 30px;
 	width: 150px;
 	height: 150px;
-	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	border-radius: 50%;
 	border: 10px solid #ececec;
-	margin-bottom: 20px;
 	position: relative;
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
@@ -1790,7 +1789,6 @@ hr.subsection-label {
 .infos-box:nth-child(2n+2) .service-icon {
 	border: 3px solid #5dc064;
 }
-.infos-box{background: white;}
 .infos-box:nth-child(2n+1) .red-border-bottom:before {
 	background: #e96656;
 }
@@ -2617,33 +2615,6 @@ video::-webkit-media-controls {
   font-size: 16px;
 }
 
-
-
-.winMeasureLabel {
-
-}
-
-.theFirstPriceTag {
-
-}
-.theSecondPriceTag {
-
-}
-.theThirdPriceTag {
-
-}
-
-.priceTagLabel {
-
-}
-
-.thePriceItself {
-
-}
-
-.showFabricLink {
-
-}
 
 
 
@@ -3649,6 +3620,46 @@ article .posted-on a:hover{
   background: #bee170;
 }
 
+#PriceTableSection .infos-box:hover{
+  box-shadow:
+    0 0 25px rgba(5,5,0,1);
+}
+#PriceTableSection .infos-box :hover  .pricePanel_1{
+  background-color: #5df044;
+}
+#PriceTableSection .infos-box :hover   .pricePanel_2{
+  background-color: #5dc064;
+}
+#PriceTableSection .infos-box :hover  .pricePanel_3{
+  background-color: #5df044;
+}
+#PriceTableSection .infos-box :hover  .panel-heading {
+  background-color: #5dc064;
+}
+
+#PriceTableSection .pricePanel_1 {
+  background: white;
+}
+
+#PriceTableSection .pricePanel_2 {
+  background: lightgray;
+}
+
+#PriceTableSection .pricePanel_3 {
+  background: white;
+}
+
+#PriceTableSection .priceTagLabel {
+}
+
+#PriceTableSection .thePrice {
+}
+
+#PriceTableSection .showFabricLink {
+}
+
+#PriceTableSection .priceSeparator {
+}
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
 	color:#404040;

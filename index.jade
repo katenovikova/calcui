@@ -597,6 +597,7 @@ html(lang='ru-RU')
             .container-fluid#PriceTableSection.calculator
             //- end_Calculator }}}
             //- PriceTable {{{
+          .container#PriceTableSection
             .row
               //- SubHeader PriceTable {{{
               .col-xs-12
@@ -609,252 +610,192 @@ html(lang='ru-RU')
             .row
               //- Column_Lite {{{
               .col-xs-12.col-sm-6.col-md-3.infos-box(data-scrollreveal='enter right after 0.5s over 1s')
-
-
-                    //- Lite_Header PriceTable {{{
-                    h6
-                      span.label.label-pill.label-success.center-block
-                        | Лайт
-                    span
-                      img.center-block.img-responsive.img-rounded.service-icon(alt='Lite_Picture', src='images/types1.png').
-                    br
-                    p.typedetails
-                      details
-                        summary Показать описание...
-                        | Недорогой вариант рулонных штор с пластиковым механизом и отвесом ПВХ, зашитым в ткань. В комплекте роллторы подъемный механизм, заглушки, кронштейны и зацепы на пластиковое окно. Длина регулируется с помощью цепи управления.  Управление — справа. Эти рулонные шторы можно
-                        a(href='http://profkarniz.com/shop/rulonnye-shtory', target='_blank') купить онлайн без замеров
-                        p.sizelimitations
-                          | Ширина: 40 - 180 см
-                          br
-                          |  Длина: до 160 см
-                    //- end_Lite_Header PriceTable }}}
-                    // //- Lite_Price_One PriceTable {{{
-
-                    //     .priceTagLabel
-                    //       | Категория 1
-                    //       .row
-                    //         h.col-xs-6.thePriceItself#Price_1_1_1
-                    //         a.col-xs-6.showFabricLink(alt="", href="", data-toggle="modal" data-target="#myModalHorizontal")
-                    //             p Показать ткани
-                   .panel.panel-primary.theFirstPriceTag
+                   .panel.panel-success.center-block
+                      //- Lite_Header {{{
                       .panel-heading
-                      .panel-body
-                    //- end_Lite_Price_One PriceTable }}}
-                    //- Lite_Price_Two PriceTable {{{
-                    .panel.panel-default.theSecondPriceTag
-                      .panel-heading
-                        .priceTagLabel
-                          | Категория 2
-                      .panel-body
-                          .row
-                            h.col-xs-6.thePriceItself#Price_1_1_2
-                            a.col-xs-6.showFabricLink(alt="", href="")
-                                p Показать ткани
-                    //- end_Lite_Price_Two PriceTable }}}
-                    //- Lite_Price_Three PriceTable {{{
-                    .panel.panel-default.theThirdPriceTag
-                      .panel-heading
-                        .priceTagLabel
-                          | Ткань "Зебра"
-                      .panel-body
-                          .row
-                            h.col-xs-6.thePriceItself#Price_1_1_3
-                            a.col-xs-6.showFabricLink(alt="", href="")
-                                p Показать ткани
-                    //- end_Lite_Price_Three PriceTable }}}
+                        h6
+                          span.label.label-pill.label-success.center-block
+                            | Лайт
+                        span
+                          img.center-block.img-responsive.img-circle.service-icon(alt='Lite_Picture', src='images/types1.png').
+                        br
+                        p.typedetails
+                          details
+                            summary Показать описание...
+                            | Недорогой вариант рулонных штор с пластиковым механизом и отвесом ПВХ, зашитым в ткань. В комплекте роллторы подъемный механизм, заглушки, кронштейны и зацепы на пластиковое окно. Длина регулируется с помощью цепи управления.  Управление — справа. Эти рулонные шторы можно
+                            a(href='http://profkarniz.com/shop/rulonnye-shtory', target='_blank') купить онлайн без замеров
+                            p.sizelimitations
+                              | Ширина: 40 - 180 см
+                              br
+                              |  Длина: до 160 см
+                        //- end_Lite_Header }}}
+                      //- LitePricePanel {{{
+                      .panel-body.pricePanel_1
+                        h4.priceTagLabel
+                          | Категория 1:
+                        h4.thePrice#PriceLite_1
+                          | --
+                        h4.showFabricLink
+                          a(alt="", href="") Показать ткани
+
+                      .panel-body.pricePanel_2
+                        h4.priceTagLabel2
+                          | Категория 2:
+                        h4.thePrice2#PriceLite_2
+                          | --
+                        h4.showFabricLink2
+                          a(alt="", href="") Показать ткани
+
+                      .panel-body.pricePanel_3
+                        h4.priceTagLabel
+                          | Категория 3:
+                        h4.thePrice#PriceLite_3
+                          | --
+                        h4.showFabricLink
+                          a(alt="", href="") Показать ткани
+
+                        //- end_Lite_Price PricePanel }}}
               //- end_Column_Lite }}}
               //- Column_Mini {{{
               .col-xs-12.col-sm-6.col-md-3.infos-box(data-scrollreveal='enter right after 0.5s over 1s')
-                    //- Mini_Header PriceTable {{{
-                    h6
-                      span.label.label-pill.label-success.center-block
-                        | Мини
-                    span
-                      img.center-block.img-responsive.img-rounded.service-icon(alt='Mini_Picture', src='images/types2.png').
-                    br
-                    p.typedetails
-                      details
-                        summary Показать описание...
-                        | Роллшторы системы МИНИ в большинстве случаев крепятся на створку окна. Сверху механизм с трубой, на которую наматывается ткань, крепится на пластиковое окно с помощью специального двухстороннего скотча или пластмасовых кронштейнов. Внизу шторы — металлический отвес. Чтобы рулонная штора плотно прилегала к окну, используют магниты или леску.
-                        p.sizelimitations
-                          | Ширина: 40 - 140 см
-                          br
-                          |  Длина: 50 - 200 см
-                    //- Mini_Header PriceTable }}}
-                    //- Mini_Price_One PriceTable {{{
-                    .panel.panel-primary.theFirstPriceTag
+                   .panel.panel-success.center-block
+                      //- Mini_Header {{{
                       .panel-heading
-                        .priceTagLabel
-                          | Категория 1
-                      .panel-body.container-fluid
-                        .row
-                          .col-xs-6
-                            h.thePriceItself#Price_1_2_1
-                          .col-xs-6
-                            .showFabricLink
-                              a(alt="", href="")
-                                p
-                                  | Показать ткани
-                    //- end_Mini_Price_One PriceTable }}}
-                    //- Mini_Price_Two PriceTable {{{
-                    .panel.panel-default.theSecondPriceTag
-                      .panel-heading
-                        .priceTagLabel
-                          | Категория 2
-                      .panel-body.container-fluid
-                        .row
-                          .col-xs-6
-                            h.thePriceItself#Price_1_2_2
-                          .col-xs-6
-                            .showFabricLink
-                              a(alt="", href="")
-                                p
-                                  | Показать ткани
-                    //- end_Mini_Price_Two PriceTable }}}
-                    //- Mini_Price_Three PriceTable {{{
-                    .panel.panel-default.theThirdPriceTag
-                      .panel-heading
-                        .priceTagLabel
-                          | Ткань "Зебра"
-                      .panel-body.container-fluid
-                        .row
-                          .col-xs-6
-                            h.thePriceItself#Price_1_2_3
-                          .col-xs-6
-                            .showFabricLink
-                              a(alt="", href="")
-                                p
-                                  | Показать ткани
-                    //- end_Mini_Price_Three PriceTable }}}
+                        h6
+                          span.label.label-pill.label-success.center-block
+                            | Мини
+                        span
+                          img.center-block.img-responsive.img-rounded.service-icon(alt='Mini_Picture', src='images/types2.png').
+                        br
+                        p.typedetails
+                          details
+                            summary Показать описание...
+                            | Роллшторы системы МИНИ в большинстве случаев крепятся на створку окна. Сверху механизм с трубой, на которую наматывается ткань, крепится на пластиковое окно с помощью специального двухстороннего скотча или пластмасовых кронштейнов. Внизу шторы — металлический отвес. Чтобы рулонная штора плотно прилегала к окну, используют магниты или леску.
+                            p.sizelimitations
+                              | Ширина: 40 - 140 см
+                              br
+                              |  Длина: 50 - 200 см
+                      //- end_Mini_Header }}}
+                      //- Mini_PricePanel {{{
+                      .panel-body.pricePanel_1
+                        h4.priceTagLabel
+                          | Категория 1:
+                        h4.thePrice#PriceMini_1
+                          | --
+                        h4.showFabricLink
+                          a(alt="", href="") Показать ткани
+
+                      .panel-body.pricePanel_2
+                        h4.priceTagLabel2
+                          | Категория 2:
+                        h4.thePrice2#PriceMini_2
+                          | --
+                        h4.showFabricLink2
+                          a(alt="", href="") Показать ткани
+
+                      .panel-body.pricePanel_3
+                        h4.priceTagLabel
+                          | Категория 3:
+                        h4.thePrice#PriceMini_3
+                          | --
+                        h4.showFabricLink
+                          a(alt="", href="") Показать ткани
+
+                        //- end_Mini_PricePanel }}}
               //- end_Column_Mini }}}
               //- Column_Uni {{{
-              .col-xs-12.col-sm-6.col-md-3.infos-box(data-scrollreveal='enter left after 0.15s over 1s')
-                    //- Uni_Header PriceTable {{{
-                    h6
-                      span.label.label-pill.label-success.center-block
-                        | Уни
-                    span
-                      img.center-block.img-responsive.img-rounded.service-icon(alt='Uni_Picture', src='images/types3.png').
-                    br
-                    p.typedetails
-                      details
-                        summary Показать описание...
-                        | Эта система также называется кассетной. Сверху на рулон крепится специальный металлический короб, который защищает ткань от пыли. Металлические направляющие плотно прилягают к окну, позволяя полностью защититься от солнца.  Выделяют две системы: Уни-1 и Уни-2 (в Уни-2 высота направляющих и короба больше).
-                        p.sizelimitations
-                          | Ширина: 40 - 140 см
-                          br
-                          |  Длина: 50 - 200 см
-                    .panel.panel-primary.theFirstPriceTag
+              .col-xs-12.col-sm-6.col-md-3.infos-box(data-scrollreveal='enter right after 0.5s over 1s')
+                   .panel.panel-success.center-block
+                      //- Uni_Header {{{
                       .panel-heading
-                        .priceTagLabel
-                          | Категория 1
-                      .panel-body.container-fluid
-                        .row
-                          .col-xs-6
-                            h.thePriceItself#Price_1_3_1
-                          .col-xs-6
-                            .showFabricLink
-                              a(alt="", href="")
-                                p
-                                  | Показать ткани
-                    //- end_Uni_Price_One PriceTable }}}
-                    //- Uni_Price_Two PriceTable {{{
-                    .panel.panel-default.theSecondPriceTag
-                      .panel-heading
-                        .priceTagLabel
-                          | Категория 2
-                      .panel-body.container-fluid
-                        .row
-                          .col-xs-6
-                            h.thePriceItself#Price_1_3_2
-                          .col-xs-6
-                            .showFabricLink
-                              a(alt="", href="")
-                                p
-                                  | Показать ткани
-                    //- end_Uni_Price_Two PriceTable }}}
-                    //- Uni_Price_Three PriceTable {{{
-                    .panel.panel-default.theThirdPriceTag
-                      .panel-heading
-                        .priceTagLabel
-                          | Ткань "Зебра"
-                      .panel-body.container-fluid
-                        .row
-                          .col-xs-6
-                            h.thePriceItself#Price_1_3_3
-                          .col-xs-6
-                            .showFabricLink
-                              a(alt="", href="")
-                                p
-                                  | Показать ткани
-                    //- end_Uni_Price_Three PriceTable }}}
+                        h6
+                          span.label.label-pill.label-success.center-block
+                            | Уни
+                        span
+                          img.center-block.img-responsive.img-rounded.service-icon(alt='Uni_Picture', src='images/types3.png').
+                        br
+                        p.typedetails
+                          details
+                            summary Показать описание...
+                            | Эта система также называется кассетной. Сверху на рулон крепится специальный металлический короб, который защищает ткань от пыли. Металлические направляющие плотно прилягают к окну, позволяя полностью защититься от солнца.  Выделяют две системы: Уни-1 и Уни-2 (в Уни-2 высота направляющих и короба больше).
+                            p.sizelimitations
+                              | Ширина: 40 - 140 см
+                              br
+                              |  Длина: 50 - 200 см
+                      //- end_Uni_Header }}}
+                      //- Uni_PricePanel {{{
+                      .panel-body.pricePanel_1
+                        h4.priceTagLabel
+                          | Категория 1:
+                        h4.thePrice#PriceUni_1
+                          | --
+                        h4.showFabricLink
+                          a(alt="", href="") Показать ткани
+
+                      .panel-body.pricePanel_2
+                        h4.priceTagLabel2
+                          | Категория 2:
+                        h4.thePrice2#PriceUni_2
+                          | --
+                        h4.showFabricLink2
+                          a(alt="", href="") Показать ткани
+
+                      .panel-body.pricePanel_3
+                        h4.priceTagLabel
+                          | Категория 3:
+                        h4.thePrice#PriceUni_3
+                          | --
+                        h4.showFabricLink
+                          a(alt="", href="") Показать ткани
+
+                        //- end_Uni_PricePanel }}}
               //- end_Column_Uni }}}
               //- Column_Lux {{{
-              .col-xs-12.col-sm-6.col-md-3.infos-box(data-scrollreveal='enter left after 0.5s over 1s')
-                    //- Lux_Header PriceTable {{{
-                    h6
-                      span.label.label-pill.label-success.center-block
-                        | Люкс
-                    span
-                      img.center-block.img-responsive.img-rounded.service-icon(alt='', src='images/types4.png').
-                    br
-                    p.typedetails
-                      details
-                        summary Показать описание...
-                        | Эта система похожа на Мини, но ширина и длина Люкса может достигать 3-х метров. Такие рулонные шторы иногда еще называются классическими. Обычно крепятся на проем или в проем окна. Кроме того, на эту систему возможно установить моторизацию (электрический привод с пультом), позволяя автоматически регулировать длину шторы на окне.
-                        p.sizelimitations
-                          | Ширина: 50 - 300 см
-                          br
-                          |  Длина: 100 - 300 см
-                    //- end_Lux_Header PriceTable }}}
-                    //- Lux_Price_One PriceTable {{{
-                    .panel.panel-primary.theFirstPriceTag
+              .col-xs-12.col-sm-6.col-md-3.infos-box(data-scrollreveal='enter right after 0.5s over 1s')
+                   .panel.panel-success.center-block
+                      //- Lux_Header {{{
                       .panel-heading
-                        .priceTagLabel
-                          | Категория 1
-                      .panel-body.container-fluid
-                        .row
-                          .col-xs-6
-                            h.thePriceItself#Price_1_4_1
-                              | -
-                          .col-xs-6
-                            .showFabricLink
-                              a(alt="", href="")
-                                p
-                                  | Показать ткани
-                    //- end_Lux_Price_One PriceTable }}}
-                    //- Lux_Price_Two PriceTable {{{
-                    .panel.panel-default.theSecondPriceTag
-                      .panel-heading
-                        .priceTagLabel
-                          | Категория 2
-                      .panel-body.container-fluid
-                        .row
-                          .col-xs-6
-                            h.thePriceItself#Price_1_4_2
-                              | -
-                          .col-xs-6
-                            .showFabricLink
-                              a(alt="", href="")
-                                p
-                                  | Показать ткани
-                    //- end_Lux_Price_Two PriceTable }}}
-                    //- Lux_Price_Three PriceTable {{{
-                    .panel.panel-default.theThirdPriceTag
-                      .panel-heading
-                        .priceTagLabel
-                          | Ткань "Зебра"
-                      .panel-body.container-fluid
-                        .row
-                          .col-xs-6
-                            h.thePriceItself#Price_1_4_3
-                              | -
-                          .col-xs-6
-                            .showFabricLink
-                              a(alt="", href="")
-                                p
-                                  | Показать ткани
-                    //- end_Lux_Price_Three PriceTable }}}
+                        h6
+                          span.label.label-pill.label-success.center-block
+                            | Люкс
+                        span
+                          img.center-block.img-responsive.img-rounded.service-icon(alt='', src='images/types4.png').
+                        br
+                        p.typedetails
+                          details
+                            summary Показать описание...
+                            | Эта система похожа на Мини, но ширина и длина Люкса может достигать 3-х метров. Такие рулонные шторы иногда еще называются классическими. Обычно крепятся на проем или в проем окна. Кроме того, на эту систему возможно установить моторизацию (электрический привод с пультом), позволяя автоматически регулировать длину шторы на окне.
+                            p.sizelimitations
+                              | Ширина: 50 - 300 см
+                              br
+                              |  Длина: 100 - 300 см
+                      //- end_Lux_Header }}}
+                      //- Lux_PricePanel {{{
+                      .panel-body.pricePanel_1
+                        h4.priceTagLabel
+                          | Категория 1:
+                        h4.thePrice#PriceLux_1
+                          | --
+                        h4.showFabricLink
+                          a(alt="", href="") Показать ткани
+
+                      .panel-body.pricePanel_2
+                        h4.priceTagLabel2
+                          | Категория 2:
+                        h4.thePrice2#PriceLux_2
+                          | --
+                        h4.showFabricLink2
+                          a(alt="", href="") Показать ткани
+
+                      .panel-body.pricePanel_3
+                        h4.priceTagLabel
+                          | Категория 3:
+                        h4.thePrice#PriceLux_3
+                          | --
+                        h4.showFabricLink
+                          a(alt="", href="") Показать ткани
+
+                        //- end_Lux_PricePanel }}}
               //- end_Column_Lux }}}
             //- end_PriceTable }}}
             // Modal {{{
