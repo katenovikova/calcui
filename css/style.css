@@ -3692,6 +3692,21 @@ article .posted-on a:hover{
 #Portfolio {
   background: peachpuff;
 }
+.portfolio-box {
+  display: inline;
+}
+.portfolio-box {
+  width: 400px;
+  height: 450px;
+  background: #506b71;
+  margin: 5px;
+  box-shadow:
+    0 0 15px rgba(5,5,5,.9);
+}
+.portfolio-box h5{
+  padding-top: 10px;
+  color: #ffffff;
+}
 
 #Map .container-fluid {
   padding: 5px 5px 12px 5px;
