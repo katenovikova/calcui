@@ -59,15 +59,15 @@ html(lang='ru-RU')
                     a(href='',data-toggle='modal', data-target='#GetACallModal')
                       .red-text
                         | Заказать звонок
-                  li#menu-item-2.menu-item.menu-item-type-custom.menu-itsem-object-custom.menu-item-25
-                    a(href='#contact')
-                      | Контакты (Пермь)
+                  li#menu-item-4.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-27
+                    a(href='',data-toggle='modal', data-target='#MeasureManModal')
+                      | Вызвать замерщика
                   li#menu-item-3.menu-item.menu-item-type-custom.menu-itsem-object-custom.menu-item-26
                     a(href='http://profkarniz.com/shop/rulonnye-shtory')
                       | Купить онлайн
-                  li#menu-item-4.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-27
-                    a(href='http://profkarniz.com/index/0-5')
-                      | Вызвать замерщика
+                  li#menu-item-2.menu-item.menu-item-type-custom.menu-itsem-object-custom.menu-item-25
+                    a(href='#contact')
+                      | Контакты (Пермь)
           //- end_Nav_Bar }}}
           //- First_Glance {{{
           .home-header-wrap
@@ -213,7 +213,7 @@ html(lang='ru-RU')
                   //- end_Client_5 }}}
             //- end_Clients }}}
           section#calculator.calculator
-            //- Calculator {{{
+            //- Calculator {{{// {{{
             .container-fluid.green-transp-bg.center-block
               .row
                 .col-xs-12.section-header
@@ -222,7 +222,7 @@ html(lang='ru-RU')
                   br
                   br
             .container-fluid#MountOptsSection.calculator
-              //- Mount_Opts {{{
+              //- Mount_Opts {{{// {{{
               .row#MountOptsRow
                 .col-xs-12
                   h2.subsection-label
@@ -233,7 +233,7 @@ html(lang='ru-RU')
                     br
                   #tabs-433998.tabbable
                     ul.nav.nav-pills.nav-justified.row
-                      //- Tabs Mount_Opts {{{
+                      //- Tabs Mount_Opts {{{// {{{
                       li.col-xs-12.active.col-sm-4#MntOneTab
                         a(href='#mountOne', data-toggle='pill')
                           h2.text-center
@@ -255,10 +255,10 @@ html(lang='ru-RU')
                               | На проем
                           span.misteriousGray
                             img.img-fluid.center-block.text-center.img-responsive.img-rounded(alt='', src='http://lorempixel.com/800/450/')
-                      //- Tabs Mount_Opts }}}
+                      //- Tabs Mount_Opts }}}// }}}
                     .tab-content
                       #mountOne.tab-pane(role='tabpanel').active
-                        //- Count_Panes {{{
+                        //- Count_Panes {{{// {{{
                         br
                         br
                         br
@@ -307,16 +307,16 @@ html(lang='ru-RU')
                         br
                         br
                         br
-                        //- end_Count_Panes }}}
+                        //- end_Count_Panes }}}// }}}
                       #mountTwo.tab-pane(role='tabpanel')
                         hr.white-text
                       #mountThree.tab-pane(role='tabpanel')
                         hr.white-text
-              //- end_Mount_Opts }}}
+              //- end_Mount_Opts }}}// }}}
             .container-fluid#MeasurePanesSection.calculator.showOnMnt1.showOnMnt2.showOnMnt3.showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane
-              //- Measure_Panes {{{
+              //- Measure_Panes {{{// {{{
               .row
-                //- SubHeader Measure_Panes {{{
+                //- SubHeader Measure_Panes {{{// {{{
                 .col-xs-12.subsection-label
                   br
                   br
@@ -327,7 +327,7 @@ html(lang='ru-RU')
                   h2.showOnMnt2.showOnMnt3
                     | Укажите размеры оконного проема
                   hr.white-glow
-                //- end_SubHeader Meaure_Panes }}}
+                //- end_SubHeader Meaure_Panes }}}// }}}
               .row
                 //- Height {{{
                 .col-xs-6.col-sm-3
@@ -601,10 +601,10 @@ html(lang='ru-RU')
                                   | мм
                     //- end_Width_4 }}}
                 //- end_Width }}}
-              //- end_Meaure_Panes }}}
+              //- end_Meaure_Panes }}}// }}}
             .container-fluid#PriceTableSection.calculator
-            //- end_Calculator }}}
-            //- PriceTable {{{
+          //- end_Calculator }}}// }}}
+          //- PriceTable {{{
           .container-fluid#PriceTableSection
             .row
               //- SubHeader PriceTable {{{
@@ -1106,8 +1106,7 @@ html(lang='ru-RU')
               form#GetACallForm(role='form', action="https://formspree.io/info@profkarniz.com", method='POST')
                 .sr-only.form-group
                   input(type='hidden',name='_subject',value='Want_to_Get_a_Call')
-                  input(type='hidden',name='_cc',value='n.anisimov.23@gmail.com')
-                  
+                  input(type='hidden',name='_next',value='#OnSubmitModal')
                 .form-group
                   label(for='clientName')
                     | Имя
@@ -1117,12 +1116,10 @@ html(lang='ru-RU')
                   label(for='thePhoneNumber')
                     | Телефонный номер
                   input#thePhoneNumber.form-control(name='thePhoneNumber', type='tel',pattern='.*', placeholder='9876543210')
-                button.btn.btn-danger
-                  input(type='submit', value='Send')
-            // Modal Footer
-            .modal-footer
-              button.btn.btn-danger(type='submit', value='Send')
-                | Заказать
+                br
+                br
+                .form-group(style='padding-top:0;padding-bottom:0;')
+                  input.form-control(type='submit', value='Заказать')
               //button.btn.btn-danger(type='button')
                 | Save changes
       //- end_GetACallModal }}}
@@ -1138,29 +1135,28 @@ html(lang='ru-RU')
                   | Заказать звонок
             // Modal Body
             .modal-body
-              form#MeasureManForm(role='form')
+              form#MeasureManForm(role='form', action="https://formspree.io/info@profkarniz.com", method='POST')
+                .sr-only.form-group
+                  input(type='hidden',name='_subject',value='Waiting_for_Measure_Man')
+                  input(type='hidden',name='_next',value='#OnSubmitModal')
                 .form-group
                   label(for='clientName')
                     | Имя
-                  input#clientName.form-control(type='text', placeholder='Как к Вам обращаться?')
+                  input#clientName.form-control(name='clientName', type='text', placeholder='Как к Вам обращаться?')
                 br
                 .form-group
                   label(for='thePhoneNumber')
                     | Телефонный номер
-                  input#thePhoneNumber.form-control(type='tel',pattern='', placeholder='9876543210')
+                  input#thePhoneNumber.form-control(name='thePhoneNumber', type='tel',pattern='.*', placeholder='9876543210')
                 br
                 .form-group
                   label(for='theEmail')
                     | Email
-                  input#theEmail.form-control(type='email',pattern='', placeholder='your@mail.com')
-            //- Footer MeasureMan {{{
-            .modal-footer
-              button.btn.btn-success(type='submit')
-                | Заказать
-              button.btn.btn-danger(type='button', data-dismiss='modal')
-                | Отмена
-            //- end_Footer MeasureMan
-      // end_MeasureManModal }}}
+                  input#theEmail.form-control(name='theEmail', type='email',pattern='', placeholder='your@mail.com')
+                br
+                .form-group(style='padding-top:0;padding-bottom:0;')
+                  input.form-control(type='submit', value='Заказать')
+      //- end_MeasureManModal }}}
       //- ShowFabricModal {{{
       .modal.showFabricModal#ShowFabricModal_1.fade(tabindex='-1', role='dialog', aria-labelledby='ShowFabricModalLabel_1', aria-hidden='true')
         .modal-dialog
@@ -1202,9 +1198,6 @@ html(lang='ru-RU')
                     img(src='images/fabric/1/8.jpg')
             //- end_Body ShowFabric }}}
       //- end_ShowFabricModal }}}
-              //button.btn.btn-danger(type='button')
-                | Save changes
-
       //- end_Modals }}}
 
 // vim:foldmethod=marker:foldlevel=0:nowrap:textwidth=9999
