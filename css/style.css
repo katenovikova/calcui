@@ -3757,19 +3757,20 @@ article .posted-on a:hover{
   margin-left: 232px;
   margin-right:232px;
 }
-#ColorPickModal_1 .modal-dialog {
-  width: 92%;
-  height: 92%;
-  padding: 0;
+.showFabricModal .modal-dialog {
+  width: 75%;
+  height: 75%;
+  padding: 5px;
 }
-
-#ColorPickModal_1 .modal-content {
-  height: 95%;
-  width: auto;
-  overflow: hidden;
+.showFabricModal .modal-body {
 }
-
-
+.showFabricModal .modal-body .thumbnail{
+  padding: 5px;
+}
+.showFabricModal .modal-content .container {
+ height: 100%;
+ width: 100%;
+}
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
 	color:#404040;
