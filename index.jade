@@ -80,10 +80,10 @@ html(lang='ru-RU')
                       br
                       |от 499 руб.
                     .buttons
-                      a.btn.btn-primary.custom-button.red-btn(href='http://profkarniz.com/index/0-5')
+                      a.btn.btn-primary.custom-button.red-btn(href='#MeasureManModal',data-toggle='modal',data-target='#MeasureManModal')
                         | Заказать бесплатный замер
                       a.btn.btn-primary.custom-button.green-btn(href='#calculator')
-                        | Рассчитать цены штор для вашего окна
+                        | Рассчитать стоимость онлайн
             .clear
           //- end_First_Glance }}}
         #content.site-content.zerif-fp-site-content
@@ -1132,7 +1132,7 @@ html(lang='ru-RU')
                 button.close(type='button', data-dismiss='modal')
                     i.fa.fa-lg.fa-times
                 h4#MeasureManModalLabel.modal-title
-                  | Заказать звонок
+                  | Вызвать замерщика
             // Modal Body
             .modal-body
               form#MeasureManForm(role='form', action="https://formspree.io/info@profkarniz.com", method='POST')
@@ -1155,7 +1155,7 @@ html(lang='ru-RU')
                   input#theEmail.form-control(name='theEmail', type='email',pattern='', placeholder='your@mail.com')
                 br
                 .form-group(style='padding-top:0;padding-bottom:0;')
-                  input.form-control(type='submit', value='Заказать')
+                  input.form-control(type='submit', value='Вызвать')
       //- end_MeasureManModal }}}
       //- ShowFabricModal {{{
       .modal.showFabricModal#ShowFabricModal_1.fade(tabindex='-1', role='dialog', aria-labelledby='ShowFabricModalLabel_1', aria-hidden='true')
