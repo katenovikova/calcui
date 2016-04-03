@@ -3689,6 +3689,10 @@ article .posted-on a:hover{
 #PriceTableSection .priceSeparator {
 }
 
+#Portfolio {
+  background: peachpuff;
+}
+
 #Map .container-fluid {
   padding: 5px 5px 12px 5px;
 }
@@ -3725,6 +3729,17 @@ article .posted-on a:hover{
 .modal-body > form > .form-group {
   text-align: left
 }
+#ColorPickModal .modal-dialog {
+  width: 92%;
+  height: 92%;
+  padding: 0;
+}
+
+#ColorPickModal .modal-content {
+  height: 95%;
+}
+
+
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
 	color:#404040;

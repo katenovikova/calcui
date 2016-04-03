@@ -47,7 +47,7 @@ html(lang='ru-RU')
                   span.icon-bar
                   span.icon-bar
                   span.icon-bar
-                a.navbar-brand#theLogooo(href='#')
+                a.navbar-brand#theLogo(href='http://profkarniz.com')
                   img(src='./images/logo.png', alt='Профкарниз')
               nav#site-navigation.navbar-collapse.bs-navbar-collapse.collapse(role='navigation', itemscope='itemscope', itemtype='http://schema.org/SiteNavigationElement')
                 ul#menu-menuname.nav.navbar-nav.navbar-right.responsive-nav.main-nav-list
@@ -328,7 +328,7 @@ html(lang='ru-RU')
                     | Укажите размеры оконного проема
                   hr.white-glow
                 //- end_SubHeader Meaure_Panes }}}
-              .row.no-padding
+              .row
                 //- Height {{{
                 .col-xs-6.col-sm-3
                   .howto_advise.center-block
@@ -840,7 +840,7 @@ html(lang='ru-RU')
                           h5 Профессиональный монтаж
                       // p Профессиональный работник установит рулонные шторы за 300 руб./изделие
               //- end_How_We_Work }}}
-          section#portfolio.no-padding
+          section#Portfolio.no-padding
             //- Portfolio {{{
             .container
               //- Header Portfolio {{{
@@ -1126,7 +1126,8 @@ html(lang='ru-RU')
       // .zerif-mobile-bg-helper-content
       // .zerif-mobile-bg-helper-wrap-all
       // }}}
-      // Modal {{{
+      // Modals {{{
+      // GetACallModal {{{
       .modal#GetACallModal.fade(tabindex='-1', role='dialog', aria-labelledby='GetACallModalLabel', aria-hidden='true')
         .modal-dialog
           .modal-content
@@ -1150,11 +1151,49 @@ html(lang='ru-RU')
                   input#thePhoneNumber.form-control(type='tel',pattern='^(8|\+7)+[\s\-\(]+\d{3}+[\-\s\)]+\d{3}+[\s\-]+\d{2}+[\s\-]+\d{2}$', placeholder='9876543210')
             // Modal Footer
             .modal-footer
-              button.btn.btn-success(type='submit') Submit
+              button.btn.btn-success(type='submit')
+                | Заказать
               button.btn.btn-danger(type='button', data-dismiss='modal')
-                | Close
+                | Отмена
               //button.btn.btn-danger(type='button')
                 | Save changes
-      //- endModal }}}
+      // end_GetACallModal }}}
+      // ColorPickModal {{{
+      .modal#ColorPickModal.fade(tabindex='-1', role='dialog', aria-labelledby='ColorPickModalLabel', aria-hidden='true')
+        .modal-dialog
+          .modal-content
+            // Modal Header
+            .modal-header
+                button.close(type='button', data-dismiss='modal')
+                    i.fa.fa-lg.fa-times
+                h4#ColorPickModalLabel.modal-title
+                  | Заказать звонок
+            // Modal Body
+            .modal-body
+              form#ColorPickForm(role='form')
+                .form-group
+                  label(for='clientName')
+                    | Имя
+                  input#clientName.form-control(type='text', placeholder='Как к Вам обращаться?')
+                br
+                .form-group
+                  label(for='thePhoneNumber')
+                    | Телефонный номер
+                  input#thePhoneNumber.form-control(type='tel',pattern='^(8|\+7)+[\s\-\(]+\d{3}+[\-\s\)]+\d{3}+[\s\-]+\d{2}+[\s\-]+\d{2}$', placeholder='9876543210')
+                br
+                .form-group
+                  label(for='theEmail')
+                    | Email
+                  input#theEmail.form-control(type='email',pattern='', placeholder='your@mail.com')
+            // Modal Footer
+            .modal-footer
+              button.btn.btn-success(type='submit')
+                | Заказать
+              button.btn.btn-danger(type='button', data-dismiss='modal')
+                | Отмена
+              //button.btn.btn-danger(type='button')
+                | Save changes
+      // end_ColorPickModal }}}
+      //- end_Modals }}}
 
 // vim:foldmethod=marker:foldlevel=0:nowrap:textwidth=9999
