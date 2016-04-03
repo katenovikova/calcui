@@ -1085,7 +1085,7 @@ html(lang='ru-RU')
       script(src='js/bootstrap.min.js')
       script(src='js/zerif.js?ver=20120206')
       script(src='js/scripts.js')
-      script(src='js/reklk.js')
+      //script(src='js/reklk.js')
       // .zerif-mobile-bg-helper-content
       // .zerif-mobile-bg-helper-wrap-all
       // }}}
@@ -1102,19 +1102,25 @@ html(lang='ru-RU')
                   | Заказать звонок
             // Modal Body
             .modal-body
-              form#GetACallForm(role='form')
+              form#GetACallForm(role='form', action="https://formspree.io/info@profkarniz.com", method='POST')
+                .sr-only.form-group
+                  input(type='hidden',name='_subject',value='Want_to_Get_a_Call')
+                  input(type='hidden',name='_cc',value='n.anisimov.23@gmail.com')
+                  
                 .form-group
                   label(for='clientName')
                     | Имя
-                  input#clientName.form-control(type='text', placeholder='Как к Вам обращаться?')
+                  input#clientName.form-control(name='clientName', type='text', placeholder='Как к Вам обращаться?')
                 br
                 .form-group
                   label(for='thePhoneNumber')
                     | Телефонный номер
-                  input#thePhoneNumber.form-control(type='tel',pattern='^(8|\+7)+[\s\-\(]+\d{3}+[\-\s\)]+\d{3}+[\s\-]+\d{2}+[\s\-]+\d{2}$', placeholder='9876543210')
+                  input#thePhoneNumber.form-control(name='thePhoneNumber', type='tel',pattern='.*', placeholder='9876543210')
+                button.btn.btn-danger
+                  input(type='submit', value='Send')
             // Modal Footer
             .modal-footer
-              button.btn.btn-danger(type='submit')
+              button.btn.btn-danger(type='submit', value='Send')
                 | Заказать
               //button.btn.btn-danger(type='button')
                 | Save changes
@@ -1140,7 +1146,7 @@ html(lang='ru-RU')
                 .form-group
                   label(for='thePhoneNumber')
                     | Телефонный номер
-                  input#thePhoneNumber.form-control(type='tel',pattern='^(8|\+7)+[\s\-\(]+\d{3}+[\-\s\)]+\d{3}+[\s\-]+\d{2}+[\s\-]+\d{2}$', placeholder='9876543210')
+                  input#thePhoneNumber.form-control(type='tel',pattern='', placeholder='9876543210')
                 br
                 .form-group
                   label(for='theEmail')
