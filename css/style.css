@@ -3689,19 +3689,31 @@ article .posted-on a:hover{
 #PriceTableSection .priceSeparator {
 }
 
-#Portfolio {
-  background: peachpuff;
+#Portfolio .container-fluid{
+  padding-left: 25px;
 }
-.portfolio-box {
+#Portfolio {
+  background: white;
+}
+#Portfolio .section-header h2{
+  color: rgba(0,0,0,.8);
+  padding-bottom: 0;
+}
+#Portfolio .section-header hr{
+  background: rgba(0,0,0,.8);
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.portfolio-box img {
+  width: 400px;
+  height: 400px;
   display: inline;
 }
 .portfolio-box {
   width: 400px;
   height: 450px;
   background: #506b71;
-  margin: 5px;
-  box-shadow:
-    0 0 15px rgba(5,5,5,.9);
+  margin: 15px;
 }
 .portfolio-box h5{
   padding-top: 10px;
@@ -3723,19 +3735,16 @@ article .posted-on a:hover{
   margin-right: -5px;
 }
 .modal-header  h4{
-  color: darkgreen;
+  color: white;
   text-transform: uppercase;
   font-weight: 400;
 }
 
 .modal-header,.modal-footer{
-  background: #96b656;
+  background: #506b71;
 }
 .modal-content{
-  background: peachpuff;
-}
-{
-  background: #96b656;
+  background: lightgray;
 }
 .modal-body > form > .form-group {
   padding-left: 20px;
@@ -3743,6 +3752,10 @@ article .posted-on a:hover{
 }
 .modal-body > form > .form-group {
   text-align: left
+}
+.modal-footer > button{
+  margin-left: 232px;
+  margin-right:232px;
 }
 #ColorPickModal .modal-dialog {
   width: 92%;

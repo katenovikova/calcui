@@ -840,21 +840,20 @@ html(lang='ru-RU')
                           h5 Профессиональный монтаж
                       // p Профессиональный работник установит рулонные шторы за 300 руб./изделие
               //- end_How_We_Work }}}
-          section#Portfolio.no-padding
+          section#Portfolio.white-bg
             //- Portfolio {{{
             .container
               //- Header Portfolio {{{
               .section-header
                 h2.dark-text
                   | Наше портфолио
-                hr.primary
+                hr.dark-text
                 br
-                h6 Руллонные шторы Мини, Уни, Люкс, Зебра, Рулонные шторы с фотопечатью
               //- end_Header Portfolio }}}
-            .container-fluid
+            .container-fluid.center-block
               //- Pictures Portfolio {{{
               .row
-                // Picture_1 {{{
+                //- Picture_1 {{{
                 .col-lg-4.col-sm-6.portfolio-box.thumbnail
                     img.img-rounded.img-responsive(src='images/portfolio/1.jpg', alt='')
                     h5.portfolio-box-caption
@@ -902,7 +901,6 @@ html(lang='ru-RU')
                     h5.portfolio-box-caption
                       .portfolio-box-caption-content
                           | TODO
-              .row
                 //- end_Picture_7 }}}
                 //- Picture_8 {{{
                 .col-lg-4.col-sm-6.portfolio-box.thumbnail
@@ -1116,10 +1114,8 @@ html(lang='ru-RU')
                   input#thePhoneNumber.form-control(type='tel',pattern='^(8|\+7)+[\s\-\(]+\d{3}+[\-\s\)]+\d{3}+[\s\-]+\d{2}+[\s\-]+\d{2}$', placeholder='9876543210')
             // Modal Footer
             .modal-footer
-              button.btn.btn-success(type='submit')
+              button.btn.btn-danger(type='submit')
                 | Заказать
-              button.btn.btn-danger(type='button', data-dismiss='modal')
-                | Отмена
               //button.btn.btn-danger(type='button')
                 | Save changes
       // end_GetACallModal }}}
