@@ -211,7 +211,7 @@ p {
 	margin-bottom: 1.0em;
 }
 b, strong {
-	font-weight: bold;
+	font-weight: 400;
 }
 dfn, cite, em, i {
 	font-style: italic;
@@ -287,7 +287,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1,h2 {
 	font-family: 'Roboto', 'sans-serif';
-	font-weight: 700;
+	font-weight: 400;
 	line-height: 35px;
 }
 h1,
@@ -399,7 +399,7 @@ li > ol {
 	margin-left: 1.5em;
 }
 dt {
-	font-weight: bold;
+	font-weight: 400;
 }
 dd {
 	margin: 0 1.5em 1.5em 0;
@@ -434,7 +434,7 @@ caption {
 	margin: 20px 0;
 }
 th {
-	font-weight: bold;
+	font-weight: 400;
 	text-transform: uppercase;
 	border-top: 1px solid #ededed;
 	padding: 6px 10px 6px 0;
@@ -457,7 +457,7 @@ thead th{
 	background: #5dc024;
 }
 .green-transp-bg {
-	background: rgba(25, 125, 10, .9);
+	background: rgba(70, 150, 40, .9);
 }
 .blue-bg {
 	background: rgba(52, 210, 147, 1);
@@ -834,7 +834,7 @@ a:active {
 	color: #21759b;
 	display: block;
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: 400;
 	height: auto;
 	left: 5px;
 	line-height: normal;
@@ -909,7 +909,7 @@ a:active {
 	color: #404040;
 	text-transform: uppercase;
 	margin-bottom: 30px;
-	font-weight: bold;
+	font-weight: 400;
 	font-size: 17px;
 	position: relative;
 	text-align: left;
@@ -1397,6 +1397,8 @@ object {
 }
 .section-header {
 	text-align: center;
+	text-transform: uppercase;
+  font-weight: 400
 	padding-bottom: 30px;
 }
 .section-header h3 {
@@ -1817,7 +1819,7 @@ hr.subsection-label {
 .other-focuses .section-footer-title {
 	padding: 0 15px;
 	color: #404040;
-	font-weight: bold;
+	font-weight: 400;
 }
 .other-infos-list {
 	padding-top: 5px;
@@ -1938,7 +1940,7 @@ width: -webkit-calc(100% / 4);
 	display: inline-block;
 	margin-bottom: 15px;
 	margin-top: 15px;
-	font-weight: bold;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 .cbp-rfgrid li a:hover .project-info {
@@ -2139,7 +2141,7 @@ video::-webkit-media-controls {
   margin-left: 0
 }
 .skills .skill h6 {
-	font-weight: 700;
+	font-weight: 400;
 	clear: none;
 	width: auto;
 	float: none;
@@ -2172,7 +2174,7 @@ video::-webkit-media-controls {
 	padding-top: : 5px;
 }
 .our-clients h2 {
-	font-weight: 700;
+	font-weight: 400;
   font-size 16
 	float:none;
   padding-top 20px
@@ -2283,7 +2285,7 @@ video::-webkit-media-controls {
 	margin-right: 25px;
 }
 .features .feature h5 {
-	font-weight: bold;
+	font-weight: 400;
 	line-height: 28px;
 	color: #404040;
 }
@@ -2331,7 +2333,7 @@ video::-webkit-media-controls {
 }
 .package-header h5 {
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 400;
 	float:none;
 }
 .price {
@@ -2384,7 +2386,7 @@ video::-webkit-media-controls {
 	height: 82px !important;
 }
 .best-value .package-header h4 {
-	font-weight: bold;
+	font-weight: 400;
 	line-height: 29px;
 	text-transform: uppercase;
 	margin:0px;
@@ -2504,7 +2506,7 @@ video::-webkit-media-controls {
 }
 .item-top-title h5 {
 	color: #404040;
-	font-weight: 700;
+	font-weight: 400;
 }
 /* ITEM DETAILS */
 .item-product {
@@ -2524,7 +2526,7 @@ video::-webkit-media-controls {
 /*---PRODUCT PRICE---*/
 .item-product-price {
 	font-size: 1em;
-	font-weight: 700;
+	font-weight: 400;
 	position: relative;
 }
 .item-product-price .subdescription {
@@ -2638,7 +2640,7 @@ video::-webkit-media-controls {
 	font-size: 28px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
+	font-weight: 400;
 	margin-bottom: 8px;
 }
 .newsletter .subscription {
@@ -3025,7 +3027,7 @@ video::-webkit-media-controls {
 	margin-top: 10px;
 }
 .single-project .project-information ul li span {
-	font-weight: 700;
+	font-weight: 400;
 	margin-right: 5px;
 }
 /*---------------------------------------
@@ -3394,7 +3396,7 @@ article .posted-on a:hover{
 	display: inline-block;
 	text-transform: uppercase;
 	margin-bottom: 30px;
-	font-weight: bold;
+	font-weight: 400;
 	font-size: 17px;
 	float: none;
 	width: auto;
@@ -3403,7 +3405,7 @@ article .posted-on a:hover{
 #carousel-homepage-latestnews .carousel-inner .item .latestnews-title a {
 	text-transform: uppercase;
 	color: #404040;
-	font-weight: 700;
+	font-weight: 400;
 	display: block;
 }
 #carousel-homepage-latestnews .item .latestnews-box .latestnews-title a:before {
@@ -3622,26 +3624,42 @@ article .posted-on a:hover{
   padding-right: 0;
 }
 
+#PriceTableSection hr.subsection-label{
+  background: #fff;
+}
+#PriceTableSection .subsection-label{
+  color: #fff;
+}
+
 #PriceTableSection{
-  background: #bee170;
+  background: #506B71;
   padding-bottom: 20px;
 }
 
 #PriceTableSection .infos-box .panel{
-  margin-bottom: 0
+  margin-bottom: 0;
+}
+#PriceTableSection .infos-box *{
+  opacity: .92;
+}
+#PriceTableSection .infos-box:hover *{
+  opacity: 1;
 }
 #PriceTableSection .infos-box:hover{
+  z-index: 200;
+  opacity: 1;
   box-shadow:
-    0 0 25px rgba(5,5,0,1);
+    0 0 15px rgba(5,5,5,.9),
+    0 0 35px rgba(5,5,5,1);
 }
 #PriceTableSection .infos-box :hover  .pricePanel_1{
-  background-color: #5df044;
+  background-color: #6dc054;
 }
 #PriceTableSection .infos-box :hover   .pricePanel_2{
   background-color: #5dc064;
 }
 #PriceTableSection .infos-box :hover  .pricePanel_3{
-  background-color: #5df044;
+  background-color: #4dc074;
 }
 #PriceTableSection .infos-box :hover  .panel-heading {
   background-color: #5dc064;
@@ -3677,6 +3695,35 @@ article .posted-on a:hover{
 
 #Map .container-fluid > .scrolloff {
   pointer-events: none;
+}
+.modal-header > h4,button{
+  display: inline-block;
+}
+.modal-header > button{
+  display: inline-block;
+  margin-right: -5px;
+}
+.modal-header  h4{
+  color: darkgreen;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.modal-header,.modal-footer{
+  background: #96b656;
+}
+.modal-content{
+  background: peachpuff;
+}
+{
+  background: #96b656;
+}
+.modal-body > form > .form-group {
+  padding-left: 20px;
+  padding-right 20px;
+}
+.modal-body > form > .form-group {
+  text-align: left
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
@@ -4403,27 +4450,4 @@ ul.nav > li.current_page_item > a:before, .nav > li.current-menu-item a:before {
 	#contact .h6 .white-text {
     font-size: 24px !important;
   }
-}
-
-/* MyModals*/
-.modal-body .form-horizontal .col-sm-2,
-.modal-body .form-horizontal .col-sm-10 {
-    width: 100%
-}
-
-.modal-body .form-horizontal .control-label {
-    text-align: left;
-}
-.modal-body .form-horizontal .col-sm-offset-2 {
-    margin-left: 15px;
-}
-/*/
-TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
-/*/
-.modal-backdrop {
-  z-index: 0;
-
-}
-.modal-dialog {
-  z-index: 3000;
 }

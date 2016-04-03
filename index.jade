@@ -55,13 +55,17 @@ html(lang='ru-RU')
                     a(href='tel:+79605241878')
                       h5.red-text
                         | +7 (960) 524-18-78
-                  li#menu-item-1.menu-item.menu-item-type-custom.menu-itsem-object-custom.menu-item-25
+                  li#menu-item-1.menu-item.menu-item-type-custom.menu-itsem-object-custom.menu-item-24
+                    a(href='',data-toggle='modal', data-target='#GetACallModal')
+                      .red-text
+                        | Заказать звонок
+                  li#menu-item-2.menu-item.menu-item-type-custom.menu-itsem-object-custom.menu-item-25
                     a(href='#contact')
                       | Контакты (Пермь)
-                  li#menu-item-2.menu-item.menu-item-type-custom.menu-itsem-object-custom.menu-item-26
+                  li#menu-item-3.menu-item.menu-item-type-custom.menu-itsem-object-custom.menu-item-26
                     a(href='http://profkarniz.com/shop/rulonnye-shtory')
                       | Купить онлайн
-                  li#menu-item-3.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-27
+                  li#menu-item-4.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-27
                     a(href='http://profkarniz.com/index/0-5')
                       | Вызвать замерщика
           //- end_Nav_Bar }}}
@@ -601,7 +605,7 @@ html(lang='ru-RU')
             .container-fluid#PriceTableSection.calculator
             //- end_Calculator }}}
             //- PriceTable {{{
-          .container#PriceTableSection
+          .container-fluid#PriceTableSection
             .row
               //- SubHeader PriceTable {{{
               .col-xs-12
@@ -623,6 +627,7 @@ html(lang='ru-RU')
                         span
                           img.center-block.img-responsive.img-circle.service-icon(alt='Lite_Picture', src='images/types1.png').
                         br
+                        hr
                         p.typedetails
                           details
                             summary Показать описание...
@@ -671,6 +676,7 @@ html(lang='ru-RU')
                         span
                           img.center-block.img-responsive.img-rounded.service-icon(alt='Mini_Picture', src='images/types2.png').
                         br
+                        hr
                         p.typedetails
                           details
                             summary Показать описание...
@@ -718,6 +724,7 @@ html(lang='ru-RU')
                         span
                           img.center-block.img-responsive.img-rounded.service-icon(alt='Uni_Picture', src='images/types3.png').
                         br
+                        hr
                         p.typedetails
                           details
                             summary Показать описание...
@@ -765,6 +772,7 @@ html(lang='ru-RU')
                         span
                           img.center-block.img-responsive.img-rounded.service-icon(alt='', src='images/types4.png').
                         br
+                        hr
                         p.typedetails
                           details
                             summary Показать описание...
@@ -802,28 +810,6 @@ html(lang='ru-RU')
                         //- end_Lux_PricePanel }}}
               //- end_Column_Lux }}}
             //- end_PriceTable }}}
-            // Modal {{{
-              #myModal.modal.fade(role='dialog')
-              .modal-dialog
-                // Modal content
-                .modal-content
-                  .modal-header
-                    button.close(type='button', data-dismiss='modal') fa.fa-times.fa-2x
-              h4.modal-title
-                |  Ткани первой категории
-              .modal-body
-                p
-                  | Ниже представлены лишь некоторые примеры тканей категории 1. Посмотреть полный перечень, а также ближе ознакомиться с тканями, Вы можете  в
-                  a(href='#mapDiv', alt='')
-                    | нашем салоне
-                  | или
-                  a(href='#GetAMesure', alt='')
-                    | заказав бесплатный замер.
-              .modal-footer
-              button.btn.btn-default(type='button', data-dismiss='modal') Close
-              // Triggering the modal with a button
-              button.btn.btn-info.btn-lg(type='button', data-toggle='modal', data-target='#myModal') Open Modal
-            //- endModal }}}
           // section#team.our-team
             //- How_We_Work (OFF) {{{
               .container
@@ -1110,16 +1096,17 @@ html(lang='ru-RU')
             .footer-box-wrap
               .col-md-3.footer-box.four-cell.company-details
                 .icon-top.red-text
-                  i.fa.fa-map-marker
+                  i.fa.fa-map-marker.fa-lg
                 | Компания ПрофКарниз
+                br
                 | Пермь, Пушкина 104 лит АБ
               .col-md-3.footer-box.four-cell.company-details
                 .icon-top.green-text
-                  i.fa.fa-envelope
+                  i.fa.fa-envelope.fa-lg
                 a(href='mailto:info@profkarniz.com') info@profkarniz.com
               .col-md-3.footer-box.four-cell.company-details
-                .icon-top.blue-text
-                  i.fa.fa-phone
+                .icon-top.green-text
+                    i.fa.fa-phone.fa-lg
                 a(href='tel:+79605241878')
                   | +7 (960) 524-18-78
                   br
@@ -1139,5 +1126,35 @@ html(lang='ru-RU')
       // .zerif-mobile-bg-helper-content
       // .zerif-mobile-bg-helper-wrap-all
       // }}}
+      // Modal {{{
+      .modal#GetACallModal.fade(tabindex='-1', role='dialog', aria-labelledby='GetACallModalLabel', aria-hidden='true')
+        .modal-dialog
+          .modal-content
+            // Modal Header
+            .modal-header
+                button.close(type='button', data-dismiss='modal')
+                    i.fa.fa-lg.fa-times
+                h4#GetACallModalLabel.modal-title
+                  | Заказать звонок
+            // Modal Body
+            .modal-body
+              form#GetACallForm(role='form')
+                .form-group
+                  label(for='clientName')
+                    | Имя
+                  input#clientName.form-control(type='text', placeholder='Как к Вам обращаться?')
+                br
+                .form-group
+                  label(for='thePhoneNumber')
+                    | Телефонный номер
+                  input#thePhoneNumber.form-control(type='tel',pattern='^(8|\+7)+[\s\-\(]+\d{3}+[\-\s\)]+\d{3}+[\s\-]+\d{2}+[\s\-]+\d{2}$', placeholder='9876543210')
+            // Modal Footer
+            .modal-footer
+              button.btn.btn-success(type='submit') Submit
+              button.btn.btn-danger(type='button', data-dismiss='modal')
+                | Close
+              //button.btn.btn-danger(type='button')
+                | Save changes
+      //- endModal }}}
 
 // vim:foldmethod=marker:foldlevel=0:nowrap:textwidth=9999
