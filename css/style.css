@@ -3716,12 +3716,31 @@ article .posted-on a:hover{
   padding-top: 10px;
   color: #ffffff;
 }
-#GetConsulted .panel{
+#testimonials,
+#contact {
+  background: rgba(0,0,0,.8);
+}
+
+#GetConsulted {
+  background: rgba(11,55,11,.85)
+}
+
+#GetConsultedForm .panel{
   background: lightgray;
   padding-right: 35px;
   padding-left: 35px;
 }
-}
+
+#Map {
+  padding: 30px;
+  box-shadow:
+    0 0 70px white,
+    0 0 60px white,
+    0 0 50px white,
+    0 0 40px white,
+    0 0 30px white,
+    0 0 20px white;
+  background: white;
 }
 
 #Map .container-fluid {
@@ -3731,6 +3750,19 @@ article .posted-on a:hover{
 #Map .container-fluid > .scrolloff {
   pointer-events: none;
 }
+
+/*/
+#footer{
+  box-shadow:
+    0 0 70px #272727,
+    0 0 60px #272727,
+    0 0 50px #272727,
+    0 0 40px #272727,
+    0 0 30px #272727,
+    0 0 20px #272727;
+}
+/*/
+
 .modal-header > h4,button{
   display: inline-block;
 }

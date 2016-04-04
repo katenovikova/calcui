@@ -143,73 +143,198 @@ $(document).ready(function() {
         return indx;
     }
     var hei1, hei2, hei3, hei4, wid1, wid2, wid3, wid4;
-    hei1=1200;
-    hei2=1200;
-    hei3=1200;
-    hei4=1200;
-    wid1=700;
-    wid2=700;
-    wid3=700;
-    wid4=700;
 
+    var resLite1 , resLite2 , resLite3 , resMini1 , resMini2 , resMini3 , resUni1  , resUni2  , resUni3  , resLux1  , resLux2  , resLux3  , 
 
+    resLite1 = 0;
+    resLite2 = 0;
+    resLite3 = 0;
+    resMini1 = 0;
+    resMini2 = 0;
+    resMini3 = 0;
+    resUni1  = 0;
+    resUni2  = 0;
+    resUni3  = 0;
+    resLux1  = 0;
+    resLux2  = 0;
+    resLux3  = 0;
+
+    hei1 = document.getElementById("height_1").value;
+    wid1 = document.getElementById("width_1").value;
+
+    h1 = hei1/10;
+    w1 = wid1/10;
+
+    TotalizePane(h1, w1);
+
+    if ($('MntOneTab').hasClass('active')) {
+      if ($('winLen2b').hasClass('active')) {
+          hei2 = document.getElementById("height_2").value;
+          wid2 = document.getElementById("width_2").value;
+
+          h2=hei2/10;
+          w2=wid2/10;
+
+          TotalizePane(h2, w2);
+
+      } else if ($('winLen3b').hasClass('active')) {
+          hei3 = document.getElementById("height_3").value;
+          wid3 = document.getElementById("width_3").value;
+
+          h3=hei3/10;
+          w3=wid3/10;
+
+          TotalizePane(h3, w3);
+
+      } else if ($('winLen4b').hasClass('active')) {
+          hei4 = document.getElementById("height_4").value;
+          wid4 = document.getElementById("width_4").value;
+
+          h4=hei4/10;
+          w4=wid4/10;
+
+          TotalizePane(h4, w4);
+      }
+    }
+      /*/
     $("#height_1").change(function() {
-        hei1 = document.getElementById("height_1").value;
-    });
-    $("#height_2").change(function() {
-        hei2 = document.getElementById("height_2").value;
-    });
-    $("#height_3").change(function() {
-        hei3 = document.getElementById("height_3").value;
-    });
-    $("#height_4").change(function() {
-        hei4 = document.getElementById("height_4").value;
+      hei1 = document.getElementById("height_1").value;
+      h1=hei1/10;
     });
     $("#width_1").change(function() {
-        wid1 = document.getElementById("width_1").value;
-    });
-    $("#width_2").change(function() {
-        wid2 = document.getElementById("width_2").value;
-    });
-    $("#width_3").change(function() {
-        wid3 = document.getElementById("width_3").value;
-    });
-    $("#width_4").change(function() {
-        wid4 = document.getElementById("width_4").value;
+      wid1 = document.getElementById("width_1").value;
+      w1=wid1/10;
     });
 
-    h1=hei1/10;
-    h2=hei2/10;
-    h3=hei3/10;
-    h4=hei4/10;
-    w1=wid1/10;
-    w2=wid2/10;
-    w3=wid3/10;
-    w4=wid4/10;
+    if ($('MntOneTab').hasClass('active')) {
+      if ($('winLen1b').hasClass('active')) {
+        $("#height_2").change(function() {
+          hei2 = document.getElementById("height_2").value;
+          h2=hei2/10;
+        });
+        $("#width_2").change(function() {
+          wid2 = document.getElementById("width_2").value;
+          w2=wid2/10;
+        });
+      }
+      if ($('winLen1b').hasClass('active')) {
+        $("#height_3").change(function() {
+          hei3 = document.getElementById("height_3").value;
+          h3=hei3/10;
+        });
+        $("#width_3").change(function() {
+          wid3 = document.getElementById("width_3").value;
+          w3=wid3/10;
+        });
+      }
+      if ($('winLen1b').hasClass('active')) {
+        $("#height_4").change(function() {
+          hei4 = document.getElementById("height_4").value;
+          h4=hei4/10;
+        });
+        $("#width_4").change(function() {
+          wid4 = document.getElementById("width_4").value;
+          w4=wid4/10;
+        });
+      }
+      /*/
 
-    iLite = findIndexLite(h1, w1);
-    iMini = findIndexMini(h1, w1);
-    iUni = findIndexUni(h1, w1);
-    iLux = findIndexLux(h1, w1);
+
+
+
+
+
+    function SubRes(h, w) {
+
+      iLite = findIndexLite(h, w);
+      iMini = findIndexMini(h, w);
+      iUni = findIndexUni(h, w);
+      iLux = findIndexLux(h, w);
+
+      subResLite1 = getQuotesLite(iLite)[0]*coefusd;
+      subResLite2 = getQuotesLite(iLite)[1]*coefusd;
+      subResLite3 = getQuotesLite(iLite)[2]*coefusd;
+
+      subResMini1 = getQuotesMini(iMini)[0]*coefusd;
+      subResMini2 = getQuotesMini(iMini)[1]*coefusd;
+      subResMini3 = getQuotesMini(iMini)[2]*coefusd;
+
+      subResUni1 = getQuotesUni(iUni)[0]*coefusd;
+      subResUni2 = getQuotesUni(iUni)[1]*coefusd;
+      subResUni3 = getQuotesUni(iUni)[2]*coefusd;
+
+      subResLux1 = getQuotesLux(iLux)[0]*coefusd;
+      subResLux2 = getQuotesLux(iLux)[1]*coefusd;
+      subResLux3 = getQuotesLux(iLux)[2]*coefusd;
+
+      subResultArray = {'Lite':[ subResLite1, subResLite2, subResLite3 ],
+                        'Mini':[ subResMini1, subResMini2, subResMini3 ],
+                        'Uni': [ subResUni1,  subResUni2,  subResUni3  ],
+                        'Lux': [ subResLux1,  subResLux2,  subResLux3  ]};
+      return subResultArray;
+    }
+
+
+
+    function TotalizePane(h, w){
+      var subresLite1,subresLite2,subresLite3,
+          subresMini1,subresMini2,subresMini3,
+          subresUni1,subresUni2,subresUni3,
+          subresLux1,subresLux2,subresLux3,
+          gotSubRes;
+
+      gotSubRes = SubRes(h,w);
+
+      subresLite1 = gotSubRes[Lite][0] ;
+      subresLite2 = gotSubRes[Lite][1] ;
+      subresLite3 = gotSubRes[Lite][2] ;
+      subresMini1 = gotSubRes[Mini][0] ;
+      subresMini2 = gotSubRes[Mini][1] ;
+      subresMini3 = gotSubRes[Mini][2] ;
+      subresUni1  = gotSubRes[Uni][0] ;
+      subresUni2  = gotSubRes[Uni][1] ;
+      subresUni3  = gotSubRes[Uni][2] ;
+      subresLux1  = gotSubRes[Lux][0] ;
+      subresLux2  = gotSubRes[Lux][1] ;
+      subresLux3  = gotSubRes[Lux][2] ;
+
+      resLite1 = resLite1 + subresLite1 ;
+      resLite2 = resLite2 + subresLite2 ;
+      resLite3 = resLite3 + subresLite3 ;
+      resMini1 = resMini1 + subresMini1 ;
+      resMini2 = resMini2 + subresMini2 ;
+      resMini3 = resMini3 + subresMini3 ;
+      resUni1  = resUni1  + subresUni1 ;
+      resUni2  = resUni2  + subresUni2 ;
+      resUni3  = resUni3  + subresUni3 ;
+      resLux1  = resLux1  + subresLux1 ;
+      resLux2  = resLux2  + subresLux2 ;
+      resLux3  = resLux3  + subresLux3 ;
+      return;
+      }
+
     function renderPrices() {
-        document.getElementById("PriceLite_1").innerHTML = getQuotesLite(iLite)[0]*coefusd;
-        document.getElementById("PriceLite_2").innerHTML = getQuotesLite(iLite)[1]*coefusd;
-        document.getElementById("PriceLite_3").innerHTML = getQuotesLite(iLite)[2]*coefusd;
-        document.getElementById("PriceMini_1").innerHTML = getQuotesMini(iMini)[0]*coefusd;
-        document.getElementById("PriceMini_2").innerHTML = getQuotesMini(iMini)[1]*coefusd;
-        document.getElementById("PriceMini_3").innerHTML = getQuotesMini(iMini)[2]*coefusd;
-        document.getElementById("PriceUni_1").innerHTML = getQuotesUni(iUni)[0]*coefusd;
-        document.getElementById("PriceUni_2").innerHTML = getQuotesUni(iUni)[1]*coefusd;
-        document.getElementById("PriceUni_3").innerHTML = getQuotesUni(iUni)[2]*coefusd;
-/*
+        document.getElementById("PriceLite_1").innerHTML = resLite1;
+        document.getElementById("PriceLite_2").innerHTML = resLite2;
+        document.getElementById("PriceLite_3").innerHTML = resLite3;
+
+        document.getElementById("PriceMini_1").innerHTML = resMini1;
+        document.getElementById("PriceMini_2").innerHTML = resMini2;
+        document.getElementById("PriceMini_3").innerHTML = resMini3;
+
+        document.getElementById("PriceUni_1").innerHTML  = resUni1;
+        document.getElementById("PriceUni_2").innerHTML  = resUni2;
+        document.getElementById("PriceUni_3").innerHTML  = resUni3;
+
+        document.getElementById("PriceLux_1").innerHTML  = resLux1;
+        document.getElementById("PriceLux_2").innerHTML  = resLux2;
+        document.getElementById("PriceLux_3").innerHTML  = resLux3;
+        /*
         document.getElementById("PriceLite_1").innerHTML = iLite;
         document.getElementById("PriceMini_1").innerHTML = iMini;
         document.getElementById("PriceUni_1").innerHTML = iUni;
         document.getElementById("PriceLux_1").innerHTML = iLux;
-*/
-        document.getElementById("PriceLux_1").innerHTML = getQuotesLux(iLux)[0]*coefusd;
-        document.getElementById("PriceLux_2").innerHTML = getQuotesLux(iLux)[1]*coefusd;
-        document.getElementById("PriceLux_3").innerHTML = getQuotesLux(iLux)[2]*coefusd;
+        */
     }
     renderPrices();
 });

@@ -376,7 +376,7 @@ html(lang='ru-RU')
 
                             .col-xs-12.col-sm-6
                               .input-group
-                                input.form-control#height_1.height_1(type='number',name='height_1', placeholder='400', min=400,max=3000,aria-describedby='height_1_units_addon')
+                                input.form-control#height_1.height_1(type='number',name='height_1', value='400', min=400,max=3000,aria-describedby='height_1_units_addon')
                                 span.input-group-addon#height_1_units_addon
                                   | мм
                     //- end_Height_1 }}}
@@ -408,7 +408,7 @@ html(lang='ru-RU')
 
                             .col-xs-12.col-sm-6
                               .input-group
-                                input.form-control#height_2.height_2(type='number',name='height_2', placeholder='400', min=400,max=3000,aria-describedby='height_2_units_addon')
+                                input.form-control#height_2.height_2(type='number',name='height_2', value='400', min=400,max=3000,aria-describedby='height_2_units_addon')
                                 span.input-group-addon#height_2_units_addon
                                   | мм
                     //- end_Height_2 }}}
@@ -437,7 +437,7 @@ html(lang='ru-RU')
 
                             .col-xs-12.col-sm-6
                               .input-group
-                                input.form-control#height_3.height_3(type='number',name='height_3', placeholder='400', min=400,max=3000,aria-describedby='height_3_units_addon')
+                                input.form-control#height_3.height_3(type='number',name='height_3', value='400', min=400,max=3000,aria-describedby='height_3_units_addon')
                                 span.input-group-addon#height_3_units_addon
                                   | мм
                     //- end_Height_3 }}}
@@ -463,7 +463,7 @@ html(lang='ru-RU')
 
                             .col-xs-12.col-sm-6
                               .input-group
-                                input.form-control#height_4.height_4(type='number',name='height_4', placeholder='400', min=400,max=3000,aria-describedby='height_4_units_addon')
+                                input.form-control#height_4.height_4(type='number',name='height_4', value='400', min=400,max=3000,aria-describedby='height_4_units_addon')
                                 span.input-group-addon#height_4_units_addon
                                   | мм
                     //- end_Height_4 }}}
@@ -515,7 +515,7 @@ html(lang='ru-RU')
 
                             .col-xs-12.col-sm-6
                               .input-group
-                                input.form-control#width_1.width_1(type='number',name='width_1', placeholder='400', min=400,max=3000,aria-describedby='width_1_units_addon')
+                                input.form-control#width_1.width_1(type='number',name='width_1', value='400', min=400,max=3000,aria-describedby='width_1_units_addon')
                                 span.input-group-addon#width_1_units_addon
                                   | мм
                     //- end_Width_1 }}}
@@ -547,7 +547,7 @@ html(lang='ru-RU')
 
                             .col-xs-12.col-sm-6
                               .input-group
-                                input.form-control#width_2.width_2(type='number',name='width_2', placeholder='400', min=400,max=3000,aria-describedby='width_2_units_addon')
+                                input.form-control#width_2.width_2(type='number',name='width_2', value='400', min=400,max=3000,aria-describedby='width_2_units_addon')
                                 span.input-group-addon#width_2_units_addon
                                   | мм
                       //- end_Width_2 }}}
@@ -576,7 +576,7 @@ html(lang='ru-RU')
 
                             .col-xs-12.col-sm-6
                               .input-group
-                                input.form-control#width_3.width_3(type='number',name='width_3', placeholder='400', min=400,max=3000,aria-describedby='width_3_units_addon')
+                                input.form-control#width_3.width_3(type='number',name='width_3', value='400', min=400,max=3000,aria-describedby='width_3_units_addon')
                                 span.input-group-addon#width_3_units_addon
                                   | мм
                       //- end_Width_3 }}}
@@ -602,7 +602,7 @@ html(lang='ru-RU')
 
                             .col-xs-12.col-sm-6
                               .input-group
-                                input.form-control#width_4.width_4(type='number',name='width_4', placeholder='400', min=400,max=3000,aria-describedby='width_4_units_addon')
+                                input.form-control#width_4.width_4(type='number',name='width_4', value='400', min=400,max=3000,aria-describedby='width_4_units_addon')
                                 span.input-group-addon#width_4_units_addon
                                   | мм
                     //- end_Width_4 }}}
@@ -1050,7 +1050,7 @@ html(lang='ru-RU')
                   |    +7 (908) 278-19-07
                   br
             //- end_Call_Us }}}
-          section#ribbon_bottom.separator-one
+          section#GetConsulted.separator-one
             //- Order_Consult {{{
             .color-overlay
 
@@ -1060,7 +1060,7 @@ html(lang='ru-RU')
                 | Или оставьте заявку на консультацию
                 | (она ни к чему Вас не обязывает)
               br
-              form#GetConsulted(role='form', action="https://formspree.io/info@profkarniz.com", method='POST')
+              form#GetConsultedForm(role='form', action="https://formspree.io/info@profkarniz.com", method='POST')
                 .row.center-block
                   .col-xs-2
                   .col-xs-8.panel-body.center-block.panel.panel-success 
