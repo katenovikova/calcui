@@ -1840,7 +1840,7 @@ hr.subsection-label {
 -----------------------------------------*/
 .separator-one {
 	background: rgba(52, 210, 147, 0.8);
-	padding: 100px 0 100px 0;
+	padding: 30px 0 30px 0;
 }
 .separator-one .green-btn {
 	background: #5dc064;
@@ -2828,8 +2828,7 @@ video::-webkit-media-controls {
  **   Purchase now           -----
 -----------------------------------------*/
 .purchase-now {
-	background: linear-gradient (to bottom right, rgba(250,100,75,.4), rgba(255,255,255,1));
-	background: white;
+  background: #bee170;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -3716,6 +3715,13 @@ article .posted-on a:hover{
 .portfolio-box h5{
   padding-top: 10px;
   color: #ffffff;
+}
+#GetConsulted .panel{
+  background: lightgray;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+}
 }
 
 #Map .container-fluid {

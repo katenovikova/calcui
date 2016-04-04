@@ -277,7 +277,7 @@ html(lang='ru-RU')
                                 span.label.label-success.calcuLabel.center-block
                                   | Одна
                                 span
-                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/')
+                                  img.center-block.img-responsive.img-rounded(alt='', src='images/Single.png')
                                   .sr-only
                                     input#win1x(type="radio", name="winLen", value=1, autocomplete="off", checked="")
                             .col-sm-3.col-xs-6
@@ -285,7 +285,7 @@ html(lang='ru-RU')
                                 span.label.label-success.calcuLabel.center-block
                                   | Две
                                 span
-                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/')
+                                  img.center-block.img-responsive.img-rounded(alt='', src='images/Double.png')
                                   .sr-only
                                     input#win2x(type="radio", name="winLen", value=2, autocomplete="off")
                             .col-sm-3.col-xs-6
@@ -293,7 +293,7 @@ html(lang='ru-RU')
                                 span.label.label-success.calcuLabel.center-block
                                   | Три
                                 span
-                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/')
+                                  img.center-block.img-responsive.img-rounded(alt='', src='images/Triple.png')
                                   .sr-only
                                     input#win3x(type="radio", name="winLen", value=3, autocomplete="off")
                             .col-sm-3.col-xs-6
@@ -301,7 +301,7 @@ html(lang='ru-RU')
                                 span.label.label-success.calcuLabel.center-block
                                   | Четыре
                                 span
-                                  img.center-block.img-responsive.img-rounded(alt='', src='http://lorempixel.com/400/300/')
+                                  img.center-block.img-responsive.img-rounded(alt='', src='images/Quadro.png')
                                   .sr-only
                                     input#win4x(type="radio", name="winLen", value=4, autocomplete="off")
                         br
@@ -333,7 +333,10 @@ html(lang='ru-RU')
                 .col-xs-6.col-sm-3
                   .howto_advise.center-block
                     //- Picture_Text Height {{{
-                    .showOnMnt1.show_SinglePane.show_DoublePan.show_TriplePan.show_QuadroPaneee
+                    .showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane
+                      span
+                        img.img-fluid.img-responsive(alt='how to measure height', src='images/measure_pane_h.png')
+                    .showOnMnt2.showOnMnt3
                       span
                         img.img-fluid.img-responsive(alt='how to measure height', src='images/measure_height.png')
                     .showOnMnt2.showOnMnt3
@@ -469,7 +472,10 @@ html(lang='ru-RU')
                 .col-xs-6.col-sm-3
                   .howto_advise.center-block
                     //- Picture_Text Width {{{
-                    .showOnMnt1.show_SinglePane.show_DoublePan.show_TriplePan.show_QuadroPaneee
+                    .showOnMnt1.showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane
+                      span
+                        img.img-fluid.img-responsive(alt='how to measure width', src='images/measure_pane_w.png')
+                    .showOnMnt2.showOnMnt3
                       span
                         img.img-fluid.img-responsive(alt='how to measure width', src='images/measure_width.png')
                     .showOnMnt2.showOnMnt3
@@ -924,14 +930,14 @@ html(lang='ru-RU')
             .container
               .section-header
                 h2.white-text
-                  | Закажите замеры/установку
+                  | Закажите замеры
               .row
                 .package-box-wrap.col-lg-6.col-md-6.col-sm-12
                   .best-value
                     .package(data-scrollreveal='enter left after 0s over 1s')
                       .package-header(style='background:#db5959')
-                        h4 Заказать замеры
-                        .meta-text В удобное для Вас время
+                        h4 В удобное для Вас время
+                        .meta-text 
                       .price.dark-bg
                         .price-container
                           h4 бесплатно
@@ -940,12 +946,13 @@ html(lang='ru-RU')
                         li Посоветует тип рулонной шторы
                         li Измерит окна
                         li Расчитает точную стоимость
-                      a.btn.btn-primary.custom-button(href='http://profkarniz.com/index/0-5', style='background:#db5959') Заказать
+                      a.btn.btn-primary.custom-button(href='',data-toggle='modal', data-target='#MeasureManModal', style='background:#db5959') Заказать
+
+              //- {{{
                 .package-box-wrap.col-lg-6.col-md-6.col-sm-12
                   .best-value
                     .package(data-scrollreveal='enter left after 0s over 1s')
                       .package-header(style='background:#43db5a')
-                        h4 Установка рулонных штор
                         .meta-text В удобное для Вас время
                       .price.dark-bg
                         .price-container
@@ -953,11 +960,9 @@ html(lang='ru-RU')
                           span.price-meta
                             | /изделие
                       ul
-                        li Мини без фиксации - 300 руб./изделие
-                        li Уни -1, Уни - 2 - 500 руб./изделие
-                        li Мини с фиксацией - 500 руб./изделие
-                        li Люкс, Зебра - 500 руб.
-                      a.btn.btn-primary.custom-button(href='http://profkarniz.com/index/0-5', style='background:#43db5a') Заказать
+                        a.btn.btn-primary.custom-button(href='http://profkarniz.com/index/0-5', style='background:#43db5a')
+                          |
+                //- }}}
             //- end_PricingTables }}}
           section#ribbon_right.purchase-now
             //- Purchase_Ribbon {{{
@@ -994,6 +999,7 @@ html(lang='ru-RU')
                             a.client-name(target='_blank') Лобашкова Ирина
                             .client-company
                           .client-image.hidden-xs
+                            img(src='images/dude1.jpg', alt='')
                         // / END CLIENT INFORMATION
                       // / END SINGLE FEEDBACK BOX
                     aside#zerif_testim-widget-2.widget.zerif_testim
@@ -1009,6 +1015,7 @@ html(lang='ru-RU')
                             a.client-name(target='_blank') Анастасия
                             .client-company
                           .client-image.hidden-xs
+                            img(src='images/dude2.jpg', alt='')
                         // / END CLIENT INFORMATION
                       // / END SINGLE FEEDBACK BOX
                     aside#zerif_testim-widget-3.widget.zerif_testim
@@ -1024,6 +1031,7 @@ html(lang='ru-RU')
                             a.client-name(target='_blank') Александр
                             .client-company
                           .client-image.hidden-xs
+                            img(src='images/dude3.jpg', alt='')
             //- end_Testimonials }}}
           section#contact.contact-us
             //- Call_Us {{{
@@ -1045,9 +1053,42 @@ html(lang='ru-RU')
           section#ribbon_bottom.separator-one
             //- Order_Consult {{{
             .color-overlay
-              h3.container(data-scrollreveal='enter left after 0s over 1s')
+
+
+            .container
+              h3(data-scrollreveal='enter left after 0s over 1s')
                 | Или оставьте заявку на консультацию
                 | (она ни к чему Вас не обязывает)
+              br
+              form#GetConsulted(role='form', action="https://formspree.io/info@profkarniz.com", method='POST')
+                .row.center-block
+                  .col-xs-2
+                  .col-xs-8.panel-body.center-block.panel.panel-success 
+                    br
+                    .sr-only.form-group
+                      input(type='hidden',name='_subject',value='Want_to_Get_a_Call')
+                      input(type='hidden',name='_next',value='#OnSubmitModal')
+                    .form-group
+                      label(for='clientName')
+                        | Имя
+                      input#clientName.form-control(name='clientName', type='text', placeholder='Как к Вам обращаться?')
+                    br
+                    .form-group
+                      label(for='thePhoneNumber')
+                        | Телефонный номер
+                      input#thePhoneNumber.form-control(name='thePhoneNumber', type='tel',pattern='.*', placeholder='9876543210')
+                    br
+                    br
+                    .form-group(style='padding-top:0;padding-bottom:0;')
+                      input.form-control(type='submit', value='Заказать')
+                    br
+                  .col-xs-2
+              
+            
+            
+            
+            
+            
             //- end_Order_Consult }}}
           section#Map
             //- Map {{{
