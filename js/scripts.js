@@ -88,3 +88,35 @@ $(function(){
      }
   );
 });
+
+$(function(){
+
+  function StripCurrent(){
+    $("#PriceLite_1").parent().removeClass("active");
+    $("#PriceLite_2").parent().removeClass("active");
+    $("#PriceLite_3").parent().removeClass("active");
+    $("#PriceMini_1").parent().removeClass("active");
+    $("#PriceMini_2").parent().removeClass("active");
+    $("#PriceMini_3").parent().removeClass("active");
+    $("#PriceUni_1").parent().removeClass("active");
+    $("#PriceUni_2").parent().removeClass("active");
+    $("#PriceUni_3").parent().removeClass("active");
+    $("#PriceLux_1").parent().removeClass("active");
+    $("#PriceLux_2").parent().removeClass("active");
+    $("#PriceLux_3").parent().removeClass("active");
+  }
+
+  $("#PriceLite_1").parent().on("click", "*", function() { StripCurrent(); $("#PriceLite_1").parent().addClass("active"); }); 
+  $("#PriceLite_2").parent().on("click", "*", function() { StripCurrent(); $("#PriceLite_2").parent().addClass("active"); }); 
+  $("#PriceLite_3").parent().on("click", "*", function() { StripCurrent(); $("#PriceLite_3").parent().addClass("active"); });
+  $("#PriceMini_1").parent().on("click", "*", function() { StripCurrent(); $("#PriceMini_1").parent().addClass("active"); }); 
+  $("#PriceMini_2").parent().on("click", "*", function() { StripCurrent(); $("#PriceMini_2").parent().addClass("active"); }); 
+  $("#PriceMini_3").parent().on("click", "*", function() { StripCurrent(); $("#PriceMini_3").parent().addClass("active"); });
+   $("#PriceUni_1").parent().on("click", "*", function() { StripCurrent(); $("#PriceUni_1").parent().addClass("active"); }); 
+   $("#PriceUni_2").parent().on("click", "*", function() { StripCurrent(); $("#PriceUni_2").parent().addClass("active"); }); 
+   $("#PriceUni_3").parent().on("click", "*", function() { StripCurrent(); $("#PriceUni_3").parent().addClass("active"); }); 
+   $("#PriceLux_1").parent().on("click", "*", function() { StripCurrent(); $("#PriceLux_1").parent().addClass("active"); }); 
+   $("#PriceLux_2").parent().on("click", "*", function() { StripCurrent(); $("#PriceLux_2").parent().addClass("active"); }); 
+   $("#PriceLux_3").parent().on("click", "*", function() { StripCurrent(); $("#PriceLux_3").parent().addClass("active"); });
+
+});

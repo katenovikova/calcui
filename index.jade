@@ -579,7 +579,7 @@ html(lang='ru-RU')
             .container-fluid#PriceTableSection.calculator
           //- end_Calculator }}}// }}}
           //- PriceTable {{{
-          .container-fluid#PriceTableSection
+          .container#PriceTableSection
             .row
               //- SubHeader PriceTable {{{
               .col-xs-12
@@ -613,29 +613,26 @@ html(lang='ru-RU')
                               |  Длина: до 160 см
                         //- end_Lite_Header }}}
                       //- LitePricePanel {{{
-                      .panel-body.pricePanel_1
+                      .panel-body.pricePanel_3
                         h4.priceTagLabel
                           | Категория 1:
                         h4.thePrice#PriceLite_1
                           | --
-                        h4.showFabricLink
-                          a(alt="", href="PriceLite_1", data-toggle='modal', data-target='#ShowFabricModal_1') Показать ткани
+                        btn.btn-success.showFabricLink(alt="", href="PriceLite_1", data-toggle='modal', data-target='#ShowFabricModal_1') Показать ткани
 
                       .panel-body.pricePanel_2
                         h4.priceTagLabel2
                           | Категория 2:
                         h4.thePrice2#PriceLite_2
                           | --
-                        h4.showFabricLink2
-                          a(alt="", href="") Показать ткани
+                        btn.btn-default.showFabricLink2(alt="", href="PriceLite_1", data-toggle='modal', data-target='#ShowFabricModal_2') Показать ткани
 
                       .panel-body.pricePanel_3
                         h4.priceTagLabel
                           | Категория 3:
                         h4.thePrice#PriceLite_3
                           | --
-                        h4.showFabricLink
-                          a(alt="", href="") Показать ткани
+                        btn.btn-success.showFabricLink(alt="", href="PriceLite_1", data-toggle='modal', data-target='#ShowFabricModal_3') Показать ткани
 
                         //- end_Lite_Price PricePanel }}}
               //- end_Column_Lite }}}
@@ -661,29 +658,27 @@ html(lang='ru-RU')
                               |  Длина: 50 - 200 см
                       //- end_Mini_Header }}}
                       //- Mini_PricePanel {{{
-                      .panel-body.pricePanel_1
+
+                      .panel-body.pricePanel_3
                         h4.priceTagLabel
                           | Категория 1:
                         h4.thePrice#PriceMini_1
                           | --
-                        h4.showFabricLink
-                          a(alt="", href="") Показать ткани
+                        btn.btn-success.showFabricLink(alt="", href="PriceLite_1", data-toggle='modal', data-target='#ShowFabricModal_1') Показать ткани
 
                       .panel-body.pricePanel_2
                         h4.priceTagLabel2
                           | Категория 2:
                         h4.thePrice2#PriceMini_2
                           | --
-                        h4.showFabricLink2
-                          a(alt="", href="") Показать ткани
+                        btn.btn-default.showFabricLink2(alt="", href="PriceLite_1", data-toggle='modal', data-target='#ShowFabricModal_2') Показать ткани
 
                       .panel-body.pricePanel_3
                         h4.priceTagLabel
                           | Категория 3:
                         h4.thePrice#PriceMini_3
                           | --
-                        h4.showFabricLink
-                          a(alt="", href="") Показать ткани
+                        btn.btn-success.showFabricLink(alt="", href="PriceLite_1", data-toggle='modal', data-target='#ShowFabricModal_1') Показать ткани
 
                         //- end_Mini_PricePanel }}}
               //- end_Column_Mini }}}
@@ -709,29 +704,26 @@ html(lang='ru-RU')
                               |  Длина: 50 - 200 см
                       //- end_Uni_Header }}}
                       //- Uni_PricePanel {{{
-                      .panel-body.pricePanel_1
+                      .panel-body.pricePanel_3
                         h4.priceTagLabel
                           | Категория 1:
                         h4.thePrice#PriceUni_1
                           | --
-                        h4.showFabricLink
-                          a(alt="", href="") Показать ткани
+                        btn.btn-success.showFabricLink(alt="", href="PriceLite_1", data-toggle='modal', data-target='#ShowFabricModal_1') Показать ткани
 
                       .panel-body.pricePanel_2
                         h4.priceTagLabel2
                           | Категория 2:
                         h4.thePrice2#PriceUni_2
                           | --
-                        h4.showFabricLink2
-                          a(alt="", href="") Показать ткани
+                        btn.btn-default.showFabricLink2(alt="", href="PriceLite_1", data-toggle='modal', data-target='#ShowFabricModal_2') Показать ткани
 
                       .panel-body.pricePanel_3
                         h4.priceTagLabel
                           | Категория 3:
                         h4.thePrice#PriceUni_3
                           | --
-                        h4.showFabricLink
-                          a(alt="", href="") Показать ткани
+                        btn.btn-success.showFabricLink(alt="", href="PriceLite_1", data-toggle='modal', data-target='#ShowFabricModal_1') Показать ткани
 
                         //- end_Uni_PricePanel }}}
               //- end_Column_Uni }}}
@@ -757,29 +749,26 @@ html(lang='ru-RU')
                               |  Длина: 100 - 300 см
                       //- end_Lux_Header }}}
                       //- Lux_PricePanel {{{
-                      .panel-body.pricePanel_1
+                      .panel-body.pricePanel_3
                         h4.priceTagLabel
                           | Категория 1:
                         h4.thePrice#PriceLux_1
                           | --
-                        h4.showFabricLink
-                          a(alt="", href="") Показать ткани
+                        btn.btn-success.showFabricLink(alt="", href="PriceLite_1", data-toggle='modal', data-target='#ShowFabricModal_1') Показать ткани
 
                       .panel-body.pricePanel_2
                         h4.priceTagLabel2
                           | Категория 2:
                         h4.thePrice2#PriceLux_2
                           | --
-                        h4.showFabricLink2
-                          a(alt="", href="") Показать ткани
+                        btn.btn-default.showFabricLink2(alt="", href="PriceLite_1", data-toggle='modal', data-target='#ShowFabricModal_2') Показать ткани
 
                       .panel-body.pricePanel_3
                         h4.priceTagLabel
                           | Категория 3:
                         h4.thePrice#PriceLux_3
                           | --
-                        h4.showFabricLink
-                          a(alt="", href="") Показать ткани
+                        btn.btn-success.showFabricLink(alt="", href="PriceLite_1", data-toggle='modal', data-target='#ShowFabricModal_1') Показать ткани
 
                         //- end_Lux_PricePanel }}}
               //- end_Column_Lux }}}

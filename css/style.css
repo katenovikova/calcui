@@ -3656,61 +3656,57 @@ article .posted-on a:hover{
   padding-bottom: 20px;
   padding-top: 40px;
 }
-
-#PriceTableSection .infos-box .panel{
-  margin-bottom: 0;
-}
-#PriceTableSection .infos-box *{
-  opacity: .92;
-}
-#PriceTableSection .infos-box:hover *{
-  opacity: 1;
+/*/
+#PriceTableSection .infos-box{
+  filter: grayscale(.1) brightness(.9);
+  -webkit-filter:grayscale(.1) brightness(.9);
+  z-index: 15;
 }
 #PriceTableSection .infos-box:hover{
-  z-index: 200;
-  opacity: 1;
+  filter: grayscale(0) brightness(1);
+  -webkit-filter:grayscale(0) brightness(1);
   box-shadow:
-    0 0 15px rgba(5,5,5,.9),
-    0 0 35px rgba(5,5,5,1);
+    0 0 35px #010,
+    0 0 25px #000;
+  z-index: 50;
+  filter: grayscale(.3);
+  -webkit-filter:grayscale(.3);
 }
-//- ===============================================
-#PriceTableSection .pricePanel_1 {
-  background: white;
+/*/
+#PriceTableSection .infos-box .panel{
+  filter: grayscale(.2);
+  -webkit-filter:grayscale(.2);
+}
+#PriceTableSection .infos-box:hoverl{
+  filter: grayscale(0);
+  -webkit-filter:grayscale(0);
 }
 #PriceTableSection .pricePanel_2 {
-  background: lightgray;
-}
-#PriceTableSection .pricePanel_3 {
-  background: white;
-}
-//- ===============================================
-#PriceTableSection .infos-box .pricePanel_1.active {
-  background: #6dc054;
-}
-#PriceTableSection .infos-box .pricePanel_2.active {
   background: #5dc064;
 }
-#PriceTableSection .infos-box .pricePanel_3.active {
-  background: #4dc074;
+#PriceTableSection .pricePanel_3 {
+  background: gray;
 }
-//- ===============================================
+#PriceTableSection .pricePanel_2.active {
+  background: #5dc064;
+  border-color: #002300;
+  border-width:medium;
+  box-shadow:
+    inset 0 0 35px #010,
+    0 0 35px #fff;
+  filter: saturate(2);;
+  -webkit-filter:saturate(2);
+}
 
-#PriceTableSection .infos-box :hover  .pricePanel_1{
-  background: rgba(109, 192, 84, .6);
-}
-#PriceTableSection .infos-box :hover   .pricePanel_2{
-  background: rgba(93, 192, 100, .6);
-}
-#PriceTableSection .infos-box :hover  .pricePanel_3{
-  background: rgba(77, 192, 116, .6);
-}
-#PriceTableSection .infos-box :hover  .panel-heading {
-  background: rgba(93, 192, 100, .6);
-}
-//- ===============================================
-
-
-#PriceTableSection .priceTagLabel {
+#PriceTableSection .pricePanel_3.active {
+  background: #5dc064;
+  border-color: #002300;
+  border-width:thick;
+  box-shadow:
+    inset 0 0 15px #010,
+    0 0 35px #000;
+  filter: saturate(2);;
+  -webkit-filter:saturate(2);
 }
 
 #PriceTableSection .thePrice {
@@ -3718,13 +3714,21 @@ article .posted-on a:hover{
   font-size: 24px;
   color: rgba(0, 34, 0, .9);
 }
-#PriceTableSection .thePrice {
+#PriceTableSection .thePrice2 {
   font-weight: 400;
   font-size: 24px;
   color: rgba(0, 34, 0, .9);
 }
 
 #PriceTableSection .showFabricLink {
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+#PriceTableSection .showFabricLink2 {
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 #PriceTableSection .priceSeparator {
