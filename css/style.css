@@ -3547,34 +3547,60 @@ article .posted-on a:hover{
 #MountOptsSection{
   background: rgba(255,255,255,.7);
 }
+#tabs-433998 > ul > li > a  span{
+  opacity: 0.9;
+  filter: grayscale(1);
+  -webkit-filter:grayscale(1);
+}
 #tabs-433998 > ul > li > a > span img {
-  opacity: 0.5;
+  opacity: 0.9;
+  filter: grayscale(1);
+  -webkit-filter:grayscale(1);
+}
+#tabs-433998 > ul > li.active > a  span{
+  opacity: 1;
+  filter: grayscale(0);
+  -webkit-filter:grayscale(0);
 }
 #tabs-433998 > ul > li.active > a > span img,
 #tabs-433998 > ul > li:focus > a > span img,
 #tabs-433998 > ul > li:hover > a > span img {
   opacity: 1;
+  filter: grayscale(0);
+  -webkit-filter:grayscale(0);
 }
 #winLenB > .row > .col-sm-3.col-xs-6 > .btn > span img {
   opacity: 0.5;
+  filter: grayscale(1);
+  -webkit-filter:grayscale(1);
 }
 #winLenB > .row > .col-sm-3.col-xs-6 > .btn.active > span img {
   opacity: 1;
+  filter: grayscale(0);
+  -webkit-filter:grayscale(0);
 }
 #winLenB > .row > .col-sm-3.col-xs-6 > .btn {
   background-color: rgba(0,0,0,0);
   border-color: rgba(0,0,0,0);
   box-shadow:
     0 0 0  rgba(0,0,0,0);
+  filter: grayscale(.9);
+  -webkit-filter:grayscale(.9);
 }
 #winLenB > .row > .col-sm-3.col-xs-6 > .btn.active {
   background-color: #5dc064;
+  opacity: 0
   box-shadow:
     0 0 25px rgba(5,5,0,1);
+  filter: grayscale(0);
+  -webkit-filter:grayscale(0);
 }
 #MountOptsSection .nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus {
   color: #fff;
   background-color: #5dc064;
+  opacity: 0
+  filter: grayscale(0);
+  -webkit-filter:grayscale(0);
   margin-bottom: 10px;
   box-shadow:
     0 0 25px rgba(5,5,0,1);
@@ -3588,23 +3614,23 @@ article .posted-on a:hover{
 #MeasurePanesSection .panel-heading h5,h6{
   margin-bottom: 0;
 }
-#MeasurePanesSection .layered-tip*{
-  width:100%(!important);
-  padding:0(!important);
+.layered_abomination{
+  position: relative !important;
+  overflow: hidden;
 }
-.layered-tip {
-  position: absolute;
-  left:0;
+.clarifyingReminder{
+  position: absolute !important;
   top:0;
-  background: rgba(0,0,0,.6);
-  filter: alpha(opacity=50);
+  right:0;
   width: 100%;
-  color:#fff;
-
-}
-.layered-tip p.clarifyingReminder *{
-  position: relative;
-  text-align: center;
+  height: 100%;
+  padding: 12%;
+  display: none;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 22px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
 }
 #MeasurePanesSection .panel-heading{
   padding: 2px 3px;
@@ -3813,7 +3839,30 @@ article .posted-on a:hover{
   height: 75%;
   padding: 5px;
 }
-.showFabricModal .modal-body {
+.showFabricModal .thumbnail {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+
+
+}
+.showFabricModal .caption {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  top:0;
+  right:0;
+  padding: 2%;
+  display: none;
+  text-align: center;
+  color:#fff;
+  background-color: #000;
+  vertical-align: middle;
+  opacity: 0.8;
+}
+.showFabricModal .caption :hover{
+}
+.showFabricModal .thumbnail :hover{
 }
 .showFabricModal .modal-body .thumbnail{
   padding: 5px;

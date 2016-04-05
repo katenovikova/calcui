@@ -65,3 +65,25 @@ $(function(){
     $("#MapIframe").removeClass("scrolloff");
   });
 });
+
+$(function(){
+  $(".layered_abomination").hover(
+     function() {
+       $(this).find('.clarifyingReminder').fadeIn(250);
+     },
+     function() {
+       $(this).find('.clarifyingReminder').fadeOut(250);
+     }
+  );
+});
+
+$(function(){
+  $(".thumbnail").hover(
+     function() {
+       $(this).find('.caption').fadeIn(250);
+     },
+     function() {
+       $(this).find('.caption').fadeOut(250);
+     }
+  );
+});
