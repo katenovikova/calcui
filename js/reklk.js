@@ -107,6 +107,8 @@ $(document).ready(function() {
     function findIndexLite(h, w) {
         var indx, ՐՏ_Temp;
         indx=0;
+        w+=35;
+        h+=100;
         if (h < 161 && w < 181 && w > 39) {
             indx = Math.ceil(w / 5) - 8 +1;
         }
@@ -115,6 +117,8 @@ $(document).ready(function() {
     function findIndexMini(h, w) {
         var indx, ՐՏ_Temp;
         indx=0;
+        h+=150;
+        w+=40;
         if (49 < h && h < 201) {
             indx = (Math.ceil(w / 10) - 4) * 16  + Math.ceil(h / 10) - 5 + 1;
         }
@@ -131,6 +135,7 @@ $(document).ready(function() {
     function findIndexLux(h, w) {
         var indx, ՐՏ_Temp;
         indx=0;
+        h+=150;
         if (99 < h && h < 301) {
             indx = (Math.ceil(w / 10) - 5) * 11 + Math.ceil(h / 20) - 5 + 1;
         }
@@ -264,6 +269,16 @@ $(document).ready(function() {
 
     hei1 = document.getElementById("height_1").value;
     wid1 = document.getElementById("width_1").value;
+
+    if ($('#MntTwoTab').hasClass('active')) {
+      console.log('M2');
+      hei1+=-5;
+    }
+
+    if ($('#MntThreeTab').hasClass('active')) {
+      console.log('M3');
+      wid1+=150;
+    }
 
     h1 = hei1/10;
     w1 = wid1/10;
