@@ -3624,35 +3624,55 @@ article .posted-on a:hover{
     0 0 15px rgba(5,5,5,.9),
     0 0 35px rgba(5,5,5,1);
 }
-#PriceTableSection .infos-box :hover  .pricePanel_1{
-  background-color: #6dc054;
-}
-#PriceTableSection .infos-box :hover   .pricePanel_2{
-  background-color: #5dc064;
-}
-#PriceTableSection .infos-box :hover  .pricePanel_3{
-  background-color: #4dc074;
-}
-#PriceTableSection .infos-box :hover  .panel-heading {
-  background-color: #5dc064;
-}
-
+//- ===============================================
 #PriceTableSection .pricePanel_1 {
   background: white;
 }
-
 #PriceTableSection .pricePanel_2 {
   background: lightgray;
 }
-
 #PriceTableSection .pricePanel_3 {
   background: white;
 }
+//- ===============================================
+#PriceTableSection .infos-box .pricePanel_1.active {
+  background: #6dc054;
+}
+#PriceTableSection .infos-box .pricePanel_2.active {
+  background: #5dc064;
+}
+#PriceTableSection .infos-box .pricePanel_3.active {
+  background: #4dc074;
+}
+//- ===============================================
+
+#PriceTableSection .infos-box :hover  .pricePanel_1{
+  background: rgba(109, 192, 84, .6);
+}
+#PriceTableSection .infos-box :hover   .pricePanel_2{
+  background: rgba(93, 192, 100, .6);
+}
+#PriceTableSection .infos-box :hover  .pricePanel_3{
+  background: rgba(77, 192, 116, .6);
+}
+#PriceTableSection .infos-box :hover  .panel-heading {
+  background: rgba(93, 192, 100, .6);
+}
+//- ===============================================
+
 
 #PriceTableSection .priceTagLabel {
 }
 
 #PriceTableSection .thePrice {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0, 34, 0, .9);
+}
+#PriceTableSection .thePrice {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0, 34, 0, .9);
 }
 
 #PriceTableSection .showFabricLink {

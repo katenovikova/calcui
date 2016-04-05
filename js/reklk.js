@@ -217,34 +217,34 @@ $(document).ready(function() {
 
       console.log( resLite1 , resLite2 , resLite3 , resMini1 , resMini2 , resMini3 , resUni1  , resUni2  , resUni3  , resLux1  , resLux2  , resLux3 );
 
-      resLite1 += sresLite1            ;
-      resLite2 += sresLite2            ;
-      resLite3 += sresLite3            ;
-      resMini1 += sresMini1            ;
-      resMini2 += sresMini2            ;
-      resMini3 += sresMini3            ;
-      resUni1  += sresUni1             ;
-      resUni2  += sresUni2             ;
-      resUni3  += sresUni3             ;
-      resLux1  += sresLux1             ;
-      resLux2  += sresLux2             ;
-      resLux3  += sresLux3             ;
-      return                           ;
+      resLite1 += sresLite1.toFixed(2)            ;
+      resLite2 += sresLite2.toFixed(2)            ;
+      resLite3 += sresLite3.toFixed(2)            ;
+      resMini1 += sresMini1.toFixed(2)            ;
+      resMini2 += sresMini2.toFixed(2)            ;
+      resMini3 += sresMini3.toFixed(2)            ;
+      resUni1  += sresUni1.toFixed(2)             ;
+      resUni2  += sresUni2.toFixed(2)             ;
+      resUni3  += sresUni3.toFixed(2)             ;
+      resLux1  += sresLux1.toFixed(2)             ;
+      resLux2  += sresLux2.toFixed(2)             ;
+      resLux3  += sresLux3.toFixed(2)             ;
+      return                                      ;
       }
     function renderPrices() {
 
-      strLite1 = Math.round(resLite1      ).toFixed(2)       ;
-      strLite2 = Math.round(resLite2      ).toFixed(2)       ;
-      strLite3 = Math.round(resLite3      ).toFixed(2)       ;
-      strMini1 = Math.round(resMini1      ).toFixed(2)       ;
-      strMini2 = Math.round(resMini2      ).toFixed(2)       ;
-      strMini3 = Math.round(resMini3      ).toFixed(2)       ;
-      strUni1  = Math.round(resUni1       ).toFixed(2)       ;
-      strUni2  = Math.round(resUni2       ).toFixed(2)       ;
-      strUni3  = Math.round(resUni3       ).toFixed(2)       ;
-      strLux1  = Math.round(resLux1       ).toFixed(2)       ;
-      strLux2  = Math.round(resLux2       ).toFixed(2)       ;
-      strLux3  = Math.round(resLux3       ).toFixed(2)       ;
+      strLite1 = accounting.formatMoney(resLite1 , "₽", 0 , " " , "." , "%v %s"  ) ;
+      strLite2 = accounting.formatMoney(resLite2 , "₽", 0 , " " , "." , "%v %s"  ) ;
+      strLite3 = accounting.formatMoney(resLite3 , "₽", 0 , " " , "." , "%v %s"  ) ;
+      strMini1 = accounting.formatMoney(resMini1 , "₽", 0 , " " , "." , "%v %s"  ) ;
+      strMini2 = accounting.formatMoney(resMini2 , "₽", 0 , " " , "." , "%v %s"  ) ;
+      strMini3 = accounting.formatMoney(resMini3 , "₽", 0 , " " , "." , "%v %s"  ) ;
+      strUni1  = accounting.formatMoney(resUni1  , "₽", 0 , " " , "." , "%v %s"  ) ;
+      strUni2  = accounting.formatMoney(resUni2  , "₽", 0 , " " , "." , "%v %s"  ) ;
+      strUni3  = accounting.formatMoney(resUni3  , "₽", 0 , " " , "." , "%v %s"  ) ;
+      strLux1  = accounting.formatMoney(resLux1  , "₽", 0 , " " , "." , "%v %s"  ) ;
+      strLux2  = accounting.formatMoney(resLux2  , "₽", 0 , " " , "." , "%v %s"  ) ;
+      strLux3  = accounting.formatMoney(resLux3  , "₽", 0 , " " , "." , "%v %s"  ) ;
 
       document.getElementById("PriceLite_1").innerHTML = strLite1;
       document.getElementById("PriceLite_2").innerHTML = strLite2;
