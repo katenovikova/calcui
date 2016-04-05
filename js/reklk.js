@@ -187,34 +187,47 @@ $(document).ready(function() {
 
       gotSubRes = SubRes(h,w);
 
-      subresLite1 = gotSubRes.Lite[0] ;
-      subresLite2 = gotSubRes.Lite[1] ;
-      subresLite3 = gotSubRes.Lite[2] ;
-      subresMini1 = gotSubRes.Mini[0] ;
-      subresMini2 = gotSubRes.Mini[1] ;
-      subresMini3 = gotSubRes.Mini[2] ;
-      subresUni1  = gotSubRes.Uni[0]  ;
-      subresUni2  = gotSubRes.Uni[1]  ;
-      subresUni3  = gotSubRes.Uni[2]  ;
-      subresLux1  = gotSubRes.Lux[0]  ;
-      subresLux2  = gotSubRes.Lux[1]  ;
-      subresLux3  = gotSubRes.Lux[2]  ;
+      subresLite1 = gotSubRes.Lite[0];
+      subresLite2 = gotSubRes.Lite[1];
+      subresLite3 = gotSubRes.Lite[2];
+      subresMini1 = gotSubRes.Mini[0];
+      subresMini2 = gotSubRes.Mini[1];
+      subresMini3 = gotSubRes.Mini[2];
+      subresUni1  = gotSubRes.Uni[0];
+      subresUni2  = gotSubRes.Uni[1];
+      subresUni3  = gotSubRes.Uni[2];
+      subresLux1  = gotSubRes.Lux[0];
+      subresLux2  = gotSubRes.Lux[1];
+      subresLux3  = gotSubRes.Lux[2];
+
+      sresLite1 =  subresLite1 * coefusd;
+      sresLite2 =  subresLite2 * coefusd;
+      sresLite3 =  subresLite3 * coefusd;
+      sresMini1 =  subresMini1 * coefusd;
+      sresMini2 =  subresMini2 * coefusd;
+      sresMini3 =  subresMini3 * coefusd;
+      sresUni1  =  subresUni1  * coefusd;
+      sresUni2  =  subresUni2  * coefusd;
+      sresUni3  =  subresUni3  * coefusd;
+      sresLux1  =  subresLux1  * coefusd;
+      sresLux2  =  subresLux2  * coefusd;
+      sresLux3  =  subresLux3  * coefusd;
 
       console.log( resLite1 , resLite2 , resLite3 , resMini1 , resMini2 , resMini3 , resUni1  , resUni2  , resUni3  , resLux1  , resLux2  , resLux3 );
 
-      resLite1 += subresLite1            ;
-      resLite2 += subresLite2            ;
-      resLite3 += subresLite3            ;
-      resMini1 += subresMini1            ;
-      resMini2 += subresMini2            ;
-      resMini3 += subresMini3            ;
-      resUni1  += subresUni1             ;
-      resUni2  += subresUni2             ;
-      resUni3  += subresUni3             ;
-      resLux1  += subresLux1             ;
-      resLux2  += subresLux2             ;
-      resLux3  += subresLux3             ;
-      return                             ;
+      resLite1 += subresLite1;
+      resLite2 += subresLite2;
+      resLite3 += subresLite3;
+      resMini1 += subresMini1;
+      resMini2 += subresMini2;
+      resMini3 += subresMini3;
+      resUni1  += subresUni1;
+      resUni2  += subresUni2;
+      resUni3  += subresUni3;
+      resLux1  += subresLux1;
+      resLux2  += subresLux2;
+      resLux3  += subresLux3;
+      return;
       }
     function renderPrices() {
         document.getElementById("PriceLite_1").innerHTML = resLite1;
