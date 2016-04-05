@@ -107,8 +107,8 @@ $(document).ready(function() {
     function findIndexLite(h, w) {
         var indx, ՐՏ_Temp;
         indx=0;
-        w+=35;
-        h+=100;
+        h+=10;
+        w+=7;
         if (h < 161 && w < 181 && w > 39) {
             indx = Math.ceil(w / 5) - 8 +1;
         }
@@ -117,8 +117,8 @@ $(document).ready(function() {
     function findIndexMini(h, w) {
         var indx, ՐՏ_Temp;
         indx=0;
-        h+=150;
-        w+=40;
+        h+=15;
+        w+=3;
         if (49 < h && h < 201) {
             indx = (Math.ceil(w / 10) - 4) * 16  + Math.ceil(h / 10) - 5 + 1;
         }
@@ -127,6 +127,7 @@ $(document).ready(function() {
     function findIndexUni(h, w) {
         var indx, ՐՏ_Temp;
         indx=0;
+        w+=3;
         if (49 < h && h < 181) {
             indx = (Math.ceil(w / 10) - 4) * 14  + Math.ceil(h / 10) - 5 + 1;
         }
@@ -135,7 +136,8 @@ $(document).ready(function() {
     function findIndexLux(h, w) {
         var indx, ՐՏ_Temp;
         indx=0;
-        h+=150;
+        h+=15;
+        w+=3;
         if (99 < h && h < 301) {
             indx = (Math.ceil(w / 10) - 5) * 11 + Math.ceil(h / 20) - 5 + 1;
         }
@@ -215,36 +217,50 @@ $(document).ready(function() {
 
       console.log( resLite1 , resLite2 , resLite3 , resMini1 , resMini2 , resMini3 , resUni1  , resUni2  , resUni3  , resLux1  , resLux2  , resLux3 );
 
-      resLite1 += subresLite1;
-      resLite2 += subresLite2;
-      resLite3 += subresLite3;
-      resMini1 += subresMini1;
-      resMini2 += subresMini2;
-      resMini3 += subresMini3;
-      resUni1  += subresUni1;
-      resUni2  += subresUni2;
-      resUni3  += subresUni3;
-      resLux1  += subresLux1;
-      resLux2  += subresLux2;
-      resLux3  += subresLux3;
-      return;
+      resLite1 += sresLite1            ;
+      resLite2 += sresLite2            ;
+      resLite3 += sresLite3            ;
+      resMini1 += sresMini1            ;
+      resMini2 += sresMini2            ;
+      resMini3 += sresMini3            ;
+      resUni1  += sresUni1             ;
+      resUni2  += sresUni2             ;
+      resUni3  += sresUni3             ;
+      resLux1  += sresLux1             ;
+      resLux2  += sresLux2             ;
+      resLux3  += sresLux3             ;
+      return                           ;
       }
     function renderPrices() {
-        document.getElementById("PriceLite_1").innerHTML = resLite1;
-        document.getElementById("PriceLite_2").innerHTML = resLite2;
-        document.getElementById("PriceLite_3").innerHTML = resLite3;
 
-        document.getElementById("PriceMini_1").innerHTML = resMini1;
-        document.getElementById("PriceMini_2").innerHTML = resMini2;
-        document.getElementById("PriceMini_3").innerHTML = resMini3;
+      strLite1 = Math.round(resLite1      ).toFixed(2)       ;
+      strLite2 = Math.round(resLite2      ).toFixed(2)       ;
+      strLite3 = Math.round(resLite3      ).toFixed(2)       ;
+      strMini1 = Math.round(resMini1      ).toFixed(2)       ;
+      strMini2 = Math.round(resMini2      ).toFixed(2)       ;
+      strMini3 = Math.round(resMini3      ).toFixed(2)       ;
+      strUni1  = Math.round(resUni1       ).toFixed(2)       ;
+      strUni2  = Math.round(resUni2       ).toFixed(2)       ;
+      strUni3  = Math.round(resUni3       ).toFixed(2)       ;
+      strLux1  = Math.round(resLux1       ).toFixed(2)       ;
+      strLux2  = Math.round(resLux2       ).toFixed(2)       ;
+      strLux3  = Math.round(resLux3       ).toFixed(2)       ;
 
-        document.getElementById("PriceUni_1").innerHTML  = resUni1;
-        document.getElementById("PriceUni_2").innerHTML  = resUni2;
-        document.getElementById("PriceUni_3").innerHTML  = resUni3;
+      document.getElementById("PriceLite_1").innerHTML = strLite1;
+      document.getElementById("PriceLite_2").innerHTML = strLite2;
+      document.getElementById("PriceLite_3").innerHTML = strLite3;
 
-        document.getElementById("PriceLux_1").innerHTML  = resLux1;
-        document.getElementById("PriceLux_2").innerHTML  = resLux2;
-        document.getElementById("PriceLux_3").innerHTML  = resLux3;
+      document.getElementById("PriceMini_1").innerHTML = strMini1;
+      document.getElementById("PriceMini_2").innerHTML = strMini2;
+      document.getElementById("PriceMini_3").innerHTML = strMini3;
+
+      document.getElementById("PriceUni_1").innerHTML  = strUni1;
+      document.getElementById("PriceUni_2").innerHTML  = strUni2;
+      document.getElementById("PriceUni_3").innerHTML  = strUni3;
+
+      document.getElementById("PriceLux_1").innerHTML  = strLux1;
+      document.getElementById("PriceLux_2").innerHTML  = strLux2;
+      document.getElementById("PriceLux_3").innerHTML  = strLux3;
     }
 
 /*/
@@ -282,73 +298,38 @@ $(document).ready(function() {
 
     hei1 = document.getElementById("height_1").value;
     wid1 = document.getElementById("width_1").value;
-
-    if ($('#MntTwoTab').hasClass('active')) {
-      console.log('M2');
-      hei1+=-5;
-    }
-
-    if ($('#MntThreeTab').hasClass('active')) {
-      console.log('M3');
-      wid1+=150;
-    }
+    hei2 = document.getElementById("height_2").value;
+    wid2 = document.getElementById("width_2").value;
+    hei3 = document.getElementById("height_3").value;
+    wid3 = document.getElementById("width_3").value;
+    hei4 = document.getElementById("height_4").value;
+    wid4 = document.getElementById("width_4").value;
 
     h1 = hei1/10;
     w1 = wid1/10;
+    h2 = hei2/10;
+    w2 = wid2/10;
+    h3 = hei3/10;
+    w3 = wid3/10;
+    h4 = hei4/10;
+    w4 = wid4/10;
 
-    console.log(h1,h2,h3,h4,w1,w2,w3,w4);
+    if ($('#MntThreeTab').hasClass('active')) {
+      console.log('M3');
+      w1+=12;
+    }
     TotalizePane(h1, w1);
-
-
     if ($('#MntOneTab').hasClass('active')) {
-      console.log('M1');
       if ($('#win2b').hasClass('active')) {
-        console.log('P2');
-          hei2 = document.getElementById("height_2").value;
-          wid2 = document.getElementById("width_2").value;
+        TotalizePane(h2, w2);
 
-          h2=hei2/10;
-          w2=wid2/10;
-
-          TotalizePane(h2, w2);
-
-      } else if ($('#win3b').hasClass('active')) {
-        console.log('P3');
-          hei2 = document.getElementById("height_2").value;
-          wid2 = document.getElementById("width_2").value;
-
-          hei3 = document.getElementById("height_3").value;
-          wid3 = document.getElementById("width_3").value;
-
-          h2=hei2/10;
-          w2=wid2/10;
-
-          h3=hei3/10;
-          w3=wid3/10;
-
+      }
+      if ($('#win3b').hasClass('active')) {
           TotalizePane(h2, w2);
           TotalizePane(h3, w3);
 
-      } else if ($('#win4b').hasClass('active')) {
-        console.log('P4');
-          hei2 = document.getElementById("height_2").value;
-          wid2 = document.getElementById("width_2").value;
-
-          hei3 = document.getElementById("height_3").value;
-          wid3 = document.getElementById("width_3").value;
-
-          hei4 = document.getElementById("height_4").value;
-          wid4 = document.getElementById("width_4").value;
-
-          h2=hei2/10;
-          w2=wid2/10;
-
-          h3=hei3/10;
-          w3=wid3/10;
-
-          h4=hei4/10;
-          w4=wid4/10;
-
+      }
+      if ($('#win4b').hasClass('active')) {
           TotalizePane(h2, w2);
           TotalizePane(h3, w3);
           TotalizePane(h4, w4);
@@ -381,30 +362,4 @@ $(document).ready(function() {
   $("#win4b").on("click", function() {
       TheReCalcJS();
   });
-    /*/
-    $("height_1").change(function() {
-      TheReCalcJS();
-    });
-    $("height_2").change(function() {
-      TheReCalcJS();
-    });
-    $("height_3").change(function() {
-      TheReCalcJS();
-    });
-    $("height_4").change(function() {
-      TheReCalcJS();
-    });
-    $("width_1").change(function() {
-      TheReCalcJS();
-    });
-    $("width_2").change(function() {
-      TheReCalcJS();
-    });
-    $("width_3").change(function() {
-      TheReCalcJS();
-    });
-    $("width_4").change(function() {
-      TheReCalcJS();
-    });
-    /*/
 });
