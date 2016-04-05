@@ -1396,7 +1396,7 @@ object {
 .section-header {
 	text-align: center;
 	text-transform: uppercase;
-  font-weight: 400
+  font-weight: 400;
 	padding-bottom: 30px;
 }
 .section-header h3 {
@@ -3545,7 +3545,9 @@ article .posted-on a:hover{
   padding-bottom: 0px;
 }
 #MountOptsSection{
-  background: rgba(255,255,255,.7);
+  background: rgba(255,255,255,.6);
+  padding-top: 40px;
+
 }
 #tabs-433998 > ul > li > a  span{
   opacity: 0.9;
@@ -3606,10 +3608,11 @@ article .posted-on a:hover{
     0 0 25px rgba(5,5,0,1);
 }
 #MeasurePanesSection .subsection-label h2,h3{
-  color:#ffffff
+  color:#ffffff;
 }
 #MeasurePanesSection {
   background: rgba(64,64,64,.7);
+  padding-top: 40px;
 }
 #MeasurePanesSection .panel-heading h5,h6{
   margin-bottom: 0;
@@ -3627,7 +3630,7 @@ article .posted-on a:hover{
   padding: 8%;
   display: none;
   text-align: left;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 18px;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.8);
@@ -3651,6 +3654,7 @@ article .posted-on a:hover{
 #PriceTableSection{
   background: #506B71;
   padding-bottom: 20px;
+  padding-top: 40px;
 }
 
 #PriceTableSection .infos-box .panel{
@@ -3791,6 +3795,9 @@ article .posted-on a:hover{
   pointer-events: none;
 }
 
+#footer{
+  padding-top: 40px
+}
 /*/
 #footer{
   box-shadow:
@@ -3913,6 +3920,13 @@ ul.nav > li.current_page_item > a:before, .nav > li.current-menu-item a:before {
 	display: none;
 }
 
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -75px;
+  height: 75px;
+  visibility: hidden;
+}
 /*---------------------------------------
  **   Responsive            -----
 -----------------------------------------*/
