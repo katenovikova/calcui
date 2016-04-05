@@ -3588,6 +3588,24 @@ article .posted-on a:hover{
 #MeasurePanesSection .panel-heading h5,h6{
   margin-bottom: 0;
 }
+#MeasurePanesSection .layered-tip*{
+  width:100%(!important);
+  padding:0(!important);
+}
+.layered-tip {
+  position: absolute;
+  left:0;
+  top:0;
+  background: rgba(0,0,0,.6);
+  filter: alpha(opacity=50);
+  width: 100%;
+  color:#fff;
+
+}
+.layered-tip p.clarifyingReminder *{
+  position: relative;
+  text-align: center;
+}
 #MeasurePanesSection .panel-heading{
   padding: 2px 3px;
 }

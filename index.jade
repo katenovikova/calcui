@@ -331,17 +331,16 @@ html(lang='ru-RU')
               .row
                 //- Height {{{
                 .col-xs-6.col-sm-3
-                  .howto_advise.center-block
+                  .howto_advise
                     //- Picture_Text Height {{{
                     .showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane
-                      span
-                        img.img-fluid.img-responsive(alt='how to measure height', src='images/measure_pane_h.png')
+                      img(alt='how to measure height', src='images/measure_pane_h.png')
+                      .clarifyingReminder
+                        | Пожалуйста, введите высоту окна по СТЕКЛУ. Все дополнительные вычисления мы сделаем сами.
                     .showOnMnt2.showOnMnt3
-                      span
-                        img.img-fluid.img-responsive(alt='how to measure height', src='images/measure_height.png')
-                    .showOnMnt2.showOnMnt3
-                      span.center-block
-                        p.clarifyingReminder.center-block
+                      img(alt='how to measure height', src='images/measure_height.png')
+                      .clarifyingReminder
+                        | Пожалуйста, укажите высоту ПРОЕМА окна. Все дополнительные вычисления мы сделаем сами.
                     //- end_Picture_Text Height }}}
                 .col-xs-6.col-sm-3
                   .measurements_area
@@ -446,17 +445,16 @@ html(lang='ru-RU')
                 //- end_Height }}}
                 //- Width {{{
                 .col-xs-6.col-sm-3
-                  .howto_advise.center-block
+                  .howto_advise
                     //- Picture_Text Width {{{
                     .showOnMnt1.showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane
-                      span
-                        img.img-fluid.img-responsive(alt='how to measure width', src='images/measure_pane_w.png')
+                      img.img-responsive(alt='how to measure width', src='images/measure_pane_w.png')
+                      .clarifyingReminder
+                        | Пожалуйста, введите ширину окна по СТЕКЛУ. Все дополнительные вычисления мы сделаем сами.
                     .showOnMnt2.showOnMnt3
-                      span
-                        img.img-fluid.img-responsive(alt='how to measure width', src='images/measure_width.png')
-                    .showOnMnt2.showOnMnt3
-                      span.center-block
-                        p.clarifyingReminder.center-block
+                      img.img-responsive(alt='how to measure width', src='images/measure_width.png')
+                      .clarifyingReminder
+                        | Пожалуйста, укажите ширину ПРОЕМА окна. Все дополнительные вычисления мы сделаем сами.
                     //- end_Picture_Text Width }}}
                 .col-xs-6.col-sm-3
                   .measurements_area
@@ -492,6 +490,10 @@ html(lang='ru-RU')
                                 span.input-group-addon#width_1_units_addon
                                   | мм
                     //- end_Width_1 }}}
+
+
+
+
                     //- Width_2 {{{
                     .showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.panel.panel-success.measurements_panel.white-bg
                       .showOn_DoublePane.panel-heading
