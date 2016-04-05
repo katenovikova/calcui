@@ -3624,14 +3624,15 @@ article .posted-on a:hover{
   right:0;
   width: 100%;
   height: 100%;
-  padding: 12%;
+  padding: 8%;
   display: none;
-  text-align: justify;
-  font-weight: 400;
-  font-size: 22px;
+  text-align: left;
+  font-weight: 200;
+  font-size: 18px;
   color: #ffffff;
   background: rgba(0, 0, 0, 0.8);
 }
+
 #MeasurePanesSection .panel-heading{
   padding: 2px 3px;
 }

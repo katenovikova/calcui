@@ -1,7 +1,7 @@
 $(function(){
-  $(".showOnMnt1").show();
   $(".showOnMnt2").hide();
   $(".showOnMnt3").hide();
+  $(".showOnMnt1").show();
   $(".showOn_DoublePane").hide();
   $(".showOn_TriplePane").hide();
   $(".showOn_QuadroPane").hide();
@@ -10,10 +10,11 @@ $(function(){
   $("#MntOneTab").on("click", function() {
     $(".showOnMnt2").hide();
     $(".showOnMnt3").hide();
-    $(".showOnMnt1").show();
+    $(".showOnMnt1").slideDown();
     $(".showOn_DoublePane").hide();
     $(".showOn_TriplePane").hide();
     $(".showOn_QuadroPane").hide();
+    $(".showOn_SinglePane").slideDown();
     $(".showOn_SinglePane").show();
   });
   $("#MntTwoTab").on("click", function() {
@@ -69,10 +70,10 @@ $(function(){
 $(function(){
   $(".layered_abomination").hover(
      function() {
-       $(this).find('.clarifyingReminder').fadeIn(250);
+       $(this).find('.clarifyingReminder').slideDown();
      },
      function() {
-       $(this).find('.clarifyingReminder').fadeOut(250);
+       $(this).find('.clarifyingReminder').slideUp();
      }
   );
 });
@@ -80,10 +81,10 @@ $(function(){
 $(function(){
   $(".thumbnail").hover(
      function() {
-       $(this).find('.caption').fadeIn(250);
+       $(this).find('.caption').fadeIn();
      },
      function() {
-       $(this).find('.caption').fadeOut(250);
+       $(this).find('.caption').fadeOut();
      }
   );
 });
