@@ -1,0 +1,29 @@
+{
+  "name": "lapro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/none23/calcui.git"
+  },
+  "author": "none23",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/none23/calcui/issues"
+  },
+  "homepage": "https://github.com/none23/calcui#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.4",
+    "gulp-jslint": "^0.2.2",
+    "gulp-minify": "0.0.7",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.5"
+  }
+}
