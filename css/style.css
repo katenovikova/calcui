@@ -2587,18 +2587,6 @@ video::-webkit-media-controls {
 /*/
 
 
-.fa-winPane1 {
-  min-width: 30%;
-  transform: scale(1,1);
-}
-.fa-winPane1 {
-  min-width: 30%;
-  transform: scale(1,1);
-}
-.fa-winPane1 {
-  min-width: 30%;
-  transform: scale(1,1);
-}
 
 /*/
 .fa-winPane1 {
@@ -3603,22 +3591,9 @@ article .posted-on a:hover{
 #MeasurePanesSection .panel-heading{
   padding: 2px 3px;
 }
-#MeasurePanesSection .panel-body > .row > .col-xs-1.col-sm-1{
+#MeasurePanesSection .panel-body > .row > *{
   padding-left: 2px;
   padding-right: 2px;
-  margin-left: 2px;
-  margin-right: 2px;
-}
-#MeasurePanesSection .panel-body > .row > * > .fa-stack {
-  transform: scale(.95, .95);
-}
-#MeasurePanesSection > .row.no-padding > * {
-  padding-left: 2px;
-  padding-right: 2px;
-}
-#MeasurePanesSection > .row > col-xs-6,col-sm-3,col-sm-12 > .measurement_area > * >,panel-body > .container-fluid > .row > *{
-  padding-left: 0;
-  padding-right: 0;
 }
 
 #PriceTableSection hr.subsection-label{

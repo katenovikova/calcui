@@ -356,27 +356,24 @@ html(lang='ru-RU')
                       .showOn_QuadroPane.panel-heading
                           h6 Высота первой створки
                       .panel-body
-                          .row
-                            .showOn_SinglePane.col-sm-3
-                            .showOn_DoublePane.col-sm-2
-                            .showOn_TriplePane.col-sm-1
-                            .showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
-                              span.fa.fa-stack
-                                i.fa.fa-square.fa-stack-2x
-                                i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                            .showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
-                              span.fa
-                                  i.fa.fa-square-o.fa-2x
-                            .showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
-                              span.fa
-                                  i.fa.fa-square-o.fa-2x
-                            .showOn_QuadroPane.col-xs-1.col-sm-1
-                              span.fa
-                                  i.fa.fa-square-o.fa-2x
+                        .row
+                          .col-xs-4
+                            .showOn_SinglePane
+                              span
+                                img(src='images/1_1.png')
+                            .showOn_DoublePane
+                              span
+                                img(src='images/2_1.png')
+                            .showOn_TriplePane
+                              span
+                                img(src='images/3_1.png')
+                            .showOn_QuadroPane
+                              span
+                                img(src='images/4_1.png')
 
-                            .col-xs-12.col-sm-6
+                          .col-xs-7
                               .input-group
-                                input.form-control#height_1.height_1.wid_hei_input(type='number',name='height_1', value=1000, min=10, max=3000,aria-describedby='height_1_units_addon')
+                                input.form-control#height_1.height_1(type='number',name='height_1', value=1000, min=10, max=3000,aria-describedby='height_1_units_addon')
                                 span.input-group-addon#height_1_units_addon
                                   | мм
                     //- end_Height_1 }}}
@@ -389,26 +386,21 @@ html(lang='ru-RU')
                       .showOn_QuadroPane.panel-heading
                           h6 Высота второй створки
                       .panel-body
-                          .row
-                            .showOn_DoublePane.col-sm-2
-                            .showOn_TriplePane.col-sm-1
-                            .col-xs-1.col-sm-1
+                        .row
+                          .col-xs-4
+                            .showOn_DoublePane
                               span
-                                  i.fa.fa-square-o.fa-2x
-                            .col-xs-1.col-sm-1
-                              span.fa.fa-stack
-                                i.fa.fa-square.fa-stack-2x
-                                i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                            .showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
+                                img(src='images/2_2.png')
+                            .showOn_TriplePane
                               span
-                                  i.fa.fa-square-o.fa-2x
-                            .showOn_QuadroPane.col-xs-1.col-sm-1
+                                img(src='images/3_2.png')
+                            .showOn_QuadroPane
                               span
-                                  i.fa.fa-square-o.fa-2x
+                                img(src='images/4_2.png')
 
-                            .col-xs-12.col-sm-6
+                          .col-xs-7
                               .input-group
-                                input.form-control#height_2.height_2.wid_hei_input(type='number',name='height_2', value=1000, min=10, max=3000,aria-describedby='height_2_units_addon')
+                                input.form-control#height_2.height_2(type='number',name='height_2', value=1000, min=10, max=3000,aria-describedby='height_2_units_addon')
                                 span.input-group-addon#height_2_units_addon
                                   | мм
                     //- end_Height_2 }}}
@@ -419,25 +411,18 @@ html(lang='ru-RU')
                       .showOn_QuadroPane.panel-heading
                           h6 Высота третьей створки
                       .panel-body
-                          .row
-                            .showOn_TriplePane.col-sm-1
-                            .col-xs-1.col-sm-1
+                        .row
+                          .col-xs-4
+                            .showOn_TriplePane
                               span
-                                  i.fa.fa-square-o.fa-2x
-                            .col-xs-1.col-sm-1
+                                img(src='images/3_3.png')
+                            .showOn_QuadroPane
                               span
-                                  i.fa.fa-square-o.fa-2x
-                            .col-xs-1.col-sm-1
-                              span.fa.fa-stack
-                                i.fa.fa-square.fa-stack-2x
-                                i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
-                            .showOn_QuadroPane.col-xs-3.col-sm-1
-                              span
-                                  i.fa.fa-square-o.fa-2x
+                                img(src='images/4_3.png')
 
-                            .col-xs-12.col-sm-6
+                          .col-xs-7
                               .input-group
-                                input.form-control#height_3.height_3.wid_hei_input(type='number',name='height_3', value=1000, min=10, max=3000,aria-describedby='height_3_units_addon')
+                                input.form-control#height_3.height_3(type='number',name='height_3', value=1000, min=10, max=3000,aria-describedby='height_3_units_addon')
                                 span.input-group-addon#height_3_units_addon
                                   | мм
                     //- end_Height_3 }}}
@@ -446,24 +431,15 @@ html(lang='ru-RU')
                       .panel-heading
                           h6 Высота четвертой створки
                       .panel-body
-                          .row
-                            .col-xs-1.col-sm-1
+                        .row
+                          .col-xs-4
+                            .showOn_QuadroPane
                               span
-                                  i.fa.fa-square-o.fa-2x
-                            .col-xs-1.col-sm-1
-                              span
-                                  i.fa.fa-square-o.fa-2x
-                            .col-xs-1.col-sm-1
-                              span
-                                  i.fa.fa-square-o.fa-2x
-                            .col-xs-1.col-sm-1
-                              span.fa.fa-stack
-                                i.fa.fa-square.fa-stack-2x
-                                i.fa.fa-arrows-v.fa-stack-1x.fa-inverse
+                                img(src='images/4_4.png')
 
-                            .col-xs-12.col-sm-6
+                          .col-xs-7
                               .input-group
-                                input.form-control#height_4.height_4.wid_hei_input(type='number',name='height_4', value=1000, min=10, max=3000,aria-describedby='height_4_units_addon')
+                                input.form-control#height_4.height_4(type='number',name='height_4', value=1000, min=10, max=3000,aria-describedby='height_4_units_addon')
                                 span.input-group-addon#height_4_units_addon
                                   | мм
                     //- end_Height_4 }}}
@@ -495,27 +471,24 @@ html(lang='ru-RU')
                       .showOn_QuadroPane.panel-heading
                           h6 Ширина первой створки
                       .panel-body
-                          .row
-                            .showOn_SinglePane.col-sm-3
-                            .showOn_DoublePane.col-sm-2
-                            .showOn_TriplePane.col-sm-1
-                            .showOn_SinglePane.showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
-                              span.fa.fa-stack
-                                i.fa.fa-square.fa-stack-2x
-                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                            .showOn_DoublePane.showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
+                        .row
+                          .col-xs-4
+                            .showOn_SinglePane
                               span
-                                  i.fa.fa-square-o.fa-2x
-                            .showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
+                                img(src='images/1_1.png')
+                            .showOn_DoublePane
                               span
-                                  i.fa.fa-square-o.fa-2x
-                            .showOn_QuadroPane.col-xs-1.col-sm-1
+                                img(src='images/2_1.png')
+                            .showOn_TriplePane
                               span
-                                  i.fa.fa-square-o.fa-2x
+                                img(src='images/3_1.png')
+                            .showOn_QuadroPane
+                              span
+                                img(src='images/4_1.png')
 
-                            .col-xs-12.col-sm-6
+                          .col-xs-7
                               .input-group
-                                input.form-control#width_1.width_1.wid_hei_input(type='number',name='width_1', value=600, min=400, max=3000, aria-describedby='width_1_units_addon')
+                                input.form-control#width_1.width_1(type='number',name='width_1', value=600, min=400, max=3000, aria-describedby='width_1_units_addon')
                                 span.input-group-addon#width_1_units_addon
                                   | мм
                     //- end_Width_1 }}}
@@ -528,26 +501,21 @@ html(lang='ru-RU')
                       .showOn_QuadroPane.panel-heading
                           h6 Ширина второй створки
                       .panel-body
-                          .row
-                            .showOn_DoublePane.col-sm-2
-                            .showOn_TriplePane.col-sm-1
-                            .col-xs-1.col-sm-1
+                        .row
+                          .col-xs-4
+                            .showOn_DoublePane
                               span
-                                  i.fa.fa-square-o.fa-2x
-                            .col-xs-1.col-sm-1
-                              span.fa.fa-stack
-                                i.fa.fa-square.fa-stack-2x
-                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                            .showOn_TriplePane.showOn_QuadroPane.col-xs-1.col-sm-1
+                                img(src='images/2_2.png')
+                            .showOn_TriplePane
                               span
-                                  i.fa.fa-square-o.fa-2x
-                            .showOn_QuadroPane.col-xs-1.col-sm-1
+                                img(src='images/3_2.png')
+                            .showOn_QuadroPane
                               span
-                                  i.fa.fa-square-o.fa-2x
+                                img(src='images/4_2.png')
 
-                            .col-xs-12.col-sm-6
+                          .col-xs-7
                               .input-group
-                                input.form-control#width_2.width_2.wid_hei_input(type='number',name='width_2', value=600, min=400, max=3000, aria-describedby='width_2_units_addon')
+                                input.form-control#width_2.width_2(type='number',name='width_2', value=600, min=400, max=3000, aria-describedby='width_2_units_addon')
                                 span.input-group-addon#width_2_units_addon
                                   | мм
                       //- end_Width_2 }}}
@@ -558,25 +526,18 @@ html(lang='ru-RU')
                       .showOn_QuadroPane.panel-heading
                           h6 Ширина третьей створки
                       .panel-body
-                          .row
-                            .showOn_TriplePane.col-sm-1
-                            .col-xs-1.col-sm-1
+                        .row
+                          .col-xs-4
+                            .showOn_TriplePane
                               span
-                                  i.fa.fa-square-o.fa-2x
-                            .col-xs-1.col-sm-1
+                                img(src='images/3_3.png')
+                            .showOn_QuadroPane
                               span
-                                  i.fa.fa-square-o.fa-2x
-                            .col-xs-1.col-sm-1
-                              span.fa.fa-stack
-                                i.fa.fa-square.fa-stack-2x
-                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
-                            .showOn_QuadroPane.col-xs-3.col-sm-1
-                              span
-                                  i.fa.fa-square-o.fa-2x
+                                img(src='images/4_3.png')
 
-                            .col-xs-12.col-sm-6
+                          .col-xs-7
                               .input-group
-                                input.form-control#width_3.width_3.wid_hei_input(type='number',name='width_3', value=600, min=400, max=3000, aria-describedby='width_3_units_addon')
+                                input.form-control#width_3.width_3(type='number',name='width_3', value=600, min=400, max=3000, aria-describedby='width_3_units_addon')
                                 span.input-group-addon#width_3_units_addon
                                   | мм
                       //- end_Width_3 }}}
@@ -585,24 +546,15 @@ html(lang='ru-RU')
                       .panel-heading
                           h6 Ширина четвертой створки
                       .panel-body
-                          .row
-                            .col-xs-1.col-sm-1
+                        .row
+                          .col-xs-4
+                            .showOn_QuadroPane
                               span
-                                  i.fa.fa-square-o.fa-2x
-                            .col-xs-1.col-sm-1
-                              span
-                                  i.fa.fa-square-o.fa-2x
-                            .col-xs-1.col-sm-1
-                              span
-                                  i.fa.fa-square-o.fa-2x
-                            .col-xs-1.col-sm-1
-                              span.fa.fa-stack
-                                i.fa.fa-square.fa-stack-2x
-                                i.fa.fa-arrows-h.fa-stack-1x.fa-inverse
+                                img(src='images/4_4.png')
 
-                            .col-xs-12.col-sm-6
+                          .col-xs-7
                               .input-group
-                                input.form-control#width_4.width_4.wid_hei_input(type='number',name='width_4', value=600, min=400, max=3000, aria-describedby='width_4_units_addon')
+                                input.form-control#width_4.width_4(type='number',name='width_4', value=600, min=400, max=3000, aria-describedby='width_4_units_addon')
                                 span.input-group-addon#width_4_units_addon
                                   | мм
                     //- end_Width_4 }}}
