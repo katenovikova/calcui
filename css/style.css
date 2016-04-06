@@ -2108,8 +2108,8 @@ video::-webkit-media-controls {
 /*--SKILLS --*/
 /*//*/
 .skills *{
-	text-align: right;;
-  text-justify: inter-word
+	text-align: right;
+  text-justify: inter-word;
 	margin: 0 0 0 0;
 }
 /*//*/
@@ -2135,7 +2135,7 @@ video::-webkit-media-controls {
 .skills .skill i {
 	line-height: 20px;
 	color: #444;
-  margin-top: 20px
+  margin-top: 20px;
   margin-left: 0
 }
 .skills .skill h6 {
@@ -2168,15 +2168,15 @@ video::-webkit-media-controls {
 	background: #232323
 }
 .our-clients h3 {
-	padding-top: : 5px;
-	padding-top: : 5px;
+	padding-top: 5px;
+	padding-top: 5px;
 }
 .our-clients h2 {
 	font-weight: 400;
-  font-size 16
+  font-size: 16;
 	float:none;
-  padding-top 20px
-  padding-bottom 20px
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .client-list {
 	padding-bottom: 10px;
@@ -2783,7 +2783,7 @@ video::-webkit-media-controls {
 .zerif_grid_col_4 {
 	float: left;
 	text-align: justify;
-  text-justify: inter-word
+  text-justify: inter-word;
 	width: 23%;
 	margin: 0 1.25% 0 1.25%;
 }
@@ -3523,7 +3523,6 @@ article .posted-on a:hover{
 
 .client-list span{
   overflow: hidden;
-  border-i
 
 }
 .client-list .clientIcon img{
@@ -3591,7 +3590,7 @@ article .posted-on a:hover{
 }
 #winLenB > .row > .col-sm-3.col-xs-6 > .btn.active {
   background-color: #5dc064;
-  opacity: 0
+  opacity: 1;
   box-shadow:
     0 0 25px rgba(5,5,0,1);
   filter: grayscale(0);
@@ -3600,7 +3599,7 @@ article .posted-on a:hover{
 #MountOptsSection .nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus {
   color: #fff;
   background-color: #5dc064;
-  opacity: 0
+  opacity: 1;
   filter: grayscale(0);
   -webkit-filter:grayscale(0);
   margin-bottom: 10px;
@@ -3837,7 +3836,7 @@ article .posted-on a:hover{
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 20px;
-  padding-right 20px;
+  padding-right: 20px;
 }
 .modal-body > form > .form-group {
   text-align: left
@@ -4490,7 +4489,6 @@ ul.nav > li.current_page_item > a:before, .nav > li.current-menu-item a:before {
 	.about-us p {
 		text-align: center;
     height: auto;
-    a
 	}
 	.our-team {
 	    padding-top: 30px;

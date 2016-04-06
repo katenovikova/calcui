@@ -20,8 +20,8 @@ html(lang='ru-RU')
     style(src='css/background.css')
 
     //- jQuery
-    script(src='./js/jquery.js?ver=1.11.3')
-    script(src='./js/jquery-migrate.min.js?ver=1.2.1')
+    script(src='./js/jquery.min.js')
+    script(src='./js/jquery-migrate.min.js')
 
   body.home.blog(itemscope='itemscope', itemtype='http://schema.org/WebPage').zerif_full_site_wrap
       // background {{{
@@ -1079,10 +1079,9 @@ html(lang='ru-RU')
           //- end_Footer }}}
       // Links after page {{{
       link(href='./css/outline.css', type='text/css', media='all')
-      script(src='js/jquery.min.js')
       script(src='js/bootstrap.min.js')
       script(src='js/zerif.js?ver=20120206')
-      script(src='js/scripts.js')
+      script(src='js/scripts.min.js')
       script(src='js/accounting.js')
       script(src='js/reklk.js')
       // .zerif-mobile-bg-helper-content
@@ -1212,7 +1211,7 @@ html(lang='ru-RU')
                       p RandomTestCaption
             //- end_Body ShowFabric }}}
       //- end_ShowFabricModal }}}
-      //- end_Modals }}}
+      //- ShowFabricModal {{{
       .modal.showFabricModal#ShowFabricModal_2.fade(tabindex='-1', role='dialog', aria-labelledby='ShowFabricModalLabel_2', aria-hidden='true')
         .modal-dialog
           .modal-content
@@ -1269,7 +1268,7 @@ html(lang='ru-RU')
                       p RandomTestCaption
             //- end_Body ShowFabric }}}
       //- end_ShowFabricModal }}}
-      //- end_Modals }}}
+      //- ShowFabricModal {{{
       .modal.showFabricModal#ShowFabricModal_3.fade(tabindex='-1', role='dialog', aria-labelledby='ShowFabricModalLabel_3', aria-hidden='true')
         .modal-dialog
           .modal-content
@@ -1326,7 +1325,7 @@ html(lang='ru-RU')
                       p RandomTestCaption
             //- end_Body ShowFabric }}}
       //- end_ShowFabricModal }}}
-      //- end_Modals }}}
+      //- ShowFabricModal {{{
       .modal.showFabricModal#ShowFabricModalOne.fade(tabindex='-1', role='dialog', aria-labelledby='ShowFabricModalLabelOne', aria-hidden='true')
         .modal-dialog
           .modal-content
@@ -1383,7 +1382,7 @@ html(lang='ru-RU')
                       p RandomTestCaption
             //- end_Body ShowFabric }}}
       //- end_ShowFabricModal }}}
-      //- end_Modals }}}
+      //- ShowFabricModal {{{
       .modal.showFabricModal#ShowFabricModalTwo.fade(tabindex='-1', role='dialog', aria-labelledby='ShowFabricModalLabelTwo', aria-hidden='true')
         .modal-dialog
           .modal-content
@@ -1440,7 +1439,7 @@ html(lang='ru-RU')
                       p RandomTestCaption
             //- end_Body ShowFabric }}}
       //- end_ShowFabricModal }}}
-      //- end_Modals }}}
+      //- ShowFabricModal {{{
       .modal.showFabricModal#ShowFabricModalThree.fade(tabindex='-1', role='dialog', aria-labelledby='ShowFabricModalLabelThree', aria-hidden='true')
         .modal-dialog
           .modal-content
@@ -1497,6 +1496,5 @@ html(lang='ru-RU')
                       p RandomTestCaption
             //- end_Body ShowFabric }}}
       //- end_ShowFabricModal }}}
-      //- end_Modals }}}
 
 // vim:foldmethod=marker:foldlevel=0:nowrap:textwidth=9999

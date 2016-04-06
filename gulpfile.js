@@ -2,7 +2,7 @@
 var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
-    jshint = require('gulp-jslint'),
+    jslint = require('gulp-jslint'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
@@ -16,22 +16,19 @@ var gulp = require('gulp'),
 
 // Styles
 gulp.task('styles', function() {
-  return gulp.src('css/styles.css')
-    .pipe(sass({ style: 'expanded', }))
-    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-    .pipe(gulp.dest('dist/css/styles.css'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(minifycss())
-    .pipe(livereload(server))
-    .pipe(gulp.dest('dist/css'))
-    .pipe(notify({ message: 'Styles task complete' }));
+  return gulp.src('css/*.css')
+    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))         
+    .pipe(gulp.dest('dist/css'))                                                                       
+    .pipe(rename({ suffix: '.min' }))                                                                             
+    .pipe(minifycss())                                                                                            
+    .pipe(livereload(server))                                                                                     
+    .pipe(gulp.dest('dist/css'))                                                                                  
+    .pipe(notify({ message: 'Styles task complete' }));                                                           
 });
 
 // Scripts
 gulp.task('scripts', function() {
-  return gulp.src('js/*.js')
-    .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter('default'))
+  return gulp.src('js/{reklk,scripts}.js')
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('dist/js'))
     .pipe(rename({ suffix: '.min' }))
@@ -50,14 +47,15 @@ gulp.task('images', function() {
     .pipe(notify({ message: 'Images task complete' }));
 });
 
-// Clean
+/*/ Clean
 gulp.task('clean', function() {
   return gulp.src(['dist/css', 'dist/js', 'dist/images'], {read: false})
     .pipe(clean());
 });
+/*/
 
 // Default task
-gulp.task('default', ['clean'], function() {
+gulp.task('default', function() {
     gulp.run('styles', 'scripts', 'images');
 });
 
