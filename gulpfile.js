@@ -27,9 +27,8 @@ gulp.task('styles', function() {
 });
 
 // Scripts
-gulp.task('scripts', function() {
-  return gulp.src('js/{reklk,scripts}.js')
-    .pipe(concat('scripts.js'))
+gulp.task('scripts1', function() {
+  return gulp.src('js/reklk.js')
     .pipe(gulp.dest('dist/js'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
@@ -37,7 +36,19 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('dist/js'))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
+gulp.task('scripts2', function() {
+  return gulp.src('js/scripts.js')
+    .pipe(gulp.dest('dist/js'))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(uglify())
+    .pipe(livereload(server))
+    .pipe(gulp.dest('dist/js'))
+    .pipe(notify({ message: 'Scripts task complete' }));
+});
+gulp.task('scripts', function() {
+    gulp.run('scripts1', 'scripts2');
 
+});
 // Images
 gulp.task('images', function() {
   return gulp.src('images/**/*')

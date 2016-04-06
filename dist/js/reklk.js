@@ -216,20 +216,21 @@ $(document).ready(function() {
       sresLux3  =  subresLux3  * coefusd;
 
       console.log( resLite1 , resLite2 , resLite3 , resMini1 , resMini2 , resMini3 , resUni1  , resUni2  , resUni3  , resLux1  , resLux2  , resLux3 );
+      console.log( resLite1 , resLite2 , resLite3 , resMini1 , resMini2 , resMini3 , resUni1  , resUni2  , resUni3  , resLux1  , resLux2  , resLux3 );
 
-      resLite1 += sresLite1.toFixed(2)            ;
-      resLite2 += sresLite2.toFixed(2)            ;
-      resLite3 += sresLite3.toFixed(2)            ;
-      resMini1 += sresMini1.toFixed(2)            ;
-      resMini2 += sresMini2.toFixed(2)            ;
-      resMini3 += sresMini3.toFixed(2)            ;
-      resUni1  += sresUni1.toFixed(2)             ;
-      resUni2  += sresUni2.toFixed(2)             ;
-      resUni3  += sresUni3.toFixed(2)             ;
-      resLux1  += sresLux1.toFixed(2)             ;
-      resLux2  += sresLux2.toFixed(2)             ;
-      resLux3  += sresLux3.toFixed(2)             ;
-      return                                      ;
+      resLite1 += sresLite1            ;
+      resLite2 += sresLite2            ;
+      resLite3 += sresLite3            ;
+      resMini1 += sresMini1            ;
+      resMini2 += sresMini2            ;
+      resMini3 += sresMini3            ;
+      resUni1  += sresUni1             ;
+      resUni2  += sresUni2             ;
+      resUni3  += sresUni3             ;
+      resLux1  += sresLux1             ;
+      resLux2  += sresLux2             ;
+      resLux3  += sresLux3             ;
+      return                           ;
       }
     function renderPrices() {
 
